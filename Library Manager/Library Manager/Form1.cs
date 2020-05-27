@@ -31,15 +31,27 @@ namespace Library_Manager
             if (dbCon.IsConnect())
             {
                 string someStringFromColumnZero = "";
-                string query = "SELECT * FROM users WHERE user_login like '" + textBoxLogin.Text + "' AND user_password like '" + textBoxPassword + "'";
+                string query = "SELECT COUNT(*) FROM users WHERE user_login like '" + textBoxLogin.Text + "' AND user_password like '" + textBoxPassword.Text + "'";
                 var cmd = new MySqlCommand(query, dbCon.Connection);
                 var reader = cmd.ExecuteReader();
                 while (reader.Read())
                 {
                     someStringFromColumnZero = reader.GetString(0);
                 }
-                MessageBox.Show("zalogowano" + someStringFromColumnZero);
+
+                int res = int.Parse(someStringFromColumnZero);
+                if(res == 1)
+                {
+                    MessageBox.Show("Zalogowano");
+                }
+                else
+                {
+                    MessageBox.Show("Błędny login lub hasło");
+                }
+
                 dbCon.Close();
+
+                dbCon = null;
             }
             
         }
