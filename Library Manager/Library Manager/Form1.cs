@@ -40,9 +40,19 @@ namespace Library_Manager
                 }
 
                 int res = int.Parse(someStringFromColumnZero);
-                if(res == 1)
+                if (res == 1 && textBoxLogin.Text == "admin")
                 {
                     MessageBox.Show("Zalogowano");
+                    FormMenuAdmin fMenuAdmin = new FormMenuAdmin();
+                    this.Hide();
+                    fMenuAdmin.Show();
+                }
+                else if(res == 1)
+                {
+                    MessageBox.Show("Zalogowano");
+                    FormMenu fMenu = new FormMenu();
+                    this.Hide();
+                    fMenu.Show();
                 }
                 else
                 {
@@ -50,10 +60,9 @@ namespace Library_Manager
                 }
 
                 dbCon.Close();
-
-                dbCon = null;
+                dbCon.connection = null;
             }
-            
+   
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -76,7 +85,7 @@ namespace Library_Manager
         }
 
         public string Password { get; set; }
-        private MySqlConnection connection = null;
+        public MySqlConnection connection = null;
         public MySqlConnection Connection
         {
             get { return connection; }
