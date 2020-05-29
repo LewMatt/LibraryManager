@@ -60,7 +60,7 @@ namespace Library_Manager
                 }
 
                 dbCon.Close();
-                dbCon.connection = null;
+
             }
    
         }
@@ -85,7 +85,7 @@ namespace Library_Manager
         }
 
         public string Password { get; set; }
-        public MySqlConnection connection = null;
+        private MySqlConnection connection = null;
         public MySqlConnection Connection
         {
             get { return connection; }
@@ -116,6 +116,7 @@ namespace Library_Manager
         public void Close()
         {
             connection.Close();
+            connection = null;
         }
     }
 }
