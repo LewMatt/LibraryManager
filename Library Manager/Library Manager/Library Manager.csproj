@@ -119,11 +119,29 @@
     <Compile Include="UserControlBiblioteka.Designer.cs">
       <DependentUpon>UserControlBiblioteka.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControlBibliotekaAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlBibliotekaAdmin.Designer.cs">
+      <DependentUpon>UserControlBibliotekaAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlKsiazkiWypAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlKsiazkiWypAdmin.Designer.cs">
+      <DependentUpon>UserControlKsiazkiWypAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControlMenu.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="UserControlMenu.Designer.cs">
       <DependentUpon>UserControlMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlMenuAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlMenuAdmin.Designer.cs">
+      <DependentUpon>UserControlMenuAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControlMojeDane.cs">
       <SubType>UserControl</SubType>
@@ -136,6 +154,12 @@
     </Compile>
     <Compile Include="UserControlMojeKsiazki.Designer.cs">
       <DependentUpon>UserControlMojeKsiazki.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlUzytkownicyAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlUzytkownicyAdmin.Designer.cs">
+      <DependentUpon>UserControlUzytkownicyAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControlZamowKsiazke.cs">
       <SubType>UserControl</SubType>
@@ -164,14 +188,26 @@
     <EmbeddedResource Include="UserControlBiblioteka.resx">
       <DependentUpon>UserControlBiblioteka.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControlBibliotekaAdmin.resx">
+      <DependentUpon>UserControlBibliotekaAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlKsiazkiWypAdmin.resx">
+      <DependentUpon>UserControlKsiazkiWypAdmin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UserControlMenu.resx">
       <DependentUpon>UserControlMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlMenuAdmin.resx">
+      <DependentUpon>UserControlMenuAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlMojeDane.resx">
       <DependentUpon>UserControlMojeDane.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlMojeKsiazki.resx">
       <DependentUpon>UserControlMojeKsiazki.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlUzytkownicyAdmin.resx">
+      <DependentUpon>UserControlUzytkownicyAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlZamowKsiazke.resx">
       <DependentUpon>UserControlZamowKsiazke.cs</DependentUpon>
