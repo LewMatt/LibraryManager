@@ -27,7 +27,7 @@ namespace Library_Manager
         private void btnLogin_Click(object sender, EventArgs e)
         {
             var dbCon = DBConnection.Instance();
-            dbCon.DatabaseName = "librarydb";
+            dbCon.DatabaseName = "mylibrarydb";
             if (dbCon.IsConnect())
             {
                 string someStringFromColumnZero = "";
@@ -105,7 +105,7 @@ namespace Library_Manager
             {
                 if (String.IsNullOrEmpty(databaseName))
                     return false;
-                string connstring = string.Format("Server=localhost; database={0}; UID=root; password=pswrd", databaseName);
+                string connstring = string.Format("Server=localhost; database={0}; UID=root; password=", databaseName);
                 connection = new MySqlConnection(connstring);
                 connection.Open();
             }
