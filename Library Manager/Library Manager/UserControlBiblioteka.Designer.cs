@@ -110,12 +110,12 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ListView listViewBiblioteka;
         private System.Windows.Forms.ColumnHeader hID;
         private System.Windows.Forms.ColumnHeader hTytul;
         private System.Windows.Forms.ColumnHeader hAutor;
         private System.Windows.Forms.ColumnHeader hGatunek;
         private System.Windows.Forms.ColumnHeader hDataWyd;
         private System.Windows.Forms.ColumnHeader hIlosc;
+        public System.Windows.Forms.ListView listViewBiblioteka;
     }
 }
