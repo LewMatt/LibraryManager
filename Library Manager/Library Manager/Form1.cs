@@ -23,46 +23,53 @@ namespace Library_Manager
             InitializeComponent();
         }
 
-
-        private void btnLogin_Click(object sender, EventArgs e)
+        public string sendQueryRetString(string query)
         {
+            string someStringFromColumnZero = "";
+            string result = "";
             var dbCon = DBConnection.Instance();
             dbCon.DatabaseName = "mylibrarydb";
             if (dbCon.IsConnect())
             {
-                string someStringFromColumnZero = "";
-                string query = "SELECT COUNT(*) FROM users WHERE user_login like '" + textBoxLogin.Text + "' AND user_password like '" + textBoxPassword.Text + "'";
                 var cmd = new MySqlCommand(query, dbCon.Connection);
                 var reader = cmd.ExecuteReader();
                 while (reader.Read())
                 {
                     someStringFromColumnZero = reader.GetString(0);
+                    result = someStringFromColumnZero;
                 }
-
-                int res = int.Parse(someStringFromColumnZero);
-                if (res == 1 && textBoxLogin.Text == "admin")
-                {
-                    MessageBox.Show("Zalogowano");
-                    FormMenuAdmin fMenuAdmin = new FormMenuAdmin();
-                    this.Hide();
-                    fMenuAdmin.Show();
-                }
-                else if(res == 1)
-                {
-                    MessageBox.Show("Zalogowano");
-                    FormMenu fMenu = new FormMenu();
-                    this.Hide();
-                    fMenu.Show();
-                }
-                else
-                {
-                    MessageBox.Show("Błędny login lub hasło");
-                }
-
                 dbCon.Close();
-
             }
-   
+            return result;
+        }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            string query = "SELECT COUNT(*) FROM users WHERE user_login like '" + textBoxLogin.Text + "' AND user_password like '" + textBoxPassword.Text + "'";
+            string result = "";
+
+            result = sendQueryRetString(query);
+
+            int res = int.Parse(result);
+            if (res == 1 && textBoxLogin.Text == "admin")
+            {
+                MessageBox.Show("Zalogowano");
+                FormMenuAdmin fMenuAdmin = new FormMenuAdmin();
+                this.Hide();
+                fMenuAdmin.Show();
+            }
+            else if (res == 1)
+            {
+                MessageBox.Show("Zalogowano");
+                FormMenu fMenu = new FormMenu();
+                this.Hide();
+                fMenu.Show();
+            }
+            else
+            {
+                MessageBox.Show("Błędny login lub hasło");
+            }
+
         }
 
         private void btnExit_Click(object sender, EventArgs e)
