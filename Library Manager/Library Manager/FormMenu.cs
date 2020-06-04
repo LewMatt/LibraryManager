@@ -17,7 +17,6 @@ namespace Library_Manager
         {
             InitializeComponent();
             userControlMenu1.BringToFront();
-            
         }
 
         Form1 form1obj = new Form1();
@@ -48,6 +47,8 @@ namespace Library_Manager
                 userControlBiblioteka1.listViewBiblioteka.Items.Add(item);
             }
 
+            userControlBiblioteka1.user = logged_user;
+
             userControlBiblioteka1.BringToFront();
         }
 
@@ -55,6 +56,8 @@ namespace Library_Manager
         {
             userControlMojeKsiazki1.BringToFront();
         }
+
+        
 
         private void btnMojeDane_Click(object sender, EventArgs e)
         {

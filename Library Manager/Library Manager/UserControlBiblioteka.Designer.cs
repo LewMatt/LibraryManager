@@ -36,6 +36,7 @@
             this.hGatunek = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.hDataWyd = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.hIlosc = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.btnWypozyczKsiazke = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -56,6 +57,7 @@
             this.hGatunek,
             this.hDataWyd,
             this.hIlosc});
+            this.listViewBiblioteka.FullRowSelect = true;
             this.listViewBiblioteka.HideSelection = false;
             this.listViewBiblioteka.Location = new System.Drawing.Point(82, 148);
             this.listViewBiblioteka.Name = "listViewBiblioteka";
@@ -94,10 +96,21 @@
             this.hIlosc.Text = "Ilość dostępnych";
             this.hIlosc.Width = 100;
             // 
+            // btnWypozyczKsiazke
+            // 
+            this.btnWypozyczKsiazke.Location = new System.Drawing.Point(744, 288);
+            this.btnWypozyczKsiazke.Name = "btnWypozyczKsiazke";
+            this.btnWypozyczKsiazke.Size = new System.Drawing.Size(100, 50);
+            this.btnWypozyczKsiazke.TabIndex = 2;
+            this.btnWypozyczKsiazke.Text = "Wypożycz książkę";
+            this.btnWypozyczKsiazke.UseVisualStyleBackColor = true;
+            this.btnWypozyczKsiazke.Click += new System.EventHandler(this.btnWypozyczKsiazke_Click);
+            // 
             // UserControlBiblioteka
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnWypozyczKsiazke);
             this.Controls.Add(this.listViewBiblioteka);
             this.Controls.Add(this.label1);
             this.Name = "UserControlBiblioteka";
@@ -117,5 +130,6 @@
         private System.Windows.Forms.ColumnHeader hDataWyd;
         private System.Windows.Forms.ColumnHeader hIlosc;
         public System.Windows.Forms.ListView listViewBiblioteka;
+        private System.Windows.Forms.Button btnWypozyczKsiazke;
     }
 }

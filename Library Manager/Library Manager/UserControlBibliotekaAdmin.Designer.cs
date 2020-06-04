@@ -56,6 +56,7 @@
             this.hGatunek,
             this.hDataWyd,
             this.hIle});
+            this.listViewBibliotekaAdmin.FullRowSelect = true;
             this.listViewBibliotekaAdmin.HideSelection = false;
             this.listViewBibliotekaAdmin.Location = new System.Drawing.Point(79, 155);
             this.listViewBibliotekaAdmin.Name = "listViewBibliotekaAdmin";
