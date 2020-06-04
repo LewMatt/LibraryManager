@@ -93,6 +93,7 @@ namespace Library_Manager
             {
                 MessageBox.Show("Zalogowano");
                 FormMenu fMenu = new FormMenu();
+                fMenu.logged_user = textBoxLogin.Text;
                 this.Hide();
                 fMenu.Show();
             }

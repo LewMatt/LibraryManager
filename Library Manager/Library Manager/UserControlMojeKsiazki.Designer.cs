@@ -29,6 +29,11 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
+            this.listViewMojeKsiazki = new System.Windows.Forms.ListView();
+            this.hID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.hTytul = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.hAutor = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.hDataZwrotu = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.SuspendLayout();
             // 
             // label1
@@ -40,10 +45,45 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Moje książki";
             // 
+            // listViewMojeKsiazki
+            // 
+            this.listViewMojeKsiazki.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.hID,
+            this.hTytul,
+            this.hAutor,
+            this.hDataZwrotu});
+            this.listViewMojeKsiazki.HideSelection = false;
+            this.listViewMojeKsiazki.Location = new System.Drawing.Point(71, 144);
+            this.listViewMojeKsiazki.Name = "listViewMojeKsiazki";
+            this.listViewMojeKsiazki.Size = new System.Drawing.Size(600, 350);
+            this.listViewMojeKsiazki.TabIndex = 1;
+            this.listViewMojeKsiazki.UseCompatibleStateImageBehavior = false;
+            this.listViewMojeKsiazki.View = System.Windows.Forms.View.Details;
+            // 
+            // hID
+            // 
+            this.hID.Text = "ID";
+            // 
+            // hTytul
+            // 
+            this.hTytul.Text = "Tytuł";
+            this.hTytul.Width = 200;
+            // 
+            // hAutor
+            // 
+            this.hAutor.Text = "Autor";
+            this.hAutor.Width = 140;
+            // 
+            // hDataZwrotu
+            // 
+            this.hDataZwrotu.Text = "Data zwrotu";
+            this.hDataZwrotu.Width = 80;
+            // 
             // UserControlMojeKsiazki
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.listViewMojeKsiazki);
             this.Controls.Add(this.label1);
             this.Name = "UserControlMojeKsiazki";
             this.Size = new System.Drawing.Size(900, 600);
@@ -55,5 +95,10 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ListView listViewMojeKsiazki;
+        private System.Windows.Forms.ColumnHeader hID;
+        private System.Windows.Forms.ColumnHeader hTytul;
+        private System.Windows.Forms.ColumnHeader hAutor;
+        private System.Windows.Forms.ColumnHeader hDataZwrotu;
     }
 }
