@@ -55,6 +55,18 @@ namespace Library_Manager
 
         private void btnUzytkownicy_Click(object sender, EventArgs e)
         {
+            List<ListViewItem> uzytkownicy = new List<ListViewItem>();
+
+            string query = "SELECT * FROM users WHERE user_id > 1";
+            uzytkownicy = form1obj.sendQueryRetUsers(query);
+
+            userControlUzytkownicyAdmin1.listViewUzytkownicy.Items.Clear();
+
+            foreach(ListViewItem item in uzytkownicy)
+            {
+                userControlUzytkownicyAdmin1.listViewUzytkownicy.Items.Add(item);
+            }
+
             userControlUzytkownicyAdmin1.BringToFront();
         }
     }

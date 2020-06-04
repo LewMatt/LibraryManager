@@ -74,6 +74,39 @@ namespace Library_Manager
             return lista;
         }
 
+        public List<ListViewItem> sendQueryRetUsers(string query)
+        {
+            List<ListViewItem> lista = new List<ListViewItem>();
+
+            var dbCon = DBConnection.Instance();
+            dbCon.DatabaseName = "mylibrarydb";
+
+            if (dbCon.IsConnect())
+            {
+                var cmd = new MySqlCommand(query, dbCon.Connection);
+                var reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    int ile = reader.FieldCount;
+
+                    for (int i = 0; i < ile; i += 7)
+                    {
+                        ListViewItem user = new ListViewItem();
+                        user.Text = reader.GetString(i);
+                        user.SubItems.Add(reader.GetString(i + 3));
+                        user.SubItems.Add(reader.GetString(i + 4));
+                        user.SubItems.Add(reader.GetString(i + 5));
+                        user.SubItems.Add(reader.GetString(i + 6));
+                        lista.Add(user);
+                    }
+                }
+                dbCon.Close();
+            }
+
+
+            return lista;
+        }
+
         private void btnLogin_Click(object sender, EventArgs e)
         {
             string query = "SELECT COUNT(*) FROM users WHERE user_login like '" + textBoxLogin.Text + "' AND user_password like '" + textBoxPassword.Text + "'";
