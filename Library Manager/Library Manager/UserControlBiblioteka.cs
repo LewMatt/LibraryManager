@@ -68,6 +68,18 @@ namespace Library_Manager
 
                     trash_result = formObj.sendQueryRetString(que);
 
+                    List<ListViewItem> list_updated = new List<ListViewItem>();
+
+                    que = "SELECT * FROM books";
+
+                    list_updated = formObj.sendQueryRetBooks(que);
+
+                    listViewBiblioteka.Items.Clear();
+
+                    foreach(ListViewItem item in list_updated)
+                    {
+                        listViewBiblioteka.Items.Add(item);
+                    }
 
                     MessageBox.Show("Książka wypożyczona");
                     

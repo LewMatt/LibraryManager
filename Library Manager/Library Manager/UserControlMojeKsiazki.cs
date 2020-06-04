@@ -20,6 +20,7 @@ namespace Library_Manager
         public int my_id;
 
         Form1 form1obj = new Form1();
+        
 
         private void btnOddajKsiazke_Click(object sender, EventArgs e)
         {
@@ -47,9 +48,23 @@ namespace Library_Manager
 
             trash_result = form1obj.sendQueryRetString(query);
 
+            List<ListViewItem> list_updated = new List<ListViewItem>();
+
+            query = "SELECT * FROM books_" + user_login;
+
+            list_updated = form1obj.sendQueryRetUserBooks(query);
+
+            listViewMojeKsiazki.Items.Clear();
+
+            foreach(ListViewItem item in list_updated)
+            {
+                listViewMojeKsiazki.Items.Add(item);
+            }
+
+
             MessageBox.Show("Książka oddana.");
 
-
+            
         }
     }
 }

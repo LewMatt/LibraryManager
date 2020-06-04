@@ -214,7 +214,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnZamowKsiazke;
         private System.Windows.Forms.Button btnMojeDane;
-        private System.Windows.Forms.Button btnMojeKsiazki;
         private System.Windows.Forms.Button btnBiblioteka;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
@@ -224,5 +223,6 @@
         private UserControlMojeKsiazki userControlMojeKsiazki1;
         private UserControlMojeDane userControlMojeDane1;
         private UserControlZamowKsiazke userControlZamowKsiazke1;
+        public System.Windows.Forms.Button btnMojeKsiazki;
     }
 }

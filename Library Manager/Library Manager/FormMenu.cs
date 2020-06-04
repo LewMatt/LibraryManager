@@ -55,7 +55,7 @@ namespace Library_Manager
             userControlBiblioteka1.BringToFront();
         }
 
-        private void btnMojeKsiazki_Click(object sender, EventArgs e)
+        public void btnMojeKsiazki_Click(object sender, EventArgs e)
         {
             List<ListViewItem> moje_ksiazki = new List<ListViewItem>();
 
