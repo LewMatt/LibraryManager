@@ -31,17 +31,19 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnWyjscie = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnUzytkownicy = new System.Windows.Forms.Button();
+            this.btnKsiazkiWypozyczone = new System.Windows.Forms.Button();
+            this.btnBiblioteka = new System.Windows.Forms.Button();
+            this.btnMenu = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.btnMenu = new System.Windows.Forms.Button();
-            this.btnBiblioteka = new System.Windows.Forms.Button();
-            this.btnKsiazkiWypozyczone = new System.Windows.Forms.Button();
-            this.btnUzytkownicy = new System.Windows.Forms.Button();
+            this.btnWyloguj = new System.Windows.Forms.Button();
+            this.userControlUzytkownicyAdmin1 = new Library_Manager.UserControlUzytkownicyAdmin();
             this.userControlKsiazkiWypAdmin1 = new Library_Manager.UserControlKsiazkiWypAdmin();
             this.userControlBibliotekaAdmin1 = new Library_Manager.UserControlBibliotekaAdmin();
             this.userControlMenuAdmin1 = new Library_Manager.UserControlMenuAdmin();
-            this.userControlUzytkownicyAdmin1 = new Library_Manager.UserControlUzytkownicyAdmin();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -76,42 +78,15 @@
             this.panel1.Size = new System.Drawing.Size(200, 700);
             this.panel1.TabIndex = 2;
             // 
-            // panel2
+            // btnUzytkownicy
             // 
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(200, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(900, 50);
-            this.panel2.TabIndex = 3;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.btnWyjscie);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel3.Location = new System.Drawing.Point(200, 650);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(900, 50);
-            this.panel3.TabIndex = 4;
-            // 
-            // btnMenu
-            // 
-            this.btnMenu.Location = new System.Drawing.Point(0, 0);
-            this.btnMenu.Name = "btnMenu";
-            this.btnMenu.Size = new System.Drawing.Size(200, 50);
-            this.btnMenu.TabIndex = 0;
-            this.btnMenu.Text = "Menu";
-            this.btnMenu.UseVisualStyleBackColor = true;
-            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
-            // 
-            // btnBiblioteka
-            // 
-            this.btnBiblioteka.Location = new System.Drawing.Point(0, 60);
-            this.btnBiblioteka.Name = "btnBiblioteka";
-            this.btnBiblioteka.Size = new System.Drawing.Size(200, 50);
-            this.btnBiblioteka.TabIndex = 1;
-            this.btnBiblioteka.Text = "Biblioteka";
-            this.btnBiblioteka.UseVisualStyleBackColor = true;
-            this.btnBiblioteka.Click += new System.EventHandler(this.btnBiblioteka_Click);
+            this.btnUzytkownicy.Location = new System.Drawing.Point(0, 180);
+            this.btnUzytkownicy.Name = "btnUzytkownicy";
+            this.btnUzytkownicy.Size = new System.Drawing.Size(200, 50);
+            this.btnUzytkownicy.TabIndex = 3;
+            this.btnUzytkownicy.Text = "Użytkownicy";
+            this.btnUzytkownicy.UseVisualStyleBackColor = true;
+            this.btnUzytkownicy.Click += new System.EventHandler(this.btnUzytkownicy_Click);
             // 
             // btnKsiazkiWypozyczone
             // 
@@ -123,15 +98,60 @@
             this.btnKsiazkiWypozyczone.UseVisualStyleBackColor = true;
             this.btnKsiazkiWypozyczone.Click += new System.EventHandler(this.btnKsiazkiWypozyczone_Click);
             // 
-            // btnUzytkownicy
+            // btnBiblioteka
             // 
-            this.btnUzytkownicy.Location = new System.Drawing.Point(0, 180);
-            this.btnUzytkownicy.Name = "btnUzytkownicy";
-            this.btnUzytkownicy.Size = new System.Drawing.Size(200, 50);
-            this.btnUzytkownicy.TabIndex = 3;
-            this.btnUzytkownicy.Text = "Użytkownicy";
-            this.btnUzytkownicy.UseVisualStyleBackColor = true;
-            this.btnUzytkownicy.Click += new System.EventHandler(this.btnUzytkownicy_Click);
+            this.btnBiblioteka.Location = new System.Drawing.Point(0, 60);
+            this.btnBiblioteka.Name = "btnBiblioteka";
+            this.btnBiblioteka.Size = new System.Drawing.Size(200, 50);
+            this.btnBiblioteka.TabIndex = 1;
+            this.btnBiblioteka.Text = "Biblioteka";
+            this.btnBiblioteka.UseVisualStyleBackColor = true;
+            this.btnBiblioteka.Click += new System.EventHandler(this.btnBiblioteka_Click);
+            // 
+            // btnMenu
+            // 
+            this.btnMenu.Location = new System.Drawing.Point(0, 0);
+            this.btnMenu.Name = "btnMenu";
+            this.btnMenu.Size = new System.Drawing.Size(200, 50);
+            this.btnMenu.TabIndex = 0;
+            this.btnMenu.Text = "Menu";
+            this.btnMenu.UseVisualStyleBackColor = true;
+            this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.btnWyjscie);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(200, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(900, 50);
+            this.panel2.TabIndex = 3;
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.btnWyloguj);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel3.Location = new System.Drawing.Point(200, 650);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(900, 50);
+            this.panel3.TabIndex = 4;
+            // 
+            // btnWyloguj
+            // 
+            this.btnWyloguj.Location = new System.Drawing.Point(800, 0);
+            this.btnWyloguj.Name = "btnWyloguj";
+            this.btnWyloguj.Size = new System.Drawing.Size(100, 50);
+            this.btnWyloguj.TabIndex = 2;
+            this.btnWyloguj.Text = "Wyloguj";
+            this.btnWyloguj.UseVisualStyleBackColor = true;
+            this.btnWyloguj.Click += new System.EventHandler(this.btnWyloguj_Click);
+            // 
+            // userControlUzytkownicyAdmin1
+            // 
+            this.userControlUzytkownicyAdmin1.Location = new System.Drawing.Point(200, 50);
+            this.userControlUzytkownicyAdmin1.Name = "userControlUzytkownicyAdmin1";
+            this.userControlUzytkownicyAdmin1.Size = new System.Drawing.Size(900, 600);
+            this.userControlUzytkownicyAdmin1.TabIndex = 8;
             // 
             // userControlKsiazkiWypAdmin1
             // 
@@ -154,13 +174,6 @@
             this.userControlMenuAdmin1.Size = new System.Drawing.Size(900, 600);
             this.userControlMenuAdmin1.TabIndex = 5;
             // 
-            // userControlUzytkownicyAdmin1
-            // 
-            this.userControlUzytkownicyAdmin1.Location = new System.Drawing.Point(200, 50);
-            this.userControlUzytkownicyAdmin1.Name = "userControlUzytkownicyAdmin1";
-            this.userControlUzytkownicyAdmin1.Size = new System.Drawing.Size(900, 600);
-            this.userControlUzytkownicyAdmin1.TabIndex = 8;
-            // 
             // FormMenuAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -179,6 +192,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormMenuAdmin";
             this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -200,5 +214,6 @@
         private UserControlBibliotekaAdmin userControlBibliotekaAdmin1;
         private UserControlKsiazkiWypAdmin userControlKsiazkiWypAdmin1;
         private UserControlUzytkownicyAdmin userControlUzytkownicyAdmin1;
+        private System.Windows.Forms.Button btnWyloguj;
     }
 }

@@ -88,5 +88,10 @@ namespace Library_Manager
 
             userControlUzytkownicyAdmin1.BringToFront();
         }
+
+        private void btnWyloguj_Click(object sender, EventArgs e)
+        {
+            Application.Restart();
+        }
     }
 }

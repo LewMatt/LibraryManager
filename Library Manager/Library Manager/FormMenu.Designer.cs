@@ -38,12 +38,14 @@
             this.btnBiblioteka = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.userControlZamowKsiazke1 = new Library_Manager.UserControlZamowKsiazke();
             this.userControlMojeDane1 = new Library_Manager.UserControlMojeDane();
             this.userControlMojeKsiazki1 = new Library_Manager.UserControlMojeKsiazki();
             this.userControlBiblioteka1 = new Library_Manager.UserControlBiblioteka();
             this.userControlMenu1 = new Library_Manager.UserControlMenu();
-            this.userControlZamowKsiazke1 = new Library_Manager.UserControlZamowKsiazke();
+            this.btnWyloguj = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -132,6 +134,7 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.btnExit);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(200, 0);
             this.panel2.Name = "panel2";
@@ -140,12 +143,19 @@
             // 
             // panel3
             // 
-            this.panel3.Controls.Add(this.btnExit);
+            this.panel3.Controls.Add(this.btnWyloguj);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel3.Location = new System.Drawing.Point(200, 650);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(900, 50);
             this.panel3.TabIndex = 4;
+            // 
+            // userControlZamowKsiazke1
+            // 
+            this.userControlZamowKsiazke1.Location = new System.Drawing.Point(200, 50);
+            this.userControlZamowKsiazke1.Name = "userControlZamowKsiazke1";
+            this.userControlZamowKsiazke1.Size = new System.Drawing.Size(900, 600);
+            this.userControlZamowKsiazke1.TabIndex = 9;
             // 
             // userControlMojeDane1
             // 
@@ -175,12 +185,15 @@
             this.userControlMenu1.Size = new System.Drawing.Size(900, 600);
             this.userControlMenu1.TabIndex = 5;
             // 
-            // userControlZamowKsiazke1
+            // btnWyloguj
             // 
-            this.userControlZamowKsiazke1.Location = new System.Drawing.Point(200, 50);
-            this.userControlZamowKsiazke1.Name = "userControlZamowKsiazke1";
-            this.userControlZamowKsiazke1.Size = new System.Drawing.Size(900, 600);
-            this.userControlZamowKsiazke1.TabIndex = 9;
+            this.btnWyloguj.Location = new System.Drawing.Point(800, 0);
+            this.btnWyloguj.Name = "btnWyloguj";
+            this.btnWyloguj.Size = new System.Drawing.Size(100, 50);
+            this.btnWyloguj.TabIndex = 2;
+            this.btnWyloguj.Text = "Wyloguj";
+            this.btnWyloguj.UseVisualStyleBackColor = true;
+            this.btnWyloguj.Click += new System.EventHandler(this.btnWyloguj_Click);
             // 
             // FormMenu
             // 
@@ -201,6 +214,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormMenu";
             this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -224,5 +238,6 @@
         private UserControlMojeDane userControlMojeDane1;
         private UserControlZamowKsiazke userControlZamowKsiazke1;
         public System.Windows.Forms.Button btnMojeKsiazki;
+        private System.Windows.Forms.Button btnWyloguj;
     }
 }
