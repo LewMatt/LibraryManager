@@ -80,6 +80,8 @@ namespace Library_Manager
                 userControlMojeKsiazki1.listViewMojeKsiazki.Items.Clear();
             }
 
+            userControlMojeKsiazki1.my_id = logged_user_id;
+
             userControlMojeKsiazki1.BringToFront();
         }
 

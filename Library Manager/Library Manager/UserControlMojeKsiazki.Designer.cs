@@ -34,6 +34,7 @@
             this.hTytul = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.hAutor = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.hDataZwrotu = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.btnOddajKsiazke = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -52,6 +53,7 @@
             this.hTytul,
             this.hAutor,
             this.hDataZwrotu});
+            this.listViewMojeKsiazki.FullRowSelect = true;
             this.listViewMojeKsiazki.HideSelection = false;
             this.listViewMojeKsiazki.Location = new System.Drawing.Point(71, 144);
             this.listViewMojeKsiazki.Name = "listViewMojeKsiazki";
@@ -79,10 +81,21 @@
             this.hDataZwrotu.Text = "Data zwrotu";
             this.hDataZwrotu.Width = 80;
             // 
+            // btnOddajKsiazke
+            // 
+            this.btnOddajKsiazke.Location = new System.Drawing.Point(736, 277);
+            this.btnOddajKsiazke.Name = "btnOddajKsiazke";
+            this.btnOddajKsiazke.Size = new System.Drawing.Size(100, 50);
+            this.btnOddajKsiazke.TabIndex = 2;
+            this.btnOddajKsiazke.Text = "Oddaj książkę";
+            this.btnOddajKsiazke.UseVisualStyleBackColor = true;
+            this.btnOddajKsiazke.Click += new System.EventHandler(this.btnOddajKsiazke_Click);
+            // 
             // UserControlMojeKsiazki
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnOddajKsiazke);
             this.Controls.Add(this.listViewMojeKsiazki);
             this.Controls.Add(this.label1);
             this.Name = "UserControlMojeKsiazki";
@@ -100,5 +113,6 @@
         private System.Windows.Forms.ColumnHeader hAutor;
         private System.Windows.Forms.ColumnHeader hDataZwrotu;
         public System.Windows.Forms.ListView listViewMojeKsiazki;
+        private System.Windows.Forms.Button btnOddajKsiazke;
     }
 }
