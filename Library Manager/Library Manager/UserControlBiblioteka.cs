@@ -18,8 +18,10 @@ namespace Library_Manager
         }
 
         Form1 formObj = new Form1();
+        
 
         public string user = "";
+        public int user_id = 0;
 
         private void btnWypozyczKsiazke_Click(object sender, EventArgs e)
         {
@@ -62,8 +64,13 @@ namespace Library_Manager
 
                     trash_result = formObj.sendQueryRetString(que);
 
+                    que = "INSERT INTO `books_borrowed` (`book_id`, `user_id`, `book_title`, `book_return_date`) VALUES('" +book_id + "', '" + user_id + "', '"+ book_name + "', 'brak')";
+
+                    trash_result = formObj.sendQueryRetString(que);
+
 
                     MessageBox.Show("Książka wypożyczona");
+                    
                 }
                 else
                 {

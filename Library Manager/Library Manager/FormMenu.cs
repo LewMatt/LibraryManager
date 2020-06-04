@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Forms;
 
 
@@ -22,6 +23,7 @@ namespace Library_Manager
         Form1 form1obj = new Form1();
 
         public string logged_user = "";
+        public int logged_user_id = 0;
 
         private void btnExit_Click(object sender, EventArgs e)
         {
@@ -48,16 +50,39 @@ namespace Library_Manager
             }
 
             userControlBiblioteka1.user = logged_user;
+            userControlBiblioteka1.user_id = logged_user_id;
 
             userControlBiblioteka1.BringToFront();
         }
 
         private void btnMojeKsiazki_Click(object sender, EventArgs e)
         {
+            List<ListViewItem> moje_ksiazki = new List<ListViewItem>();
+
+            string query = "SELECT COUNT(*) FROM books_" + logged_user;
+
+            int result = int.Parse(form1obj.sendQueryRetString(query));
+
+            if(result>0)
+            {
+                query = "SELECT * FROM books_" + logged_user;
+                moje_ksiazki = form1obj.sendQueryRetUserBooks(query);
+
+                userControlMojeKsiazki1.listViewMojeKsiazki.Items.Clear();
+
+                foreach(ListViewItem item in moje_ksiazki)
+                {
+                    userControlMojeKsiazki1.listViewMojeKsiazki.Items.Add(item);
+                }
+            }
+            else
+            {
+                userControlMojeKsiazki1.listViewMojeKsiazki.Items.Clear();
+            }
+
             userControlMojeKsiazki1.BringToFront();
         }
 
-        
 
         private void btnMojeDane_Click(object sender, EventArgs e)
         {

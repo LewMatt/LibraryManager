@@ -95,10 +95,10 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ListView listViewMojeKsiazki;
         private System.Windows.Forms.ColumnHeader hID;
         private System.Windows.Forms.ColumnHeader hTytul;
         private System.Windows.Forms.ColumnHeader hAutor;
         private System.Windows.Forms.ColumnHeader hDataZwrotu;
+        public System.Windows.Forms.ListView listViewMojeKsiazki;
     }
 }
