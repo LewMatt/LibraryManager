@@ -22,7 +22,7 @@ namespace Library_Manager
         Form1 form1obj = new Form1();
 
         public string logged_user = "";
-        public int logged_user_id = 0;
+        public int logged_user_id;
 
         private void btnExit_Click(object sender, EventArgs e)
         {
@@ -111,6 +111,33 @@ namespace Library_Manager
 
         private void btnZamowKsiazke_Click(object sender, EventArgs e)
         {
+            string query = "SELECT COUNT(*) FROM books WHERE book_amount_available LIKE 0";
+
+            int res = int.Parse(form1obj.sendQueryRetString(query));
+
+            if(res == 0)
+            {
+                userControlZamowKsiazke1.labelZamowKsiazke.Text = "Wszystkie dostępne książki są na stanie";
+                userControlZamowKsiazke1.listViewKsiazkiZamow.Items.Clear();
+            }
+            else
+            {
+                List<ListViewItem> lista = new List<ListViewItem>();
+
+                string qu = "SELECT * FROM books WHERE book_amount_available LIKE 0";
+
+                lista = form1obj.sendQueryRetBooks(qu);
+
+                userControlZamowKsiazke1.listViewKsiazkiZamow.Items.Clear();
+
+                foreach(ListViewItem item in lista)
+                {
+                    userControlZamowKsiazke1.listViewKsiazkiZamow.Items.Add(item);
+                }
+            }
+
+            userControlZamowKsiazke1.my_user_id = logged_user_id;
+
             userControlZamowKsiazke1.BringToFront();
         }
 
