@@ -204,6 +204,15 @@ namespace Library_Manager
         {
             System.Windows.Forms.Application.Exit();
         }
+
+        private void btnUtworzKonto_Click(object sender, EventArgs e)
+        {
+            FormCreateAccount fCreAcc = new FormCreateAccount();
+
+            fCreAcc.Show();
+            fCreAcc.BringToFront();
+
+        }
     }
 
     public class DBConnection
