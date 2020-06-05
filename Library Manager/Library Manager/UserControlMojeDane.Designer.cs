@@ -40,6 +40,7 @@
             this.btnZmienEmail = new System.Windows.Forms.Button();
             this.btnZmienTel = new System.Windows.Forms.Button();
             this.btnOdswiez = new System.Windows.Forms.Button();
+            this.btnZmienHaslo = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -134,7 +135,7 @@
             // btnZmienEmail
             // 
             this.btnZmienEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnZmienEmail.Location = new System.Drawing.Point(618, 185);
+            this.btnZmienEmail.Location = new System.Drawing.Point(618, 228);
             this.btnZmienEmail.Name = "btnZmienEmail";
             this.btnZmienEmail.Size = new System.Drawing.Size(200, 50);
             this.btnZmienEmail.TabIndex = 9;
@@ -145,7 +146,7 @@
             // btnZmienTel
             // 
             this.btnZmienTel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnZmienTel.Location = new System.Drawing.Point(618, 292);
+            this.btnZmienTel.Location = new System.Drawing.Point(618, 322);
             this.btnZmienTel.Name = "btnZmienTel";
             this.btnZmienTel.Size = new System.Drawing.Size(200, 50);
             this.btnZmienTel.TabIndex = 10;
@@ -163,10 +164,22 @@
             this.btnOdswiez.UseVisualStyleBackColor = true;
             this.btnOdswiez.Click += new System.EventHandler(this.btnOdswiez_Click);
             // 
+            // btnZmienHaslo
+            // 
+            this.btnZmienHaslo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnZmienHaslo.Location = new System.Drawing.Point(618, 142);
+            this.btnZmienHaslo.Name = "btnZmienHaslo";
+            this.btnZmienHaslo.Size = new System.Drawing.Size(200, 50);
+            this.btnZmienHaslo.TabIndex = 12;
+            this.btnZmienHaslo.Text = "Zmień hasło";
+            this.btnZmienHaslo.UseVisualStyleBackColor = true;
+            this.btnZmienHaslo.Click += new System.EventHandler(this.btnZmienHaslo_Click);
+            // 
             // UserControlMojeDane
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnZmienHaslo);
             this.Controls.Add(this.btnOdswiez);
             this.Controls.Add(this.btnZmienTel);
             this.Controls.Add(this.btnZmienEmail);
@@ -200,5 +213,6 @@
         private System.Windows.Forms.Button btnZmienEmail;
         private System.Windows.Forms.Button btnZmienTel;
         private System.Windows.Forms.Button btnOdswiez;
+        private System.Windows.Forms.Button btnZmienHaslo;
     }
 }

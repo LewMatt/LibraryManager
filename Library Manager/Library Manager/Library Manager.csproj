@@ -131,6 +131,12 @@
     <Compile Include="FormZmienEmail.Designer.cs">
       <DependentUpon>FormZmienEmail.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormZmienHaslo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormZmienHaslo.Designer.cs">
+      <DependentUpon>FormZmienHaslo.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormZmienTelefon.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -210,6 +216,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormZmienEmail.resx">
       <DependentUpon>FormZmienEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormZmienHaslo.resx">
+      <DependentUpon>FormZmienHaslo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormZmienTelefon.resx">
       <DependentUpon>FormZmienTelefon.cs</DependentUpon>

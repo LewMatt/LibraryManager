@@ -57,5 +57,12 @@ namespace Library_Manager
             fZmienTel.Show();
             fZmienTel.BringToFront();
         }
+
+        private void btnZmienHaslo_Click(object sender, EventArgs e)
+        {
+            FormZmienHaslo fZmienHas = new FormZmienHaslo();
+            fZmienHas.Show();
+            fZmienHas.BringToFront();
+        }
     }
 }
