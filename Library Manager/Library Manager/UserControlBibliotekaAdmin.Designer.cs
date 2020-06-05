@@ -36,6 +36,8 @@
             this.hGatunek = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.hDataWyd = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.hIle = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.btnDodajIloscKsiazek = new System.Windows.Forms.Button();
+            this.textBoxIloscKsiazek = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -95,10 +97,30 @@
             this.hIle.Text = "Ilość dostępnych";
             this.hIle.Width = 100;
             // 
+            // btnDodajIloscKsiazek
+            // 
+            this.btnDodajIloscKsiazek.Location = new System.Drawing.Point(774, 219);
+            this.btnDodajIloscKsiazek.Name = "btnDodajIloscKsiazek";
+            this.btnDodajIloscKsiazek.Size = new System.Drawing.Size(100, 40);
+            this.btnDodajIloscKsiazek.TabIndex = 2;
+            this.btnDodajIloscKsiazek.Text = "Dodaj książki";
+            this.btnDodajIloscKsiazek.UseVisualStyleBackColor = true;
+            this.btnDodajIloscKsiazek.Click += new System.EventHandler(this.btnDodajIloscKsiazek_Click);
+            // 
+            // textBoxIloscKsiazek
+            // 
+            this.textBoxIloscKsiazek.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBoxIloscKsiazek.Location = new System.Drawing.Point(718, 219);
+            this.textBoxIloscKsiazek.Name = "textBoxIloscKsiazek";
+            this.textBoxIloscKsiazek.Size = new System.Drawing.Size(50, 38);
+            this.textBoxIloscKsiazek.TabIndex = 3;
+            // 
             // UserControlBibliotekaAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.textBoxIloscKsiazek);
+            this.Controls.Add(this.btnDodajIloscKsiazek);
             this.Controls.Add(this.listViewBibliotekaAdmin);
             this.Controls.Add(this.label1);
             this.Name = "UserControlBibliotekaAdmin";
@@ -118,5 +140,7 @@
         private System.Windows.Forms.ColumnHeader hDataWyd;
         private System.Windows.Forms.ColumnHeader hIle;
         public System.Windows.Forms.ListView listViewBibliotekaAdmin;
+        private System.Windows.Forms.Button btnDodajIloscKsiazek;
+        private System.Windows.Forms.TextBox textBoxIloscKsiazek;
     }
 }

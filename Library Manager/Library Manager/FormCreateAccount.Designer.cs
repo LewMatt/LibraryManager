@@ -188,7 +188,7 @@
             this.btnPowrot.Name = "btnPowrot";
             this.btnPowrot.Size = new System.Drawing.Size(100, 50);
             this.btnPowrot.TabIndex = 15;
-            this.btnPowrot.Text = "Powróć";
+            this.btnPowrot.Text = "Powrót";
             this.btnPowrot.UseVisualStyleBackColor = true;
             this.btnPowrot.Click += new System.EventHandler(this.btnPowrot_Click);
             // 
