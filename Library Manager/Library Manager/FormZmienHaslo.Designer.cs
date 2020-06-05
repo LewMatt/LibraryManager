@@ -84,6 +84,7 @@
             this.textBoxAktHaslo.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.textBoxAktHaslo.Location = new System.Drawing.Point(406, 196);
             this.textBoxAktHaslo.Name = "textBoxAktHaslo";
+            this.textBoxAktHaslo.PasswordChar = '*';
             this.textBoxAktHaslo.Size = new System.Drawing.Size(300, 35);
             this.textBoxAktHaslo.TabIndex = 4;
             // 
@@ -92,6 +93,7 @@
             this.textBoxNoweHaslo.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.textBoxNoweHaslo.Location = new System.Drawing.Point(406, 298);
             this.textBoxNoweHaslo.Name = "textBoxNoweHaslo";
+            this.textBoxNoweHaslo.PasswordChar = '*';
             this.textBoxNoweHaslo.Size = new System.Drawing.Size(300, 35);
             this.textBoxNoweHaslo.TabIndex = 5;
             // 
@@ -100,6 +102,7 @@
             this.textBoxNoweHasloPow.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.textBoxNoweHasloPow.Location = new System.Drawing.Point(406, 401);
             this.textBoxNoweHasloPow.Name = "textBoxNoweHasloPow";
+            this.textBoxNoweHasloPow.PasswordChar = '*';
             this.textBoxNoweHasloPow.Size = new System.Drawing.Size(300, 35);
             this.textBoxNoweHasloPow.TabIndex = 6;
             // 
@@ -121,6 +124,7 @@
             this.btnZmienHaslo.TabIndex = 8;
             this.btnZmienHaslo.Text = "Zmień hasło";
             this.btnZmienHaslo.UseVisualStyleBackColor = true;
+            this.btnZmienHaslo.Click += new System.EventHandler(this.btnZmienHaslo_Click);
             // 
             // FormZmienHaslo
             // 

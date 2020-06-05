@@ -61,6 +61,7 @@ namespace Library_Manager
         private void btnZmienHaslo_Click(object sender, EventArgs e)
         {
             FormZmienHaslo fZmienHas = new FormZmienHaslo();
+            fZmienHas.my_act_id = my_id;
             fZmienHas.Show();
             fZmienHas.BringToFront();
         }

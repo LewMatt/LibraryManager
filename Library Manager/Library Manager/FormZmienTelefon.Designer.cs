@@ -80,6 +80,7 @@
             this.textBoxHaslo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.textBoxHaslo.Location = new System.Drawing.Point(418, 304);
             this.textBoxHaslo.Name = "textBoxHaslo";
+            this.textBoxHaslo.PasswordChar = '*';
             this.textBoxHaslo.Size = new System.Drawing.Size(300, 31);
             this.textBoxHaslo.TabIndex = 4;
             // 
