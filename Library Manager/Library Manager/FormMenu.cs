@@ -103,6 +103,9 @@ namespace Library_Manager
             string tel = form1obj.sendQueryRetString(query);
             userControlMojeDane1.lblTelefonPokaz.Text = tel;
 
+            userControlMojeDane1.my_id = logged_user_id;
+            userControlMojeDane1.my_login = logged_user;
+
             userControlMojeDane1.BringToFront();
         }
 

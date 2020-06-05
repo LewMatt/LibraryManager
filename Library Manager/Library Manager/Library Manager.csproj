@@ -125,6 +125,12 @@
     <Compile Include="FormNowaKsiazka.Designer.cs">
       <DependentUpon>FormNowaKsiazka.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormZmienEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormZmienEmail.Designer.cs">
+      <DependentUpon>FormZmienEmail.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserControlBiblioteka.cs">
@@ -195,6 +201,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormNowaKsiazka.resx">
       <DependentUpon>FormNowaKsiazka.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormZmienEmail.resx">
+      <DependentUpon>FormZmienEmail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

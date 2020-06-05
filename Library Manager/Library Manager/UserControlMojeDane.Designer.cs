@@ -37,6 +37,9 @@
             this.lblPokazEmail = new System.Windows.Forms.Label();
             this.lblTelefon = new System.Windows.Forms.Label();
             this.lblTelefonPokaz = new System.Windows.Forms.Label();
+            this.btnZmienEmail = new System.Windows.Forms.Button();
+            this.btnZmienTel = new System.Windows.Forms.Button();
+            this.btnOdswiez = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -128,10 +131,44 @@
             this.lblTelefonPokaz.TabIndex = 8;
             this.lblTelefonPokaz.Text = "brak";
             // 
+            // btnZmienEmail
+            // 
+            this.btnZmienEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnZmienEmail.Location = new System.Drawing.Point(618, 185);
+            this.btnZmienEmail.Name = "btnZmienEmail";
+            this.btnZmienEmail.Size = new System.Drawing.Size(200, 50);
+            this.btnZmienEmail.TabIndex = 9;
+            this.btnZmienEmail.Text = "Zmień email";
+            this.btnZmienEmail.UseVisualStyleBackColor = true;
+            this.btnZmienEmail.Click += new System.EventHandler(this.btnZmienEmail_Click);
+            // 
+            // btnZmienTel
+            // 
+            this.btnZmienTel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnZmienTel.Location = new System.Drawing.Point(618, 292);
+            this.btnZmienTel.Name = "btnZmienTel";
+            this.btnZmienTel.Size = new System.Drawing.Size(200, 50);
+            this.btnZmienTel.TabIndex = 10;
+            this.btnZmienTel.Text = "Zmień nr telefonu";
+            this.btnZmienTel.UseVisualStyleBackColor = true;
+            // 
+            // btnOdswiez
+            // 
+            this.btnOdswiez.Location = new System.Drawing.Point(405, 439);
+            this.btnOdswiez.Name = "btnOdswiez";
+            this.btnOdswiez.Size = new System.Drawing.Size(100, 50);
+            this.btnOdswiez.TabIndex = 11;
+            this.btnOdswiez.Text = "Odśwież";
+            this.btnOdswiez.UseVisualStyleBackColor = true;
+            this.btnOdswiez.Click += new System.EventHandler(this.btnOdswiez_Click);
+            // 
             // UserControlMojeDane
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnOdswiez);
+            this.Controls.Add(this.btnZmienTel);
+            this.Controls.Add(this.btnZmienEmail);
             this.Controls.Add(this.lblTelefonPokaz);
             this.Controls.Add(this.lblTelefon);
             this.Controls.Add(this.lblPokazEmail);
@@ -159,5 +196,8 @@
         public System.Windows.Forms.Label lblPokazNazwisko;
         public System.Windows.Forms.Label lblPokazEmail;
         public System.Windows.Forms.Label lblTelefonPokaz;
+        private System.Windows.Forms.Button btnZmienEmail;
+        private System.Windows.Forms.Button btnZmienTel;
+        private System.Windows.Forms.Button btnOdswiez;
     }
 }
