@@ -39,6 +39,7 @@
             this.btnDodajIloscKsiazek = new System.Windows.Forms.Button();
             this.textBoxIloscKsiazek = new System.Windows.Forms.TextBox();
             this.btnNowaKsiazka = new System.Windows.Forms.Button();
+            this.btnOdswiez = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -126,10 +127,21 @@
             this.btnNowaKsiazka.UseVisualStyleBackColor = true;
             this.btnNowaKsiazka.Click += new System.EventHandler(this.btnNowaKsiazka_Click);
             // 
+            // btnOdswiez
+            // 
+            this.btnOdswiez.Location = new System.Drawing.Point(749, 455);
+            this.btnOdswiez.Name = "btnOdswiez";
+            this.btnOdswiez.Size = new System.Drawing.Size(100, 50);
+            this.btnOdswiez.TabIndex = 5;
+            this.btnOdswiez.Text = "Odśwież";
+            this.btnOdswiez.UseVisualStyleBackColor = true;
+            this.btnOdswiez.Click += new System.EventHandler(this.btnOdswiez_Click);
+            // 
             // UserControlBibliotekaAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnOdswiez);
             this.Controls.Add(this.btnNowaKsiazka);
             this.Controls.Add(this.textBoxIloscKsiazek);
             this.Controls.Add(this.btnDodajIloscKsiazek);
@@ -155,5 +167,6 @@
         private System.Windows.Forms.Button btnDodajIloscKsiazek;
         private System.Windows.Forms.TextBox textBoxIloscKsiazek;
         private System.Windows.Forms.Button btnNowaKsiazka;
+        private System.Windows.Forms.Button btnOdswiez;
     }
 }

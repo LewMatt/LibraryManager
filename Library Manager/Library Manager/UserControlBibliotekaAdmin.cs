@@ -76,5 +76,21 @@ namespace Library_Manager
             fKsiazka.Show();
             fKsiazka.BringToFront();
         }
+
+        private void btnOdswiez_Click(object sender, EventArgs e)
+        {
+            List<ListViewItem> list_upd = new List<ListViewItem>();
+
+            string query = "SELECT * FROM books";
+
+            list_upd = form1obj.sendQueryRetBooks(query);
+
+            listViewBibliotekaAdmin.Items.Clear();
+
+            foreach (ListViewItem item in list_upd)
+            {
+                listViewBibliotekaAdmin.Items.Add(item);
+            }
+        }
     }
 }
