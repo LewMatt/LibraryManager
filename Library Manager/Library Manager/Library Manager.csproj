@@ -131,6 +131,12 @@
     <Compile Include="FormZmienEmail.Designer.cs">
       <DependentUpon>FormZmienEmail.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormZmienTelefon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormZmienTelefon.Designer.cs">
+      <DependentUpon>FormZmienTelefon.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserControlBiblioteka.cs">
@@ -204,6 +210,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormZmienEmail.resx">
       <DependentUpon>FormZmienEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormZmienTelefon.resx">
+      <DependentUpon>FormZmienTelefon.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

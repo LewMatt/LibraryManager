@@ -151,6 +151,7 @@
             this.btnZmienTel.TabIndex = 10;
             this.btnZmienTel.Text = "Zmień nr telefonu";
             this.btnZmienTel.UseVisualStyleBackColor = true;
+            this.btnZmienTel.Click += new System.EventHandler(this.btnZmienTel_Click);
             // 
             // btnOdswiez
             // 

@@ -48,5 +48,14 @@ namespace Library_Manager
             string tel = form1obj.sendQueryRetString(query);
             lblTelefonPokaz.Text = tel;
         }
+
+        private void btnZmienTel_Click(object sender, EventArgs e)
+        {
+            FormZmienTelefon fZmienTel = new FormZmienTelefon();
+            fZmienTel.my_user_id = my_id;
+
+            fZmienTel.Show();
+            fZmienTel.BringToFront();
+        }
     }
 }
