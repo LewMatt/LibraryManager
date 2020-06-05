@@ -50,6 +50,7 @@
             this.listViewZamowienia.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.hIDUzytkownika,
             this.hIDKsiazki});
+            this.listViewZamowienia.FullRowSelect = true;
             this.listViewZamowienia.HideSelection = false;
             this.listViewZamowienia.Location = new System.Drawing.Point(347, 183);
             this.listViewZamowienia.Name = "listViewZamowienia";
@@ -76,6 +77,7 @@
             this.btnDodajDoBib.TabIndex = 2;
             this.btnDodajDoBib.Text = "Dodaj do biblioteki.";
             this.btnDodajDoBib.UseVisualStyleBackColor = true;
+            this.btnDodajDoBib.Click += new System.EventHandler(this.btnDodajDoBib_Click);
             // 
             // UserControlZamowienaAdmin
             // 

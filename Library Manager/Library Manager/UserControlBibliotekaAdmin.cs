@@ -62,6 +62,8 @@ namespace Library_Manager
                         listViewBibliotekaAdmin.Items.Add(item);
                     }
 
+                    textBoxIloscKsiazek.Text = "";
+
 
                     MessageBox.Show("Dodano książki.");
 
