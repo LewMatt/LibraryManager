@@ -38,10 +38,12 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnWyloguj = new System.Windows.Forms.Button();
+            this.btnZamowienia = new System.Windows.Forms.Button();
             this.userControlUzytkownicyAdmin1 = new Library_Manager.UserControlUzytkownicyAdmin();
             this.userControlKsiazkiWypAdmin1 = new Library_Manager.UserControlKsiazkiWypAdmin();
             this.userControlBibliotekaAdmin1 = new Library_Manager.UserControlBibliotekaAdmin();
             this.userControlMenuAdmin1 = new Library_Manager.UserControlMenuAdmin();
+            this.userControlZamowienaAdmin1 = new Library_Manager.UserControlZamowienaAdmin();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -68,6 +70,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.btnZamowienia);
             this.panel1.Controls.Add(this.btnUzytkownicy);
             this.panel1.Controls.Add(this.btnKsiazkiWypozyczone);
             this.panel1.Controls.Add(this.btnBiblioteka);
@@ -146,6 +149,16 @@
             this.btnWyloguj.UseVisualStyleBackColor = true;
             this.btnWyloguj.Click += new System.EventHandler(this.btnWyloguj_Click);
             // 
+            // btnZamowienia
+            // 
+            this.btnZamowienia.Location = new System.Drawing.Point(0, 240);
+            this.btnZamowienia.Name = "btnZamowienia";
+            this.btnZamowienia.Size = new System.Drawing.Size(200, 50);
+            this.btnZamowienia.TabIndex = 4;
+            this.btnZamowienia.Text = "Zamówienia";
+            this.btnZamowienia.UseVisualStyleBackColor = true;
+            this.btnZamowienia.Click += new System.EventHandler(this.btnZamowienia_Click);
+            // 
             // userControlUzytkownicyAdmin1
             // 
             this.userControlUzytkownicyAdmin1.Location = new System.Drawing.Point(200, 50);
@@ -174,11 +187,19 @@
             this.userControlMenuAdmin1.Size = new System.Drawing.Size(900, 600);
             this.userControlMenuAdmin1.TabIndex = 5;
             // 
+            // userControlZamowienaAdmin1
+            // 
+            this.userControlZamowienaAdmin1.Location = new System.Drawing.Point(200, 50);
+            this.userControlZamowienaAdmin1.Name = "userControlZamowienaAdmin1";
+            this.userControlZamowienaAdmin1.Size = new System.Drawing.Size(900, 600);
+            this.userControlZamowienaAdmin1.TabIndex = 9;
+            // 
             // FormMenuAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1100, 700);
+            this.Controls.Add(this.userControlZamowienaAdmin1);
             this.Controls.Add(this.userControlUzytkownicyAdmin1);
             this.Controls.Add(this.userControlKsiazkiWypAdmin1);
             this.Controls.Add(this.userControlBibliotekaAdmin1);
@@ -215,5 +236,7 @@
         private UserControlKsiazkiWypAdmin userControlKsiazkiWypAdmin1;
         private UserControlUzytkownicyAdmin userControlUzytkownicyAdmin1;
         private System.Windows.Forms.Button btnWyloguj;
+        private System.Windows.Forms.Button btnZamowienia;
+        private UserControlZamowienaAdmin userControlZamowienaAdmin1;
     }
 }

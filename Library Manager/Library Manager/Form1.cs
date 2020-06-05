@@ -134,6 +134,35 @@ namespace Library_Manager
             return lista;
         }
 
+        public List<ListViewItem> sendQueryRetBooksOrdered(string query)
+        {
+            List<ListViewItem> lista = new List<ListViewItem>();
+
+            var dbCon = DBConnection.Instance();
+            dbCon.DatabaseName = "mylibrarydb";
+            if (dbCon.IsConnect())
+            {
+                var cmd = new MySqlCommand(query, dbCon.Connection);
+                var reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    int ile = reader.FieldCount;
+
+                    for (int i = 0; i < ile; i += 2)
+                    {
+                        ListViewItem ksiazka = new ListViewItem();
+                        ksiazka.Text = reader.GetString(i);
+                        ksiazka.SubItems.Add(reader.GetString(i + 1));
+                        lista.Add(ksiazka);
+                    }
+                }
+                dbCon.Close();
+            }
+
+            return lista;
+        }
+
+
         public List<ListViewItem> sendQueryRetUsers(string query)
         {
             List<ListViewItem> lista = new List<ListViewItem>();

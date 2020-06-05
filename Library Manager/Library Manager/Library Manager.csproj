@@ -193,6 +193,12 @@
     <Compile Include="UserControlUzytkownicyAdmin.Designer.cs">
       <DependentUpon>UserControlUzytkownicyAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControlZamowienaAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlZamowienaAdmin.Designer.cs">
+      <DependentUpon>UserControlZamowienaAdmin.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserControlZamowKsiazke.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -255,6 +261,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlUzytkownicyAdmin.resx">
       <DependentUpon>UserControlUzytkownicyAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlZamowienaAdmin.resx">
+      <DependentUpon>UserControlZamowienaAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControlZamowKsiazke.resx">
       <DependentUpon>UserControlZamowKsiazke.cs</DependentUpon>

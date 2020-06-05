@@ -93,5 +93,31 @@ namespace Library_Manager
         {
             Application.Restart();
         }
+
+        private void btnZamowienia_Click(object sender, EventArgs e)
+        {
+
+            List<ListViewItem> ksiazki_zam = new List<ListViewItem>();
+
+            userControlZamowienaAdmin1.listViewZamowienia.Items.Clear();
+
+            string query = "SELECT COUNT(*) FROM books_ordered";
+
+            int res = int.Parse(form1obj.sendQueryRetString(query));
+
+            if(res > 0)
+            {
+                query = "SELECT * FROM books_ordered";
+                ksiazki_zam = form1obj.sendQueryRetBooksOrdered(query);
+
+                foreach(ListViewItem item in ksiazki_zam)
+                {
+                    userControlZamowienaAdmin1.listViewZamowienia.Items.Add(item);
+                }
+            }
+
+
+            userControlZamowienaAdmin1.BringToFront();
+        }
     }
 }
