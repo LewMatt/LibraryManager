@@ -68,5 +68,13 @@ namespace Library_Manager
                 }
             }
         }
+
+        private void btnNowaKsiazka_Click(object sender, EventArgs e)
+        {
+            FormNowaKsiazka fKsiazka = new FormNowaKsiazka();
+
+            fKsiazka.Show();
+            fKsiazka.BringToFront();
+        }
     }
 }

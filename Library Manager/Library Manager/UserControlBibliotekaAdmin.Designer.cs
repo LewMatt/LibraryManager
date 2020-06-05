@@ -38,6 +38,7 @@
             this.hIle = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btnDodajIloscKsiazek = new System.Windows.Forms.Button();
             this.textBoxIloscKsiazek = new System.Windows.Forms.TextBox();
+            this.btnNowaKsiazka = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -115,10 +116,21 @@
             this.textBoxIloscKsiazek.Size = new System.Drawing.Size(50, 38);
             this.textBoxIloscKsiazek.TabIndex = 3;
             // 
+            // btnNowaKsiazka
+            // 
+            this.btnNowaKsiazka.Location = new System.Drawing.Point(718, 330);
+            this.btnNowaKsiazka.Name = "btnNowaKsiazka";
+            this.btnNowaKsiazka.Size = new System.Drawing.Size(150, 50);
+            this.btnNowaKsiazka.TabIndex = 4;
+            this.btnNowaKsiazka.Text = "Dodaj nową książkę";
+            this.btnNowaKsiazka.UseVisualStyleBackColor = true;
+            this.btnNowaKsiazka.Click += new System.EventHandler(this.btnNowaKsiazka_Click);
+            // 
             // UserControlBibliotekaAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.btnNowaKsiazka);
             this.Controls.Add(this.textBoxIloscKsiazek);
             this.Controls.Add(this.btnDodajIloscKsiazek);
             this.Controls.Add(this.listViewBibliotekaAdmin);
@@ -142,5 +154,6 @@
         public System.Windows.Forms.ListView listViewBibliotekaAdmin;
         private System.Windows.Forms.Button btnDodajIloscKsiazek;
         private System.Windows.Forms.TextBox textBoxIloscKsiazek;
+        private System.Windows.Forms.Button btnNowaKsiazka;
     }
 }
