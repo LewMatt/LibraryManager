@@ -137,6 +137,7 @@ namespace Library_Manager
             }
 
             userControlZamowKsiazke1.my_user_id = logged_user_id;
+            userControlZamowKsiazke1.my_user_login = logged_user;
 
             userControlZamowKsiazke1.BringToFront();
         }

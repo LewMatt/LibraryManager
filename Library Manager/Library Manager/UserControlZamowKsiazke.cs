@@ -19,6 +19,8 @@ namespace Library_Manager
 
         public int my_user_id;
 
+        public string my_user_login;
+
         Form1 form1obj = new Form1();
 
         private void btnZamow_Click(object sender, EventArgs e)
@@ -35,11 +37,23 @@ namespace Library_Manager
             }
             else
             {
-                query = "INSERT INTO `books_ordered` (`book_id`, `user_id`) VALUES ('" + book_id.ToString() + "', '" + my_user_id + "')";
+                query = "SELECT COUNT(*) FROM books_"+my_user_login+" WHERE book_id LIKE "+ book_id.ToString();
 
-                string trash_res = form1obj.sendQueryRetString(query);
+                res = int.Parse(form1obj.sendQueryRetString(query));
 
-                MessageBox.Show("Zamówiono książkę.");
+                if (res == 1)
+                {
+                    MessageBox.Show("Posiadasz już tą książkę.");
+                }
+                else
+                {
+                    query = "INSERT INTO `books_ordered` (`book_id`, `user_id`) VALUES ('" + book_id.ToString() + "', '" + my_user_id + "')";
+
+                    string trash_res = form1obj.sendQueryRetString(query);
+
+                    MessageBox.Show("Zamówiono książkę.");
+                }
+                
             }
 
         }

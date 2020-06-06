@@ -21,60 +21,55 @@ namespace Library_Manager
 
         private void btnDodajDoBib_Click(object sender, EventArgs e)
         {
-            string user_id = listViewZamowienia.SelectedItems[0].Text;
-            string book_id = listViewZamowienia.SelectedItems[0].SubItems[1].Text;
+            string book_id = listViewZamowienia.SelectedItems[0].Text;
+            string user_id = listViewZamowienia.SelectedItems[0].SubItems[1].Text;
 
-            
-
-            string quer = "DELETE FROM books_ordered WHERE book_id LIKE " + book_id + " AND user_id LIKE " + user_id;
+            string quer = "DELETE FROM `books_ordered` WHERE book_id LIKE "+book_id+" AND user_id LIKE "+user_id+";";
 
             Form1 form1o = new Form1();
 
-            MessageBox.Show(quer);
+            string trash_res = form1o.sendQueryRetString(quer);
 
-            string ress_trash = form1o.sendQueryRetString(quer);
-
-
-            /*
 
             listViewZamowienia.Items.Clear();
 
             List<ListViewItem> listaa = new List<ListViewItem>();
 
-            query = "SELECT * FROM books_ordered";
+            quer = "SELECT * FROM books_ordered";
 
-            listaa = form1obj.sendQueryRetBooksOrdered(query);
+            listaa = form1o.sendQueryRetBooksOrdered(quer);
 
             foreach(ListViewItem item in listaa)
             {
                 listViewZamowienia.Items.Add(item);
             }
 
-            //
+            
             string user_login;
             string book_title;
             string book_author;
             string book_ret_date = "brak";
 
 
-            query = "SELECT user_login FROM users WHERE user_id LIKE "+user_id.ToString();
+            quer = "SELECT user_login FROM users WHERE user_id LIKE "+user_id.ToString();
 
-            user_login = form1obj.sendQueryRetString(query);
+            user_login = form1o.sendQueryRetString(quer);
 
-            query = "SELECT book_title FROM books WHERE book_id LIKE "+book_id.ToString();
+            quer = "SELECT book_title FROM books WHERE book_id LIKE "+book_id.ToString();
 
-            book_title = form1obj.sendQueryRetString(query);
+            book_title = form1o.sendQueryRetString(quer);
 
-            query = "SELECT book_author FROM books WHERE book_id LIKE "+book_id.ToString()+"";
+            quer = "SELECT book_author FROM books WHERE book_id LIKE "+book_id.ToString()+"";
 
-            book_author = form1obj.sendQueryRetString(query);
+            book_author = form1o.sendQueryRetString(quer);
 
-            query = "INSERT INTO `books_"+user_login+"` (`book_id`, `book_title`, `book_author`, `book_return_date`) VALUES (" + book_id.ToString() +", '"+book_title+"', '"+book_author+"', '"+book_ret_date+"')";
+            quer = "INSERT INTO `books_"+user_login+"` (`book_id`, `book_title`, `book_author`, `book_return_date`) VALUES (" + book_id.ToString() +", '"+book_title+"', '"+book_author+"', '"+book_ret_date+"')";
 
-            string trash_result = form1obj.sendQueryRetString(query);
-            //
-            */
+            trash_res = form1o.sendQueryRetString(quer);
 
+            quer = "INSERT INTO `books_borrowed` (`book_id`, `user_id`, `book_title`, `book_return_date`) VALUES ('"+book_id+"', '"+user_id+"', '"+book_title+"', '"+book_ret_date+"')";
+
+            trash_res = form1o.sendQueryRetString(quer);
 
             MessageBox.Show("Dodano do biblioteki");
         }
