@@ -15,6 +15,7 @@ namespace Library_Manager
         public UserControlBiblioteka()
         {
             InitializeComponent();
+ 
         }
 
         Form1 formObj = new Form1();
@@ -22,6 +23,10 @@ namespace Library_Manager
 
         public string user = "";
         public int user_id = 0;
+
+        public string data_za_mies;
+
+
 
         private void btnWypozyczKsiazke_Click(object sender, EventArgs e)
         {
@@ -50,7 +55,7 @@ namespace Library_Manager
 
                 if(is_borrowed == 0)
                 {
-                    string que = "INSERT INTO `books_" + user + "` (`book_id`, `book_title`, `book_author`, `book_return_date`) VALUES (" + book_id + ", '" + book_name + "', '" + book_author + "', 'brak')";
+                    string que = "INSERT INTO `books_" + user + "` (`book_id`, `book_title`, `book_author`, `book_return_date`) VALUES (" + book_id + ", '" + book_name + "', '" + book_author + "', '"+data_za_mies+"')";
 
                     string trash_result = formObj.sendQueryRetString(que);
 
@@ -64,7 +69,7 @@ namespace Library_Manager
 
                     trash_result = formObj.sendQueryRetString(que);
 
-                    que = "INSERT INTO `books_borrowed` (`book_id`, `user_id`, `book_title`, `book_return_date`) VALUES('" +book_id + "', '" + user_id + "', '"+ book_name + "', 'brak')";
+                    que = "INSERT INTO `books_borrowed` (`book_id`, `user_id`, `book_title`, `book_return_date`) VALUES('" +book_id + "', '" + user_id + "', '"+ book_name + "', '"+data_za_mies+"')";
 
                     trash_result = formObj.sendQueryRetString(que);
 
@@ -92,8 +97,6 @@ namespace Library_Manager
                 
 
             }
-
-            
         }
     }
 }

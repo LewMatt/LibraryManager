@@ -17,6 +17,8 @@ namespace Library_Manager
             InitializeComponent();
         }
 
+        public string data_odd;
+
         private void btnDodajDoBib_Click(object sender, EventArgs e)
         {
             string book_id = listViewZamowienia.SelectedItems[0].Text;
@@ -46,7 +48,6 @@ namespace Library_Manager
             string user_login;
             string book_title;
             string book_author;
-            string book_ret_date = "brak";
 
 
             quer = "SELECT user_login FROM users WHERE user_id LIKE "+user_id.ToString();
@@ -61,11 +62,11 @@ namespace Library_Manager
 
             book_author = form1o.sendQueryRetString(quer);
 
-            quer = "INSERT INTO `books_"+user_login+"` (`book_id`, `book_title`, `book_author`, `book_return_date`) VALUES (" + book_id.ToString() +", '"+book_title+"', '"+book_author+"', '"+book_ret_date+"')";
+            quer = "INSERT INTO `books_"+user_login+"` (`book_id`, `book_title`, `book_author`, `book_return_date`) VALUES (" + book_id.ToString() +", '"+book_title+"', '"+book_author+"', '"+data_odd+"')";
 
             trash_res = form1o.sendQueryRetString(quer);
 
-            quer = "INSERT INTO `books_borrowed` (`book_id`, `user_id`, `book_title`, `book_return_date`) VALUES ('"+book_id+"', '"+user_id+"', '"+book_title+"', '"+book_ret_date+"')";
+            quer = "INSERT INTO `books_borrowed` (`book_id`, `user_id`, `book_title`, `book_return_date`) VALUES ('"+book_id+"', '"+user_id+"', '"+book_title+"', '"+data_odd+"')";
 
             trash_res = form1o.sendQueryRetString(quer);
 

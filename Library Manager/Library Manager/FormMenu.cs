@@ -51,6 +51,14 @@ namespace Library_Manager
             userControlBiblioteka1.user = logged_user;
             userControlBiblioteka1.user_id = logged_user_id;
 
+            int czas_do_oddania = 1;
+
+            var act_date = DateTime.Today.AddMonths(czas_do_oddania);
+
+            string act_date_str = act_date.ToString("dd MMMM, yyyy");
+
+            userControlBiblioteka1.data_za_mies = act_date_str;
+
             userControlBiblioteka1.BringToFront();
         }
 

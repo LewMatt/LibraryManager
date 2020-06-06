@@ -116,6 +116,13 @@ namespace Library_Manager
                 }
             }
 
+            int czas_do_oddania = 1;
+
+            var act_date = DateTime.Today.AddMonths(czas_do_oddania);
+
+            string act_date_str = act_date.ToString("dd MMMM, yyyy");
+
+            userControlZamowienaAdmin1.data_odd = act_date_str;
 
             userControlZamowienaAdmin1.BringToFront();
         }
