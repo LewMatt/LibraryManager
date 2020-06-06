@@ -30,8 +30,8 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.listViewZamowienia = new System.Windows.Forms.ListView();
-            this.hIDUzytkownika = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.hIDKsiazki = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.hIDKsiaz = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.hIDUz = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.btnDodajDoBib = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -48,26 +48,26 @@
             // listViewZamowienia
             // 
             this.listViewZamowienia.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.hIDUzytkownika,
-            this.hIDKsiazki});
+            this.hIDKsiaz,
+            this.hIDUz});
             this.listViewZamowienia.FullRowSelect = true;
             this.listViewZamowienia.HideSelection = false;
             this.listViewZamowienia.Location = new System.Drawing.Point(347, 183);
             this.listViewZamowienia.Name = "listViewZamowienia";
-            this.listViewZamowienia.Size = new System.Drawing.Size(188, 294);
+            this.listViewZamowienia.Size = new System.Drawing.Size(190, 294);
             this.listViewZamowienia.TabIndex = 1;
             this.listViewZamowienia.UseCompatibleStateImageBehavior = false;
             this.listViewZamowienia.View = System.Windows.Forms.View.Details;
             // 
-            // hIDUzytkownika
+            // hIDKsiaz
             // 
-            this.hIDUzytkownika.Text = "ID Użytkownika";
-            this.hIDUzytkownika.Width = 99;
+            this.hIDKsiaz.Text = "ID Książki";
+            this.hIDKsiaz.Width = 99;
             // 
-            // hIDKsiazki
+            // hIDUz
             // 
-            this.hIDKsiazki.Text = "ID Książki";
-            this.hIDKsiazki.Width = 81;
+            this.hIDUz.Text = "ID Użytkownika";
+            this.hIDUz.Width = 88;
             // 
             // btnDodajDoBib
             // 
@@ -96,8 +96,8 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ColumnHeader hIDUzytkownika;
-        private System.Windows.Forms.ColumnHeader hIDKsiazki;
+        private System.Windows.Forms.ColumnHeader hIDKsiaz;
+        private System.Windows.Forms.ColumnHeader hIDUz;
         private System.Windows.Forms.Button btnDodajDoBib;
         public System.Windows.Forms.ListView listViewZamowienia;
     }

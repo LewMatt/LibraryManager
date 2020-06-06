@@ -17,8 +17,6 @@ namespace Library_Manager
             InitializeComponent();
         }
 
-        
-
         private void btnDodajDoBib_Click(object sender, EventArgs e)
         {
             string book_id = listViewZamowienia.SelectedItems[0].Text;
