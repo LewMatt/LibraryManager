@@ -41,12 +41,14 @@
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(398, 56);
+            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label1.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 13);
+            this.label1.Size = new System.Drawing.Size(900, 150);
             this.label1.TabIndex = 0;
             this.label1.Text = "Biblioteka";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // listViewBiblioteka
             // 
@@ -57,11 +59,12 @@
             this.hGatunek,
             this.hDataWyd,
             this.hIlosc});
+            this.listViewBiblioteka.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.listViewBiblioteka.FullRowSelect = true;
             this.listViewBiblioteka.HideSelection = false;
-            this.listViewBiblioteka.Location = new System.Drawing.Point(82, 148);
+            this.listViewBiblioteka.Location = new System.Drawing.Point(60, 180);
             this.listViewBiblioteka.Name = "listViewBiblioteka";
-            this.listViewBiblioteka.Size = new System.Drawing.Size(600, 350);
+            this.listViewBiblioteka.Size = new System.Drawing.Size(634, 350);
             this.listViewBiblioteka.TabIndex = 1;
             this.listViewBiblioteka.UseCompatibleStateImageBehavior = false;
             this.listViewBiblioteka.View = System.Windows.Forms.View.Details;
@@ -69,38 +72,39 @@
             // hID
             // 
             this.hID.Text = "ID";
-            this.hID.Width = 30;
+            this.hID.Width = 34;
             // 
             // hTytul
             // 
             this.hTytul.Text = "Tytuł";
-            this.hTytul.Width = 180;
+            this.hTytul.Width = 183;
             // 
             // hAutor
             // 
             this.hAutor.Text = "Autor";
-            this.hAutor.Width = 130;
+            this.hAutor.Width = 129;
             // 
             // hGatunek
             // 
             this.hGatunek.Text = "Gatunek";
-            this.hGatunek.Width = 80;
+            this.hGatunek.Width = 95;
             // 
             // hDataWyd
             // 
             this.hDataWyd.Text = "Data wydania";
-            this.hDataWyd.Width = 80;
+            this.hDataWyd.Width = 89;
             // 
             // hIlosc
             // 
             this.hIlosc.Text = "Ilość dostępnych";
-            this.hIlosc.Width = 100;
+            this.hIlosc.Width = 109;
             // 
             // btnWypozyczKsiazke
             // 
-            this.btnWypozyczKsiazke.Location = new System.Drawing.Point(744, 288);
+            this.btnWypozyczKsiazke.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnWypozyczKsiazke.Location = new System.Drawing.Point(738, 277);
             this.btnWypozyczKsiazke.Name = "btnWypozyczKsiazke";
-            this.btnWypozyczKsiazke.Size = new System.Drawing.Size(100, 50);
+            this.btnWypozyczKsiazke.Size = new System.Drawing.Size(120, 70);
             this.btnWypozyczKsiazke.TabIndex = 2;
             this.btnWypozyczKsiazke.Text = "Wypożycz książkę";
             this.btnWypozyczKsiazke.UseVisualStyleBackColor = true;
@@ -116,7 +120,6 @@
             this.Name = "UserControlBiblioteka";
             this.Size = new System.Drawing.Size(900, 600);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

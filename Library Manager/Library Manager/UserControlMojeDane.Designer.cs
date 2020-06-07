@@ -45,97 +45,99 @@
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(375, 56);
+            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label1.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(57, 13);
+            this.label1.Size = new System.Drawing.Size(900, 100);
             this.label1.TabIndex = 0;
             this.label1.Text = "Moje dane";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblImie
             // 
             this.lblImie.AutoSize = true;
-            this.lblImie.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblImie.Location = new System.Drawing.Point(132, 142);
+            this.lblImie.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblImie.Location = new System.Drawing.Point(160, 140);
             this.lblImie.Name = "lblImie";
-            this.lblImie.Size = new System.Drawing.Size(47, 20);
+            this.lblImie.Size = new System.Drawing.Size(75, 36);
             this.lblImie.TabIndex = 1;
-            this.lblImie.Text = "Imie: ";
+            this.lblImie.Text = "Imię: ";
             // 
             // lblPokazImie
             // 
             this.lblPokazImie.AutoSize = true;
-            this.lblPokazImie.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblPokazImie.Location = new System.Drawing.Point(312, 142);
+            this.lblPokazImie.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblPokazImie.Location = new System.Drawing.Point(270, 140);
             this.lblPokazImie.Name = "lblPokazImie";
-            this.lblPokazImie.Size = new System.Drawing.Size(40, 20);
+            this.lblPokazImie.Size = new System.Drawing.Size(62, 36);
             this.lblPokazImie.TabIndex = 2;
             this.lblPokazImie.Text = "brak";
             // 
             // lblNazwisko
             // 
             this.lblNazwisko.AutoSize = true;
-            this.lblNazwisko.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblNazwisko.Location = new System.Drawing.Point(132, 200);
+            this.lblNazwisko.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblNazwisko.Location = new System.Drawing.Point(116, 210);
             this.lblNazwisko.Name = "lblNazwisko";
-            this.lblNazwisko.Size = new System.Drawing.Size(80, 20);
+            this.lblNazwisko.Size = new System.Drawing.Size(119, 36);
             this.lblNazwisko.TabIndex = 3;
             this.lblNazwisko.Text = "Nazwisko:";
             // 
             // lblPokazNazwisko
             // 
             this.lblPokazNazwisko.AutoSize = true;
-            this.lblPokazNazwisko.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblPokazNazwisko.Location = new System.Drawing.Point(312, 200);
+            this.lblPokazNazwisko.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblPokazNazwisko.Location = new System.Drawing.Point(270, 210);
             this.lblPokazNazwisko.Name = "lblPokazNazwisko";
-            this.lblPokazNazwisko.Size = new System.Drawing.Size(40, 20);
+            this.lblPokazNazwisko.Size = new System.Drawing.Size(62, 36);
             this.lblPokazNazwisko.TabIndex = 4;
             this.lblPokazNazwisko.Text = "brak";
             // 
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
-            this.lblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblEmail.Location = new System.Drawing.Point(132, 258);
+            this.lblEmail.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblEmail.Location = new System.Drawing.Point(154, 280);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(52, 20);
+            this.lblEmail.Size = new System.Drawing.Size(81, 36);
             this.lblEmail.TabIndex = 5;
             this.lblEmail.Text = "Email:";
             // 
             // lblPokazEmail
             // 
             this.lblPokazEmail.AutoSize = true;
-            this.lblPokazEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblPokazEmail.Location = new System.Drawing.Point(312, 258);
+            this.lblPokazEmail.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblPokazEmail.Location = new System.Drawing.Point(270, 280);
             this.lblPokazEmail.Name = "lblPokazEmail";
-            this.lblPokazEmail.Size = new System.Drawing.Size(40, 20);
+            this.lblPokazEmail.Size = new System.Drawing.Size(62, 36);
             this.lblPokazEmail.TabIndex = 6;
             this.lblPokazEmail.Text = "brak";
             // 
             // lblTelefon
             // 
             this.lblTelefon.AutoSize = true;
-            this.lblTelefon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblTelefon.Location = new System.Drawing.Point(132, 322);
+            this.lblTelefon.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblTelefon.Location = new System.Drawing.Point(93, 350);
             this.lblTelefon.Name = "lblTelefon";
-            this.lblTelefon.Size = new System.Drawing.Size(91, 20);
+            this.lblTelefon.Size = new System.Drawing.Size(142, 36);
             this.lblTelefon.TabIndex = 7;
             this.lblTelefon.Text = "Nr telefonu:";
             // 
             // lblTelefonPokaz
             // 
             this.lblTelefonPokaz.AutoSize = true;
-            this.lblTelefonPokaz.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblTelefonPokaz.Location = new System.Drawing.Point(312, 322);
+            this.lblTelefonPokaz.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblTelefonPokaz.Location = new System.Drawing.Point(270, 350);
             this.lblTelefonPokaz.Name = "lblTelefonPokaz";
-            this.lblTelefonPokaz.Size = new System.Drawing.Size(40, 20);
+            this.lblTelefonPokaz.Size = new System.Drawing.Size(62, 36);
             this.lblTelefonPokaz.TabIndex = 8;
             this.lblTelefonPokaz.Text = "brak";
             // 
             // btnZmienEmail
             // 
-            this.btnZmienEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnZmienEmail.Location = new System.Drawing.Point(618, 228);
+            this.btnZmienEmail.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnZmienEmail.Location = new System.Drawing.Point(630, 230);
             this.btnZmienEmail.Name = "btnZmienEmail";
             this.btnZmienEmail.Size = new System.Drawing.Size(200, 50);
             this.btnZmienEmail.TabIndex = 9;
@@ -145,8 +147,8 @@
             // 
             // btnZmienTel
             // 
-            this.btnZmienTel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnZmienTel.Location = new System.Drawing.Point(618, 322);
+            this.btnZmienTel.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnZmienTel.Location = new System.Drawing.Point(630, 320);
             this.btnZmienTel.Name = "btnZmienTel";
             this.btnZmienTel.Size = new System.Drawing.Size(200, 50);
             this.btnZmienTel.TabIndex = 10;
@@ -156,9 +158,10 @@
             // 
             // btnOdswiez
             // 
-            this.btnOdswiez.Location = new System.Drawing.Point(405, 439);
+            this.btnOdswiez.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnOdswiez.Location = new System.Drawing.Point(375, 475);
             this.btnOdswiez.Name = "btnOdswiez";
-            this.btnOdswiez.Size = new System.Drawing.Size(100, 50);
+            this.btnOdswiez.Size = new System.Drawing.Size(150, 60);
             this.btnOdswiez.TabIndex = 11;
             this.btnOdswiez.Text = "Odśwież";
             this.btnOdswiez.UseVisualStyleBackColor = true;
@@ -166,8 +169,8 @@
             // 
             // btnZmienHaslo
             // 
-            this.btnZmienHaslo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnZmienHaslo.Location = new System.Drawing.Point(618, 142);
+            this.btnZmienHaslo.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnZmienHaslo.Location = new System.Drawing.Point(630, 140);
             this.btnZmienHaslo.Name = "btnZmienHaslo";
             this.btnZmienHaslo.Size = new System.Drawing.Size(200, 50);
             this.btnZmienHaslo.TabIndex = 12;
@@ -193,6 +196,7 @@
             this.Controls.Add(this.lblImie);
             this.Controls.Add(this.label1);
             this.Name = "UserControlMojeDane";
+            this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.Size = new System.Drawing.Size(900, 600);
             this.ResumeLayout(false);
             this.PerformLayout();

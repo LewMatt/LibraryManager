@@ -39,12 +39,14 @@
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(409, 47);
+            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label1.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 13);
+            this.label1.Size = new System.Drawing.Size(900, 150);
             this.label1.TabIndex = 0;
             this.label1.Text = "Moje książki";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // listViewMojeKsiazki
             // 
@@ -53,11 +55,12 @@
             this.hTytul,
             this.hAutor,
             this.hDataZwrotu});
+            this.listViewMojeKsiazki.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.listViewMojeKsiazki.FullRowSelect = true;
             this.listViewMojeKsiazki.HideSelection = false;
-            this.listViewMojeKsiazki.Location = new System.Drawing.Point(71, 144);
+            this.listViewMojeKsiazki.Location = new System.Drawing.Point(74, 177);
             this.listViewMojeKsiazki.Name = "listViewMojeKsiazki";
-            this.listViewMojeKsiazki.Size = new System.Drawing.Size(600, 350);
+            this.listViewMojeKsiazki.Size = new System.Drawing.Size(555, 350);
             this.listViewMojeKsiazki.TabIndex = 1;
             this.listViewMojeKsiazki.UseCompatibleStateImageBehavior = false;
             this.listViewMojeKsiazki.View = System.Windows.Forms.View.Details;
@@ -83,9 +86,10 @@
             // 
             // btnOddajKsiazke
             // 
-            this.btnOddajKsiazke.Location = new System.Drawing.Point(736, 277);
+            this.btnOddajKsiazke.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnOddajKsiazke.Location = new System.Drawing.Point(705, 277);
             this.btnOddajKsiazke.Name = "btnOddajKsiazke";
-            this.btnOddajKsiazke.Size = new System.Drawing.Size(100, 50);
+            this.btnOddajKsiazke.Size = new System.Drawing.Size(120, 70);
             this.btnOddajKsiazke.TabIndex = 2;
             this.btnOddajKsiazke.Text = "Oddaj książkę";
             this.btnOddajKsiazke.UseVisualStyleBackColor = true;
@@ -101,7 +105,6 @@
             this.Name = "UserControlMojeKsiazki";
             this.Size = new System.Drawing.Size(900, 600);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

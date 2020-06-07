@@ -37,78 +37,82 @@
             this.textBoxNoweHasloPow = new System.Windows.Forms.TextBox();
             this.btnAnuluj = new System.Windows.Forms.Button();
             this.btnZmienHaslo = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblZmianaHas
             // 
-            this.lblZmianaHas.AutoSize = true;
-            this.lblZmianaHas.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblZmianaHas.Location = new System.Drawing.Point(466, 75);
+            this.lblZmianaHas.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblZmianaHas.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblZmianaHas.Location = new System.Drawing.Point(0, 0);
             this.lblZmianaHas.Name = "lblZmianaHas";
-            this.lblZmianaHas.Size = new System.Drawing.Size(126, 24);
+            this.lblZmianaHas.Size = new System.Drawing.Size(1100, 150);
             this.lblZmianaHas.TabIndex = 0;
             this.lblZmianaHas.Text = "Zmiana hasła";
+            this.lblZmianaHas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblHasloAkt
             // 
             this.lblHasloAkt.AutoSize = true;
-            this.lblHasloAkt.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblHasloAkt.Location = new System.Drawing.Point(189, 199);
+            this.lblHasloAkt.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblHasloAkt.Location = new System.Drawing.Point(142, 200);
             this.lblHasloAkt.Name = "lblHasloAkt";
-            this.lblHasloAkt.Size = new System.Drawing.Size(178, 29);
+            this.lblHasloAkt.Size = new System.Drawing.Size(177, 36);
             this.lblHasloAkt.TabIndex = 1;
             this.lblHasloAkt.Text = "Aktualne hasło:";
             // 
             // lblHaslo
             // 
             this.lblHaslo.AutoSize = true;
-            this.lblHaslo.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblHaslo.Location = new System.Drawing.Point(217, 301);
+            this.lblHaslo.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblHaslo.Location = new System.Drawing.Point(177, 290);
             this.lblHaslo.Name = "lblHaslo";
-            this.lblHaslo.Size = new System.Drawing.Size(150, 29);
+            this.lblHaslo.Size = new System.Drawing.Size(142, 36);
             this.lblHaslo.TabIndex = 2;
             this.lblHaslo.Text = "Nowe hasło:";
             // 
             // lblPowHaslo
             // 
             this.lblPowHaslo.AutoSize = true;
-            this.lblPowHaslo.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblPowHaslo.Location = new System.Drawing.Point(129, 404);
+            this.lblPowHaslo.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblPowHaslo.Location = new System.Drawing.Point(82, 380);
             this.lblPowHaslo.Name = "lblPowHaslo";
-            this.lblPowHaslo.Size = new System.Drawing.Size(238, 29);
+            this.lblPowHaslo.Size = new System.Drawing.Size(237, 36);
             this.lblPowHaslo.TabIndex = 3;
             this.lblPowHaslo.Text = "Powtórz nowe hasło:";
             // 
             // textBoxAktHaslo
             // 
-            this.textBoxAktHaslo.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBoxAktHaslo.Location = new System.Drawing.Point(406, 196);
+            this.textBoxAktHaslo.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBoxAktHaslo.Location = new System.Drawing.Point(325, 200);
             this.textBoxAktHaslo.Name = "textBoxAktHaslo";
             this.textBoxAktHaslo.PasswordChar = '*';
-            this.textBoxAktHaslo.Size = new System.Drawing.Size(300, 35);
+            this.textBoxAktHaslo.Size = new System.Drawing.Size(450, 36);
             this.textBoxAktHaslo.TabIndex = 4;
             // 
             // textBoxNoweHaslo
             // 
-            this.textBoxNoweHaslo.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBoxNoweHaslo.Location = new System.Drawing.Point(406, 298);
+            this.textBoxNoweHaslo.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBoxNoweHaslo.Location = new System.Drawing.Point(325, 290);
             this.textBoxNoweHaslo.Name = "textBoxNoweHaslo";
             this.textBoxNoweHaslo.PasswordChar = '*';
-            this.textBoxNoweHaslo.Size = new System.Drawing.Size(300, 35);
+            this.textBoxNoweHaslo.Size = new System.Drawing.Size(450, 36);
             this.textBoxNoweHaslo.TabIndex = 5;
             // 
             // textBoxNoweHasloPow
             // 
-            this.textBoxNoweHasloPow.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBoxNoweHasloPow.Location = new System.Drawing.Point(406, 401);
+            this.textBoxNoweHasloPow.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBoxNoweHasloPow.Location = new System.Drawing.Point(325, 380);
             this.textBoxNoweHasloPow.Name = "textBoxNoweHasloPow";
             this.textBoxNoweHasloPow.PasswordChar = '*';
-            this.textBoxNoweHasloPow.Size = new System.Drawing.Size(300, 35);
+            this.textBoxNoweHasloPow.Size = new System.Drawing.Size(450, 36);
             this.textBoxNoweHasloPow.TabIndex = 6;
             // 
             // btnAnuluj
             // 
-            this.btnAnuluj.Location = new System.Drawing.Point(988, 638);
+            this.btnAnuluj.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnAnuluj.Location = new System.Drawing.Point(1000, 0);
             this.btnAnuluj.Name = "btnAnuluj";
             this.btnAnuluj.Size = new System.Drawing.Size(100, 50);
             this.btnAnuluj.TabIndex = 7;
@@ -118,21 +122,31 @@
             // 
             // btnZmienHaslo
             // 
-            this.btnZmienHaslo.Location = new System.Drawing.Point(445, 521);
+            this.btnZmienHaslo.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnZmienHaslo.Location = new System.Drawing.Point(425, 500);
             this.btnZmienHaslo.Name = "btnZmienHaslo";
-            this.btnZmienHaslo.Size = new System.Drawing.Size(200, 50);
+            this.btnZmienHaslo.Size = new System.Drawing.Size(250, 60);
             this.btnZmienHaslo.TabIndex = 8;
             this.btnZmienHaslo.Text = "Zmień hasło";
             this.btnZmienHaslo.UseVisualStyleBackColor = true;
             this.btnZmienHaslo.Click += new System.EventHandler(this.btnZmienHaslo_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.btnAnuluj);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 650);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1100, 50);
+            this.panel1.TabIndex = 9;
             // 
             // FormZmienHaslo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1100, 700);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnZmienHaslo);
-            this.Controls.Add(this.btnAnuluj);
             this.Controls.Add(this.textBoxNoweHasloPow);
             this.Controls.Add(this.textBoxNoweHaslo);
             this.Controls.Add(this.textBoxAktHaslo);
@@ -144,6 +158,7 @@
             this.Name = "FormZmienHaslo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormZmienHaslo";
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -160,5 +175,6 @@
         private System.Windows.Forms.TextBox textBoxNoweHasloPow;
         private System.Windows.Forms.Button btnAnuluj;
         private System.Windows.Forms.Button btnZmienHaslo;
+        private System.Windows.Forms.Panel panel1;
     }
 }

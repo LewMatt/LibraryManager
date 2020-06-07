@@ -38,12 +38,12 @@
             this.btnBiblioteka = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btnWyloguj = new System.Windows.Forms.Button();
             this.userControlZamowKsiazke1 = new Library_Manager.UserControlZamowKsiazke();
             this.userControlMojeDane1 = new Library_Manager.UserControlMojeDane();
             this.userControlMojeKsiazki1 = new Library_Manager.UserControlMojeKsiazki();
             this.userControlBiblioteka1 = new Library_Manager.UserControlBiblioteka();
             this.userControlMenu1 = new Library_Manager.UserControlMenu();
-            this.btnWyloguj = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -61,6 +61,7 @@
             // 
             // btnExit
             // 
+            this.btnExit.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnExit.Location = new System.Drawing.Point(800, 0);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(100, 50);
@@ -84,6 +85,7 @@
             // 
             // btnMenu
             // 
+            this.btnMenu.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnMenu.Location = new System.Drawing.Point(0, 0);
             this.btnMenu.Name = "btnMenu";
             this.btnMenu.Size = new System.Drawing.Size(200, 50);
@@ -94,6 +96,7 @@
             // 
             // btnZamowKsiazke
             // 
+            this.btnZamowKsiazke.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnZamowKsiazke.Location = new System.Drawing.Point(0, 240);
             this.btnZamowKsiazke.Name = "btnZamowKsiazke";
             this.btnZamowKsiazke.Size = new System.Drawing.Size(200, 50);
@@ -104,6 +107,7 @@
             // 
             // btnMojeDane
             // 
+            this.btnMojeDane.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnMojeDane.Location = new System.Drawing.Point(0, 180);
             this.btnMojeDane.Name = "btnMojeDane";
             this.btnMojeDane.Size = new System.Drawing.Size(200, 50);
@@ -114,6 +118,7 @@
             // 
             // btnMojeKsiazki
             // 
+            this.btnMojeKsiazki.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnMojeKsiazki.Location = new System.Drawing.Point(0, 120);
             this.btnMojeKsiazki.Name = "btnMojeKsiazki";
             this.btnMojeKsiazki.Size = new System.Drawing.Size(200, 50);
@@ -124,6 +129,7 @@
             // 
             // btnBiblioteka
             // 
+            this.btnBiblioteka.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnBiblioteka.Location = new System.Drawing.Point(0, 60);
             this.btnBiblioteka.Name = "btnBiblioteka";
             this.btnBiblioteka.Size = new System.Drawing.Size(200, 50);
@@ -149,6 +155,17 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(900, 50);
             this.panel3.TabIndex = 4;
+            // 
+            // btnWyloguj
+            // 
+            this.btnWyloguj.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnWyloguj.Location = new System.Drawing.Point(800, 0);
+            this.btnWyloguj.Name = "btnWyloguj";
+            this.btnWyloguj.Size = new System.Drawing.Size(100, 50);
+            this.btnWyloguj.TabIndex = 2;
+            this.btnWyloguj.Text = "Wyloguj";
+            this.btnWyloguj.UseVisualStyleBackColor = true;
+            this.btnWyloguj.Click += new System.EventHandler(this.btnWyloguj_Click);
             // 
             // userControlZamowKsiazke1
             // 
@@ -184,16 +201,6 @@
             this.userControlMenu1.Name = "userControlMenu1";
             this.userControlMenu1.Size = new System.Drawing.Size(900, 600);
             this.userControlMenu1.TabIndex = 5;
-            // 
-            // btnWyloguj
-            // 
-            this.btnWyloguj.Location = new System.Drawing.Point(800, 0);
-            this.btnWyloguj.Name = "btnWyloguj";
-            this.btnWyloguj.Size = new System.Drawing.Size(100, 50);
-            this.btnWyloguj.TabIndex = 2;
-            this.btnWyloguj.Text = "Wyloguj";
-            this.btnWyloguj.UseVisualStyleBackColor = true;
-            this.btnWyloguj.Click += new System.EventHandler(this.btnWyloguj_Click);
             // 
             // FormMenu
             // 
