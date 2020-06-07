@@ -49,7 +49,7 @@
             this.label1.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(900, 100);
+            this.label1.Size = new System.Drawing.Size(900, 120);
             this.label1.TabIndex = 0;
             this.label1.Text = "Moje dane";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

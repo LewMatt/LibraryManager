@@ -44,12 +44,14 @@
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(385, 58);
+            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label1.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 13);
+            this.label1.Size = new System.Drawing.Size(900, 120);
             this.label1.TabIndex = 0;
             this.label1.Text = "Biblioteka admin";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // listViewBibliotekaAdmin
             // 
@@ -60,11 +62,12 @@
             this.hGatunek,
             this.hDataWyd,
             this.hIle});
+            this.listViewBibliotekaAdmin.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.listViewBibliotekaAdmin.FullRowSelect = true;
             this.listViewBibliotekaAdmin.HideSelection = false;
-            this.listViewBibliotekaAdmin.Location = new System.Drawing.Point(79, 155);
+            this.listViewBibliotekaAdmin.Location = new System.Drawing.Point(60, 180);
             this.listViewBibliotekaAdmin.Name = "listViewBibliotekaAdmin";
-            this.listViewBibliotekaAdmin.Size = new System.Drawing.Size(600, 350);
+            this.listViewBibliotekaAdmin.Size = new System.Drawing.Size(634, 350);
             this.listViewBibliotekaAdmin.TabIndex = 1;
             this.listViewBibliotekaAdmin.UseCompatibleStateImageBehavior = false;
             this.listViewBibliotekaAdmin.View = System.Windows.Forms.View.Details;
@@ -72,38 +75,39 @@
             // hID
             // 
             this.hID.Text = "ID";
-            this.hID.Width = 30;
+            this.hID.Width = 34;
             // 
             // hTytul
             // 
             this.hTytul.Text = "Tytuł";
-            this.hTytul.Width = 180;
+            this.hTytul.Width = 183;
             // 
             // hAutor
             // 
             this.hAutor.Text = "Autor";
-            this.hAutor.Width = 130;
+            this.hAutor.Width = 129;
             // 
             // hGatunek
             // 
             this.hGatunek.Text = "Gatunek";
-            this.hGatunek.Width = 80;
+            this.hGatunek.Width = 95;
             // 
             // hDataWyd
             // 
             this.hDataWyd.Text = "Data wydania";
-            this.hDataWyd.Width = 80;
+            this.hDataWyd.Width = 89;
             // 
             // hIle
             // 
             this.hIle.Text = "Ilość dostępnych";
-            this.hIle.Width = 100;
+            this.hIle.Width = 109;
             // 
             // btnDodajIloscKsiazek
             // 
-            this.btnDodajIloscKsiazek.Location = new System.Drawing.Point(774, 219);
+            this.btnDodajIloscKsiazek.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnDodajIloscKsiazek.Location = new System.Drawing.Point(789, 222);
             this.btnDodajIloscKsiazek.Name = "btnDodajIloscKsiazek";
-            this.btnDodajIloscKsiazek.Size = new System.Drawing.Size(100, 40);
+            this.btnDodajIloscKsiazek.Size = new System.Drawing.Size(80, 70);
             this.btnDodajIloscKsiazek.TabIndex = 2;
             this.btnDodajIloscKsiazek.Text = "Dodaj książki";
             this.btnDodajIloscKsiazek.UseVisualStyleBackColor = true;
@@ -111,17 +115,18 @@
             // 
             // textBoxIloscKsiazek
             // 
-            this.textBoxIloscKsiazek.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.textBoxIloscKsiazek.Location = new System.Drawing.Point(718, 219);
+            this.textBoxIloscKsiazek.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBoxIloscKsiazek.Location = new System.Drawing.Point(723, 236);
             this.textBoxIloscKsiazek.Name = "textBoxIloscKsiazek";
-            this.textBoxIloscKsiazek.Size = new System.Drawing.Size(50, 38);
+            this.textBoxIloscKsiazek.Size = new System.Drawing.Size(60, 41);
             this.textBoxIloscKsiazek.TabIndex = 3;
             // 
             // btnNowaKsiazka
             // 
-            this.btnNowaKsiazka.Location = new System.Drawing.Point(718, 330);
+            this.btnNowaKsiazka.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnNowaKsiazka.Location = new System.Drawing.Point(723, 348);
             this.btnNowaKsiazka.Name = "btnNowaKsiazka";
-            this.btnNowaKsiazka.Size = new System.Drawing.Size(150, 50);
+            this.btnNowaKsiazka.Size = new System.Drawing.Size(160, 50);
             this.btnNowaKsiazka.TabIndex = 4;
             this.btnNowaKsiazka.Text = "Dodaj nową książkę";
             this.btnNowaKsiazka.UseVisualStyleBackColor = true;
@@ -129,9 +134,10 @@
             // 
             // btnOdswiez
             // 
-            this.btnOdswiez.Location = new System.Drawing.Point(749, 455);
+            this.btnOdswiez.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnOdswiez.Location = new System.Drawing.Point(756, 460);
             this.btnOdswiez.Name = "btnOdswiez";
-            this.btnOdswiez.Size = new System.Drawing.Size(100, 50);
+            this.btnOdswiez.Size = new System.Drawing.Size(80, 70);
             this.btnOdswiez.TabIndex = 5;
             this.btnOdswiez.Text = "Odśwież";
             this.btnOdswiez.UseVisualStyleBackColor = true;

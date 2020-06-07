@@ -37,24 +37,26 @@
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(376, 73);
+            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label1.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(127, 25);
+            this.label1.Size = new System.Drawing.Size(900, 120);
             this.label1.TabIndex = 0;
             this.label1.Text = "Zamówienia";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // listViewZamowienia
             // 
             this.listViewZamowienia.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.hIDKsiaz,
             this.hIDUz});
+            this.listViewZamowienia.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.listViewZamowienia.FullRowSelect = true;
             this.listViewZamowienia.HideSelection = false;
-            this.listViewZamowienia.Location = new System.Drawing.Point(347, 183);
+            this.listViewZamowienia.Location = new System.Drawing.Point(300, 155);
             this.listViewZamowienia.Name = "listViewZamowienia";
-            this.listViewZamowienia.Size = new System.Drawing.Size(190, 294);
+            this.listViewZamowienia.Size = new System.Drawing.Size(300, 400);
             this.listViewZamowienia.TabIndex = 1;
             this.listViewZamowienia.UseCompatibleStateImageBehavior = false;
             this.listViewZamowienia.View = System.Windows.Forms.View.Details;
@@ -62,20 +64,21 @@
             // hIDKsiaz
             // 
             this.hIDKsiaz.Text = "ID Książki";
-            this.hIDKsiaz.Width = 99;
+            this.hIDKsiaz.Width = 145;
             // 
             // hIDUz
             // 
             this.hIDUz.Text = "ID Użytkownika";
-            this.hIDUz.Width = 88;
+            this.hIDUz.Width = 150;
             // 
             // btnDodajDoBib
             // 
-            this.btnDodajDoBib.Location = new System.Drawing.Point(614, 285);
+            this.btnDodajDoBib.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnDodajDoBib.Location = new System.Drawing.Point(670, 267);
             this.btnDodajDoBib.Name = "btnDodajDoBib";
-            this.btnDodajDoBib.Size = new System.Drawing.Size(169, 68);
+            this.btnDodajDoBib.Size = new System.Drawing.Size(160, 80);
             this.btnDodajDoBib.TabIndex = 2;
-            this.btnDodajDoBib.Text = "Dodaj do biblioteki.";
+            this.btnDodajDoBib.Text = "Dodaj do biblioteki";
             this.btnDodajDoBib.UseVisualStyleBackColor = true;
             this.btnDodajDoBib.Click += new System.EventHandler(this.btnDodajDoBib_Click);
             // 
@@ -89,7 +92,6 @@
             this.Name = "UserControlZamowienaAdmin";
             this.Size = new System.Drawing.Size(900, 600);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

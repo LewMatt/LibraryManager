@@ -41,13 +41,14 @@
             // 
             // labelZamowKsiazke
             // 
-            this.labelZamowKsiazke.AutoSize = true;
-            this.labelZamowKsiazke.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.labelZamowKsiazke.Location = new System.Drawing.Point(298, 66);
+            this.labelZamowKsiazke.Dock = System.Windows.Forms.DockStyle.Top;
+            this.labelZamowKsiazke.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelZamowKsiazke.Location = new System.Drawing.Point(0, 0);
             this.labelZamowKsiazke.Name = "labelZamowKsiazke";
-            this.labelZamowKsiazke.Size = new System.Drawing.Size(139, 24);
+            this.labelZamowKsiazke.Size = new System.Drawing.Size(900, 120);
             this.labelZamowKsiazke.TabIndex = 0;
             this.labelZamowKsiazke.Text = "Zamów książkę";
+            this.labelZamowKsiazke.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // listViewKsiazkiZamow
             // 
@@ -58,11 +59,12 @@
             this.hGatunek,
             this.hDataWyd,
             this.hIleDos});
+            this.listViewKsiazkiZamow.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.listViewKsiazkiZamow.FullRowSelect = true;
             this.listViewKsiazkiZamow.HideSelection = false;
-            this.listViewKsiazkiZamow.Location = new System.Drawing.Point(59, 172);
+            this.listViewKsiazkiZamow.Location = new System.Drawing.Point(60, 180);
             this.listViewKsiazkiZamow.Name = "listViewKsiazkiZamow";
-            this.listViewKsiazkiZamow.Size = new System.Drawing.Size(570, 313);
+            this.listViewKsiazkiZamow.Size = new System.Drawing.Size(634, 350);
             this.listViewKsiazkiZamow.TabIndex = 1;
             this.listViewKsiazkiZamow.UseCompatibleStateImageBehavior = false;
             this.listViewKsiazkiZamow.View = System.Windows.Forms.View.Details;
@@ -70,40 +72,41 @@
             // hID
             // 
             this.hID.Text = "ID";
-            this.hID.Width = 30;
+            this.hID.Width = 34;
             // 
             // hTytul
             // 
             this.hTytul.Text = "Tytuł";
-            this.hTytul.Width = 180;
+            this.hTytul.Width = 183;
             // 
             // hAutor
             // 
             this.hAutor.Text = "Autor";
-            this.hAutor.Width = 130;
+            this.hAutor.Width = 129;
             // 
             // hGatunek
             // 
             this.hGatunek.Text = "Gatunek";
-            this.hGatunek.Width = 80;
+            this.hGatunek.Width = 95;
             // 
             // hDataWyd
             // 
             this.hDataWyd.Text = "Data wydania";
-            this.hDataWyd.Width = 80;
+            this.hDataWyd.Width = 89;
             // 
             // hIleDos
             // 
-            this.hIleDos.Text = "Ilość dost.";
-            this.hIleDos.Width = 64;
+            this.hIleDos.Text = "Ilość dostępnych";
+            this.hIleDos.Width = 109;
             // 
             // btnZamow
             // 
-            this.btnZamow.Location = new System.Drawing.Point(667, 295);
+            this.btnZamow.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnZamow.Location = new System.Drawing.Point(737, 267);
             this.btnZamow.Name = "btnZamow";
-            this.btnZamow.Size = new System.Drawing.Size(200, 50);
+            this.btnZamow.Size = new System.Drawing.Size(120, 70);
             this.btnZamow.TabIndex = 2;
-            this.btnZamow.Text = "Zamów książkę.";
+            this.btnZamow.Text = "Zamów książkę";
             this.btnZamow.UseVisualStyleBackColor = true;
             this.btnZamow.Click += new System.EventHandler(this.btnZamow_Click);
             // 
@@ -117,7 +120,6 @@
             this.Name = "UserControlZamowKsiazke";
             this.Size = new System.Drawing.Size(900, 600);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

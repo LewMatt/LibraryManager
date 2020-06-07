@@ -39,12 +39,14 @@
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(404, 54);
+            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label1.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 13);
+            this.label1.Size = new System.Drawing.Size(900, 120);
             this.label1.TabIndex = 0;
             this.label1.Text = "Użytkownicy";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // listViewUzytkownicy
             // 
@@ -54,10 +56,11 @@
             this.hNazwisko,
             this.hEmail,
             this.hTelefon});
+            this.listViewUzytkownicy.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.listViewUzytkownicy.HideSelection = false;
-            this.listViewUzytkownicy.Location = new System.Drawing.Point(80, 141);
+            this.listViewUzytkownicy.Location = new System.Drawing.Point(60, 180);
             this.listViewUzytkownicy.Name = "listViewUzytkownicy";
-            this.listViewUzytkownicy.Size = new System.Drawing.Size(600, 350);
+            this.listViewUzytkownicy.Size = new System.Drawing.Size(634, 350);
             this.listViewUzytkownicy.TabIndex = 1;
             this.listViewUzytkownicy.UseCompatibleStateImageBehavior = false;
             this.listViewUzytkownicy.View = System.Windows.Forms.View.Details;
@@ -69,8 +72,8 @@
             // 
             // hImie
             // 
-            this.hImie.Text = "Imie";
-            this.hImie.Width = 80;
+            this.hImie.Text = "Imię";
+            this.hImie.Width = 110;
             // 
             // hNazwisko
             // 
@@ -96,7 +99,6 @@
             this.Name = "UserControlUzytkownicyAdmin";
             this.Size = new System.Drawing.Size(900, 600);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

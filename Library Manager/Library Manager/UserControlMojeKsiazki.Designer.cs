@@ -43,7 +43,7 @@
             this.label1.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(900, 150);
+            this.label1.Size = new System.Drawing.Size(900, 120);
             this.label1.TabIndex = 0;
             this.label1.Text = "Moje książki";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -58,9 +58,9 @@
             this.listViewMojeKsiazki.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.listViewMojeKsiazki.FullRowSelect = true;
             this.listViewMojeKsiazki.HideSelection = false;
-            this.listViewMojeKsiazki.Location = new System.Drawing.Point(74, 177);
+            this.listViewMojeKsiazki.Location = new System.Drawing.Point(60, 180);
             this.listViewMojeKsiazki.Name = "listViewMojeKsiazki";
-            this.listViewMojeKsiazki.Size = new System.Drawing.Size(555, 350);
+            this.listViewMojeKsiazki.Size = new System.Drawing.Size(634, 350);
             this.listViewMojeKsiazki.TabIndex = 1;
             this.listViewMojeKsiazki.UseCompatibleStateImageBehavior = false;
             this.listViewMojeKsiazki.View = System.Windows.Forms.View.Details;
@@ -87,7 +87,7 @@
             // btnOddajKsiazke
             // 
             this.btnOddajKsiazke.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btnOddajKsiazke.Location = new System.Drawing.Point(705, 277);
+            this.btnOddajKsiazke.Location = new System.Drawing.Point(737, 267);
             this.btnOddajKsiazke.Name = "btnOddajKsiazke";
             this.btnOddajKsiazke.Size = new System.Drawing.Size(120, 70);
             this.btnOddajKsiazke.TabIndex = 2;

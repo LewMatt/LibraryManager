@@ -116,7 +116,7 @@
             this.lblLibraryManager.Font = new System.Drawing.Font("Segoe Script", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lblLibraryManager.Location = new System.Drawing.Point(0, 0);
             this.lblLibraryManager.Name = "lblLibraryManager";
-            this.lblLibraryManager.Size = new System.Drawing.Size(1100, 150);
+            this.lblLibraryManager.Size = new System.Drawing.Size(1100, 180);
             this.lblLibraryManager.TabIndex = 7;
             this.lblLibraryManager.Text = "Library Manager ";
             this.lblLibraryManager.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;

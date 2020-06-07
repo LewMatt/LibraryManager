@@ -31,6 +31,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnWyjscie = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnZamowienia = new System.Windows.Forms.Button();
             this.btnUzytkownicy = new System.Windows.Forms.Button();
             this.btnKsiazkiWypozyczone = new System.Windows.Forms.Button();
             this.btnBiblioteka = new System.Windows.Forms.Button();
@@ -38,7 +39,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnWyloguj = new System.Windows.Forms.Button();
-            this.btnZamowienia = new System.Windows.Forms.Button();
             this.userControlUzytkownicyAdmin1 = new Library_Manager.UserControlUzytkownicyAdmin();
             this.userControlKsiazkiWypAdmin1 = new Library_Manager.UserControlKsiazkiWypAdmin();
             this.userControlBibliotekaAdmin1 = new Library_Manager.UserControlBibliotekaAdmin();
@@ -60,6 +60,7 @@
             // 
             // btnWyjscie
             // 
+            this.btnWyjscie.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnWyjscie.Location = new System.Drawing.Point(800, 0);
             this.btnWyjscie.Name = "btnWyjscie";
             this.btnWyjscie.Size = new System.Drawing.Size(100, 50);
@@ -81,8 +82,20 @@
             this.panel1.Size = new System.Drawing.Size(200, 700);
             this.panel1.TabIndex = 2;
             // 
+            // btnZamowienia
+            // 
+            this.btnZamowienia.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnZamowienia.Location = new System.Drawing.Point(0, 240);
+            this.btnZamowienia.Name = "btnZamowienia";
+            this.btnZamowienia.Size = new System.Drawing.Size(200, 50);
+            this.btnZamowienia.TabIndex = 4;
+            this.btnZamowienia.Text = "Zamówienia";
+            this.btnZamowienia.UseVisualStyleBackColor = true;
+            this.btnZamowienia.Click += new System.EventHandler(this.btnZamowienia_Click);
+            // 
             // btnUzytkownicy
             // 
+            this.btnUzytkownicy.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnUzytkownicy.Location = new System.Drawing.Point(0, 180);
             this.btnUzytkownicy.Name = "btnUzytkownicy";
             this.btnUzytkownicy.Size = new System.Drawing.Size(200, 50);
@@ -93,6 +106,7 @@
             // 
             // btnKsiazkiWypozyczone
             // 
+            this.btnKsiazkiWypozyczone.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnKsiazkiWypozyczone.Location = new System.Drawing.Point(0, 120);
             this.btnKsiazkiWypozyczone.Name = "btnKsiazkiWypozyczone";
             this.btnKsiazkiWypozyczone.Size = new System.Drawing.Size(200, 50);
@@ -103,6 +117,7 @@
             // 
             // btnBiblioteka
             // 
+            this.btnBiblioteka.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnBiblioteka.Location = new System.Drawing.Point(0, 60);
             this.btnBiblioteka.Name = "btnBiblioteka";
             this.btnBiblioteka.Size = new System.Drawing.Size(200, 50);
@@ -113,6 +128,7 @@
             // 
             // btnMenu
             // 
+            this.btnMenu.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnMenu.Location = new System.Drawing.Point(0, 0);
             this.btnMenu.Name = "btnMenu";
             this.btnMenu.Size = new System.Drawing.Size(200, 50);
@@ -141,6 +157,7 @@
             // 
             // btnWyloguj
             // 
+            this.btnWyloguj.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnWyloguj.Location = new System.Drawing.Point(800, 0);
             this.btnWyloguj.Name = "btnWyloguj";
             this.btnWyloguj.Size = new System.Drawing.Size(100, 50);
@@ -148,16 +165,6 @@
             this.btnWyloguj.Text = "Wyloguj";
             this.btnWyloguj.UseVisualStyleBackColor = true;
             this.btnWyloguj.Click += new System.EventHandler(this.btnWyloguj_Click);
-            // 
-            // btnZamowienia
-            // 
-            this.btnZamowienia.Location = new System.Drawing.Point(0, 240);
-            this.btnZamowienia.Name = "btnZamowienia";
-            this.btnZamowienia.Size = new System.Drawing.Size(200, 50);
-            this.btnZamowienia.TabIndex = 4;
-            this.btnZamowienia.Text = "Zamówienia";
-            this.btnZamowienia.UseVisualStyleBackColor = true;
-            this.btnZamowienia.Click += new System.EventHandler(this.btnZamowienia_Click);
             // 
             // userControlUzytkownicyAdmin1
             // 

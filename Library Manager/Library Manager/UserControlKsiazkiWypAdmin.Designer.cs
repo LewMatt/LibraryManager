@@ -38,12 +38,14 @@
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(352, 47);
+            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label1.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(138, 13);
+            this.label1.Size = new System.Drawing.Size(900, 120);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Ksiazki wypozyczone admin";
+            this.label1.Text = "Ksiązki wypożyczone";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // listViewKsiazkiWyp
             // 
@@ -52,10 +54,11 @@
             this.hIDUzytkownik,
             this.hTytuł,
             this.hDataZwrotu});
+            this.listViewKsiazkiWyp.Font = new System.Drawing.Font("Segoe Print", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.listViewKsiazkiWyp.HideSelection = false;
-            this.listViewKsiazkiWyp.Location = new System.Drawing.Point(74, 139);
+            this.listViewKsiazkiWyp.Location = new System.Drawing.Point(60, 180);
             this.listViewKsiazkiWyp.Name = "listViewKsiazkiWyp";
-            this.listViewKsiazkiWyp.Size = new System.Drawing.Size(600, 350);
+            this.listViewKsiazkiWyp.Size = new System.Drawing.Size(634, 350);
             this.listViewKsiazkiWyp.TabIndex = 1;
             this.listViewKsiazkiWyp.UseCompatibleStateImageBehavior = false;
             this.listViewKsiazkiWyp.View = System.Windows.Forms.View.Details;
@@ -89,7 +92,6 @@
             this.Name = "UserControlKsiazkiWypAdmin";
             this.Size = new System.Drawing.Size(900, 600);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
