@@ -43,6 +43,7 @@
             // 
             this.label1.Dock = System.Windows.Forms.DockStyle.Top;
             this.label1.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(900, 120);
@@ -101,19 +102,22 @@
             // 
             // btnWypozyczKsiazke
             // 
+            this.btnWypozyczKsiazke.BackColor = System.Drawing.Color.SaddleBrown;
             this.btnWypozyczKsiazke.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnWypozyczKsiazke.ForeColor = System.Drawing.Color.White;
             this.btnWypozyczKsiazke.Location = new System.Drawing.Point(737, 267);
             this.btnWypozyczKsiazke.Name = "btnWypozyczKsiazke";
             this.btnWypozyczKsiazke.Size = new System.Drawing.Size(120, 70);
             this.btnWypozyczKsiazke.TabIndex = 2;
             this.btnWypozyczKsiazke.Text = "Wypożycz książkę";
-            this.btnWypozyczKsiazke.UseVisualStyleBackColor = true;
+            this.btnWypozyczKsiazke.UseVisualStyleBackColor = false;
             this.btnWypozyczKsiazke.Click += new System.EventHandler(this.btnWypozyczKsiazke_Click);
             // 
             // UserControlBiblioteka
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.btnWypozyczKsiazke);
             this.Controls.Add(this.listViewBiblioteka);
             this.Controls.Add(this.label1);

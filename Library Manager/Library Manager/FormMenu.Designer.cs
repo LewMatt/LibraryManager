@@ -61,17 +61,20 @@
             // 
             // btnExit
             // 
+            this.btnExit.BackColor = System.Drawing.Color.SaddleBrown;
             this.btnExit.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnExit.ForeColor = System.Drawing.Color.White;
             this.btnExit.Location = new System.Drawing.Point(800, 0);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(100, 50);
             this.btnExit.TabIndex = 1;
             this.btnExit.Text = "Wyjście";
-            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.btnMenu);
             this.panel1.Controls.Add(this.btnZamowKsiazke);
             this.panel1.Controls.Add(this.btnMojeDane);
@@ -85,61 +88,72 @@
             // 
             // btnMenu
             // 
+            this.btnMenu.BackColor = System.Drawing.Color.SaddleBrown;
             this.btnMenu.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnMenu.ForeColor = System.Drawing.Color.White;
             this.btnMenu.Location = new System.Drawing.Point(0, 0);
             this.btnMenu.Name = "btnMenu";
             this.btnMenu.Size = new System.Drawing.Size(200, 50);
             this.btnMenu.TabIndex = 4;
             this.btnMenu.Text = "Menu";
-            this.btnMenu.UseVisualStyleBackColor = true;
+            this.btnMenu.UseVisualStyleBackColor = false;
             this.btnMenu.Click += new System.EventHandler(this.btnMenu_Click);
             // 
             // btnZamowKsiazke
             // 
+            this.btnZamowKsiazke.BackColor = System.Drawing.Color.SaddleBrown;
             this.btnZamowKsiazke.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnZamowKsiazke.ForeColor = System.Drawing.Color.White;
             this.btnZamowKsiazke.Location = new System.Drawing.Point(0, 240);
             this.btnZamowKsiazke.Name = "btnZamowKsiazke";
             this.btnZamowKsiazke.Size = new System.Drawing.Size(200, 50);
             this.btnZamowKsiazke.TabIndex = 3;
             this.btnZamowKsiazke.Text = "Zamów książkę";
-            this.btnZamowKsiazke.UseVisualStyleBackColor = true;
+            this.btnZamowKsiazke.UseVisualStyleBackColor = false;
             this.btnZamowKsiazke.Click += new System.EventHandler(this.btnZamowKsiazke_Click);
             // 
             // btnMojeDane
             // 
+            this.btnMojeDane.BackColor = System.Drawing.Color.SaddleBrown;
             this.btnMojeDane.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnMojeDane.ForeColor = System.Drawing.Color.White;
             this.btnMojeDane.Location = new System.Drawing.Point(0, 180);
             this.btnMojeDane.Name = "btnMojeDane";
             this.btnMojeDane.Size = new System.Drawing.Size(200, 50);
             this.btnMojeDane.TabIndex = 2;
             this.btnMojeDane.Text = "Moje dane";
-            this.btnMojeDane.UseVisualStyleBackColor = true;
+            this.btnMojeDane.UseVisualStyleBackColor = false;
             this.btnMojeDane.Click += new System.EventHandler(this.btnMojeDane_Click);
             // 
             // btnMojeKsiazki
             // 
+            this.btnMojeKsiazki.BackColor = System.Drawing.Color.SaddleBrown;
             this.btnMojeKsiazki.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnMojeKsiazki.ForeColor = System.Drawing.Color.White;
             this.btnMojeKsiazki.Location = new System.Drawing.Point(0, 120);
             this.btnMojeKsiazki.Name = "btnMojeKsiazki";
             this.btnMojeKsiazki.Size = new System.Drawing.Size(200, 50);
             this.btnMojeKsiazki.TabIndex = 1;
             this.btnMojeKsiazki.Text = "Moje książki";
-            this.btnMojeKsiazki.UseVisualStyleBackColor = true;
+            this.btnMojeKsiazki.UseVisualStyleBackColor = false;
             this.btnMojeKsiazki.Click += new System.EventHandler(this.btnMojeKsiazki_Click);
             // 
             // btnBiblioteka
             // 
+            this.btnBiblioteka.BackColor = System.Drawing.Color.SaddleBrown;
             this.btnBiblioteka.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnBiblioteka.ForeColor = System.Drawing.Color.White;
             this.btnBiblioteka.Location = new System.Drawing.Point(0, 60);
             this.btnBiblioteka.Name = "btnBiblioteka";
             this.btnBiblioteka.Size = new System.Drawing.Size(200, 50);
             this.btnBiblioteka.TabIndex = 0;
             this.btnBiblioteka.Text = "Biblioteka";
-            this.btnBiblioteka.UseVisualStyleBackColor = true;
+            this.btnBiblioteka.UseVisualStyleBackColor = false;
             this.btnBiblioteka.Click += new System.EventHandler(this.btnBiblioteka_Click);
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.Controls.Add(this.btnExit);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(200, 0);
@@ -149,6 +163,7 @@
             // 
             // panel3
             // 
+            this.panel3.BackColor = System.Drawing.Color.Transparent;
             this.panel3.Controls.Add(this.btnWyloguj);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel3.Location = new System.Drawing.Point(200, 650);
@@ -158,17 +173,20 @@
             // 
             // btnWyloguj
             // 
+            this.btnWyloguj.BackColor = System.Drawing.Color.SaddleBrown;
             this.btnWyloguj.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnWyloguj.ForeColor = System.Drawing.Color.White;
             this.btnWyloguj.Location = new System.Drawing.Point(800, 0);
             this.btnWyloguj.Name = "btnWyloguj";
             this.btnWyloguj.Size = new System.Drawing.Size(100, 50);
             this.btnWyloguj.TabIndex = 2;
             this.btnWyloguj.Text = "Wyloguj";
-            this.btnWyloguj.UseVisualStyleBackColor = true;
+            this.btnWyloguj.UseVisualStyleBackColor = false;
             this.btnWyloguj.Click += new System.EventHandler(this.btnWyloguj_Click);
             // 
             // userControlZamowKsiazke1
             // 
+            this.userControlZamowKsiazke1.BackColor = System.Drawing.Color.Transparent;
             this.userControlZamowKsiazke1.Location = new System.Drawing.Point(200, 50);
             this.userControlZamowKsiazke1.Name = "userControlZamowKsiazke1";
             this.userControlZamowKsiazke1.Size = new System.Drawing.Size(900, 600);
@@ -176,13 +194,16 @@
             // 
             // userControlMojeDane1
             // 
+            this.userControlMojeDane1.BackColor = System.Drawing.Color.Transparent;
             this.userControlMojeDane1.Location = new System.Drawing.Point(200, 50);
             this.userControlMojeDane1.Name = "userControlMojeDane1";
+            this.userControlMojeDane1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.userControlMojeDane1.Size = new System.Drawing.Size(900, 600);
             this.userControlMojeDane1.TabIndex = 8;
             // 
             // userControlMojeKsiazki1
             // 
+            this.userControlMojeKsiazki1.BackColor = System.Drawing.Color.Transparent;
             this.userControlMojeKsiazki1.Location = new System.Drawing.Point(200, 50);
             this.userControlMojeKsiazki1.Name = "userControlMojeKsiazki1";
             this.userControlMojeKsiazki1.Size = new System.Drawing.Size(900, 600);
@@ -190,6 +211,7 @@
             // 
             // userControlBiblioteka1
             // 
+            this.userControlBiblioteka1.BackColor = System.Drawing.Color.Transparent;
             this.userControlBiblioteka1.Location = new System.Drawing.Point(200, 50);
             this.userControlBiblioteka1.Name = "userControlBiblioteka1";
             this.userControlBiblioteka1.Size = new System.Drawing.Size(900, 600);
@@ -206,6 +228,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Library_Manager.Properties.Resources.book_photo_1100_700;
             this.ClientSize = new System.Drawing.Size(1100, 700);
             this.Controls.Add(this.userControlZamowKsiazke1);
             this.Controls.Add(this.userControlMojeDane1);

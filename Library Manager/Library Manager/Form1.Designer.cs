@@ -59,70 +59,83 @@
             // 
             // btnLogin
             // 
+            this.btnLogin.BackColor = System.Drawing.Color.SaddleBrown;
             this.btnLogin.Font = new System.Drawing.Font("Segoe Print", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnLogin.ForeColor = System.Drawing.Color.White;
             this.btnLogin.Location = new System.Drawing.Point(425, 480);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(250, 50);
             this.btnLogin.TabIndex = 2;
             this.btnLogin.Text = "Zaloguj";
-            this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.UseVisualStyleBackColor = false;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label1.Location = new System.Drawing.Point(263, 239);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Segoe Print", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.ForeColor = System.Drawing.Color.SeaShell;
+            this.label1.Location = new System.Drawing.Point(256, 233);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(102, 47);
+            this.label1.Size = new System.Drawing.Size(109, 51);
             this.label1.TabIndex = 3;
             this.label1.Text = "Login:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe Print", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label2.Location = new System.Drawing.Point(274, 344);
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Segoe Print", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(254, 335);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 42);
+            this.label2.Size = new System.Drawing.Size(110, 51);
             this.label2.TabIndex = 4;
             this.label2.Text = "Hasło:";
             // 
             // btnExit
             // 
+            this.btnExit.BackColor = System.Drawing.Color.SaddleBrown;
             this.btnExit.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnExit.ForeColor = System.Drawing.Color.White;
             this.btnExit.Location = new System.Drawing.Point(1000, 0);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(100, 50);
             this.btnExit.TabIndex = 5;
             this.btnExit.Text = "Wyjście";
-            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.UseVisualStyleBackColor = false;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnUtworzKonto
             // 
+            this.btnUtworzKonto.BackColor = System.Drawing.Color.SaddleBrown;
             this.btnUtworzKonto.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnUtworzKonto.ForeColor = System.Drawing.Color.White;
             this.btnUtworzKonto.Location = new System.Drawing.Point(0, 0);
             this.btnUtworzKonto.Name = "btnUtworzKonto";
             this.btnUtworzKonto.Size = new System.Drawing.Size(200, 50);
             this.btnUtworzKonto.TabIndex = 6;
             this.btnUtworzKonto.Text = "Utwórz konto";
-            this.btnUtworzKonto.UseVisualStyleBackColor = true;
+            this.btnUtworzKonto.UseVisualStyleBackColor = false;
             this.btnUtworzKonto.Click += new System.EventHandler(this.btnUtworzKonto_Click);
             // 
             // lblLibraryManager
             // 
+            this.lblLibraryManager.BackColor = System.Drawing.Color.Transparent;
             this.lblLibraryManager.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblLibraryManager.Font = new System.Drawing.Font("Segoe Script", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblLibraryManager.Font = new System.Drawing.Font("Segoe Script", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblLibraryManager.ForeColor = System.Drawing.Color.White;
             this.lblLibraryManager.Location = new System.Drawing.Point(0, 0);
             this.lblLibraryManager.Name = "lblLibraryManager";
-            this.lblLibraryManager.Size = new System.Drawing.Size(1100, 180);
+            this.lblLibraryManager.Size = new System.Drawing.Size(1100, 140);
             this.lblLibraryManager.TabIndex = 7;
             this.lblLibraryManager.Text = "Library Manager ";
             this.lblLibraryManager.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.btnExit);
             this.panel1.Controls.Add(this.btnUtworzKonto);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -135,6 +148,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Library_Manager.Properties.Resources.book_photo_1100_700;
             this.ClientSize = new System.Drawing.Size(1100, 700);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblLibraryManager);

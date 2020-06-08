@@ -43,8 +43,10 @@
             // 
             // lblZmianaHas
             // 
+            this.lblZmianaHas.BackColor = System.Drawing.Color.Transparent;
             this.lblZmianaHas.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblZmianaHas.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblZmianaHas.ForeColor = System.Drawing.Color.White;
             this.lblZmianaHas.Location = new System.Drawing.Point(0, 0);
             this.lblZmianaHas.Name = "lblZmianaHas";
             this.lblZmianaHas.Size = new System.Drawing.Size(1100, 150);
@@ -55,30 +57,36 @@
             // lblHasloAkt
             // 
             this.lblHasloAkt.AutoSize = true;
-            this.lblHasloAkt.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblHasloAkt.BackColor = System.Drawing.Color.Transparent;
+            this.lblHasloAkt.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblHasloAkt.ForeColor = System.Drawing.Color.White;
             this.lblHasloAkt.Location = new System.Drawing.Point(142, 200);
             this.lblHasloAkt.Name = "lblHasloAkt";
-            this.lblHasloAkt.Size = new System.Drawing.Size(177, 36);
+            this.lblHasloAkt.Size = new System.Drawing.Size(179, 37);
             this.lblHasloAkt.TabIndex = 1;
             this.lblHasloAkt.Text = "Aktualne hasło:";
             // 
             // lblHaslo
             // 
             this.lblHaslo.AutoSize = true;
-            this.lblHaslo.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblHaslo.BackColor = System.Drawing.Color.Transparent;
+            this.lblHaslo.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Bold);
+            this.lblHaslo.ForeColor = System.Drawing.Color.White;
             this.lblHaslo.Location = new System.Drawing.Point(177, 290);
             this.lblHaslo.Name = "lblHaslo";
-            this.lblHaslo.Size = new System.Drawing.Size(142, 36);
+            this.lblHaslo.Size = new System.Drawing.Size(143, 37);
             this.lblHaslo.TabIndex = 2;
             this.lblHaslo.Text = "Nowe hasło:";
             // 
             // lblPowHaslo
             // 
             this.lblPowHaslo.AutoSize = true;
-            this.lblPowHaslo.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblPowHaslo.BackColor = System.Drawing.Color.Transparent;
+            this.lblPowHaslo.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Bold);
+            this.lblPowHaslo.ForeColor = System.Drawing.Color.White;
             this.lblPowHaslo.Location = new System.Drawing.Point(82, 380);
             this.lblPowHaslo.Name = "lblPowHaslo";
-            this.lblPowHaslo.Size = new System.Drawing.Size(237, 36);
+            this.lblPowHaslo.Size = new System.Drawing.Size(237, 37);
             this.lblPowHaslo.TabIndex = 3;
             this.lblPowHaslo.Text = "Powtórz nowe hasło:";
             // 
@@ -111,28 +119,33 @@
             // 
             // btnAnuluj
             // 
+            this.btnAnuluj.BackColor = System.Drawing.Color.SaddleBrown;
             this.btnAnuluj.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnAnuluj.ForeColor = System.Drawing.Color.White;
             this.btnAnuluj.Location = new System.Drawing.Point(1000, 0);
             this.btnAnuluj.Name = "btnAnuluj";
             this.btnAnuluj.Size = new System.Drawing.Size(100, 50);
             this.btnAnuluj.TabIndex = 7;
             this.btnAnuluj.Text = "Anuluj";
-            this.btnAnuluj.UseVisualStyleBackColor = true;
+            this.btnAnuluj.UseVisualStyleBackColor = false;
             this.btnAnuluj.Click += new System.EventHandler(this.btnAnuluj_Click);
             // 
             // btnZmienHaslo
             // 
+            this.btnZmienHaslo.BackColor = System.Drawing.Color.SaddleBrown;
             this.btnZmienHaslo.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnZmienHaslo.ForeColor = System.Drawing.Color.White;
             this.btnZmienHaslo.Location = new System.Drawing.Point(425, 500);
             this.btnZmienHaslo.Name = "btnZmienHaslo";
             this.btnZmienHaslo.Size = new System.Drawing.Size(250, 60);
             this.btnZmienHaslo.TabIndex = 8;
             this.btnZmienHaslo.Text = "Zmień hasło";
-            this.btnZmienHaslo.UseVisualStyleBackColor = true;
+            this.btnZmienHaslo.UseVisualStyleBackColor = false;
             this.btnZmienHaslo.Click += new System.EventHandler(this.btnZmienHaslo_Click);
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.btnAnuluj);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 650);
@@ -144,6 +157,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Library_Manager.Properties.Resources.book_photo_1100_700;
             this.ClientSize = new System.Drawing.Size(1100, 700);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnZmienHaslo);

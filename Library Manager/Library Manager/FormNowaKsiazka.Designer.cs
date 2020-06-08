@@ -47,19 +47,23 @@
             // 
             // btnAnuluj
             // 
+            this.btnAnuluj.BackColor = System.Drawing.Color.SaddleBrown;
             this.btnAnuluj.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnAnuluj.ForeColor = System.Drawing.Color.White;
             this.btnAnuluj.Location = new System.Drawing.Point(1000, 0);
             this.btnAnuluj.Name = "btnAnuluj";
             this.btnAnuluj.Size = new System.Drawing.Size(100, 50);
             this.btnAnuluj.TabIndex = 0;
             this.btnAnuluj.Text = "Anuluj";
-            this.btnAnuluj.UseVisualStyleBackColor = true;
+            this.btnAnuluj.UseVisualStyleBackColor = false;
             this.btnAnuluj.Click += new System.EventHandler(this.btnAnuluj_Click);
             // 
             // lblNowa
             // 
+            this.lblNowa.BackColor = System.Drawing.Color.Transparent;
             this.lblNowa.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblNowa.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblNowa.ForeColor = System.Drawing.Color.White;
             this.lblNowa.Location = new System.Drawing.Point(0, 0);
             this.lblNowa.Name = "lblNowa";
             this.lblNowa.Size = new System.Drawing.Size(1100, 120);
@@ -70,50 +74,60 @@
             // lblTytul
             // 
             this.lblTytul.AutoSize = true;
-            this.lblTytul.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblTytul.BackColor = System.Drawing.Color.Transparent;
+            this.lblTytul.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblTytul.ForeColor = System.Drawing.Color.White;
             this.lblTytul.Location = new System.Drawing.Point(266, 151);
             this.lblTytul.Name = "lblTytul";
-            this.lblTytul.Size = new System.Drawing.Size(78, 36);
+            this.lblTytul.Size = new System.Drawing.Size(80, 37);
             this.lblTytul.TabIndex = 2;
             this.lblTytul.Text = "Tytuł:";
             // 
             // lblAutor
             // 
             this.lblAutor.AutoSize = true;
-            this.lblAutor.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblAutor.BackColor = System.Drawing.Color.Transparent;
+            this.lblAutor.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Bold);
+            this.lblAutor.ForeColor = System.Drawing.Color.White;
             this.lblAutor.Location = new System.Drawing.Point(261, 220);
             this.lblAutor.Name = "lblAutor";
-            this.lblAutor.Size = new System.Drawing.Size(83, 36);
+            this.lblAutor.Size = new System.Drawing.Size(85, 37);
             this.lblAutor.TabIndex = 3;
             this.lblAutor.Text = "Autor:";
             // 
             // lblGatunek
             // 
             this.lblGatunek.AutoSize = true;
-            this.lblGatunek.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblGatunek.BackColor = System.Drawing.Color.Transparent;
+            this.lblGatunek.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Bold);
+            this.lblGatunek.ForeColor = System.Drawing.Color.White;
             this.lblGatunek.Location = new System.Drawing.Point(235, 290);
             this.lblGatunek.Name = "lblGatunek";
-            this.lblGatunek.Size = new System.Drawing.Size(109, 36);
+            this.lblGatunek.Size = new System.Drawing.Size(111, 37);
             this.lblGatunek.TabIndex = 4;
             this.lblGatunek.Text = "Gatunek:";
             // 
             // lblDataWyd
             // 
             this.lblDataWyd.AutoSize = true;
-            this.lblDataWyd.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblDataWyd.BackColor = System.Drawing.Color.Transparent;
+            this.lblDataWyd.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Bold);
+            this.lblDataWyd.ForeColor = System.Drawing.Color.White;
             this.lblDataWyd.Location = new System.Drawing.Point(175, 360);
             this.lblDataWyd.Name = "lblDataWyd";
-            this.lblDataWyd.Size = new System.Drawing.Size(169, 36);
+            this.lblDataWyd.Size = new System.Drawing.Size(170, 37);
             this.lblDataWyd.TabIndex = 5;
             this.lblDataWyd.Text = "Data wydania:";
             // 
             // lblIlosc
             // 
             this.lblIlosc.AutoSize = true;
-            this.lblIlosc.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblIlosc.BackColor = System.Drawing.Color.Transparent;
+            this.lblIlosc.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Bold);
+            this.lblIlosc.ForeColor = System.Drawing.Color.White;
             this.lblIlosc.Location = new System.Drawing.Point(278, 430);
             this.lblIlosc.Name = "lblIlosc";
-            this.lblIlosc.Size = new System.Drawing.Size(66, 36);
+            this.lblIlosc.Size = new System.Drawing.Size(68, 37);
             this.lblIlosc.TabIndex = 6;
             this.lblIlosc.Text = "Ilość:";
             // 
@@ -159,17 +173,20 @@
             // 
             // btnDodaj
             // 
+            this.btnDodaj.BackColor = System.Drawing.Color.SaddleBrown;
             this.btnDodaj.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnDodaj.ForeColor = System.Drawing.Color.White;
             this.btnDodaj.Location = new System.Drawing.Point(425, 530);
             this.btnDodaj.Name = "btnDodaj";
             this.btnDodaj.Size = new System.Drawing.Size(250, 50);
             this.btnDodaj.TabIndex = 12;
             this.btnDodaj.Text = "Dodaj książkę";
-            this.btnDodaj.UseVisualStyleBackColor = true;
+            this.btnDodaj.UseVisualStyleBackColor = false;
             this.btnDodaj.Click += new System.EventHandler(this.btnDodaj_Click);
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.btnAnuluj);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 650);
@@ -181,6 +198,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Library_Manager.Properties.Resources.book_photo_1100_700;
             this.ClientSize = new System.Drawing.Size(1100, 700);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnDodaj);
@@ -195,6 +213,7 @@
             this.Controls.Add(this.lblAutor);
             this.Controls.Add(this.lblTytul);
             this.Controls.Add(this.lblNowa);
+            this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormNowaKsiazka";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

@@ -46,6 +46,7 @@
             // 
             this.label1.Dock = System.Windows.Forms.DockStyle.Top;
             this.label1.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(900, 120);
@@ -104,13 +105,15 @@
             // 
             // btnDodajIloscKsiazek
             // 
+            this.btnDodajIloscKsiazek.BackColor = System.Drawing.Color.SaddleBrown;
             this.btnDodajIloscKsiazek.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnDodajIloscKsiazek.ForeColor = System.Drawing.Color.White;
             this.btnDodajIloscKsiazek.Location = new System.Drawing.Point(789, 222);
             this.btnDodajIloscKsiazek.Name = "btnDodajIloscKsiazek";
             this.btnDodajIloscKsiazek.Size = new System.Drawing.Size(80, 70);
             this.btnDodajIloscKsiazek.TabIndex = 2;
             this.btnDodajIloscKsiazek.Text = "Dodaj książki";
-            this.btnDodajIloscKsiazek.UseVisualStyleBackColor = true;
+            this.btnDodajIloscKsiazek.UseVisualStyleBackColor = false;
             this.btnDodajIloscKsiazek.Click += new System.EventHandler(this.btnDodajIloscKsiazek_Click);
             // 
             // textBoxIloscKsiazek
@@ -123,30 +126,35 @@
             // 
             // btnNowaKsiazka
             // 
+            this.btnNowaKsiazka.BackColor = System.Drawing.Color.SaddleBrown;
             this.btnNowaKsiazka.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnNowaKsiazka.ForeColor = System.Drawing.Color.White;
             this.btnNowaKsiazka.Location = new System.Drawing.Point(723, 348);
             this.btnNowaKsiazka.Name = "btnNowaKsiazka";
             this.btnNowaKsiazka.Size = new System.Drawing.Size(160, 50);
             this.btnNowaKsiazka.TabIndex = 4;
             this.btnNowaKsiazka.Text = "Dodaj nową książkę";
-            this.btnNowaKsiazka.UseVisualStyleBackColor = true;
+            this.btnNowaKsiazka.UseVisualStyleBackColor = false;
             this.btnNowaKsiazka.Click += new System.EventHandler(this.btnNowaKsiazka_Click);
             // 
             // btnOdswiez
             // 
+            this.btnOdswiez.BackColor = System.Drawing.Color.SaddleBrown;
             this.btnOdswiez.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnOdswiez.ForeColor = System.Drawing.Color.White;
             this.btnOdswiez.Location = new System.Drawing.Point(756, 460);
             this.btnOdswiez.Name = "btnOdswiez";
             this.btnOdswiez.Size = new System.Drawing.Size(80, 70);
             this.btnOdswiez.TabIndex = 5;
             this.btnOdswiez.Text = "Odśwież";
-            this.btnOdswiez.UseVisualStyleBackColor = true;
+            this.btnOdswiez.UseVisualStyleBackColor = false;
             this.btnOdswiez.Click += new System.EventHandler(this.btnOdswiez_Click);
             // 
             // UserControlBibliotekaAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.btnOdswiez);
             this.Controls.Add(this.btnNowaKsiazka);
             this.Controls.Add(this.textBoxIloscKsiazek);

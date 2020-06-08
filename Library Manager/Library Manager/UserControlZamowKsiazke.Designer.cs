@@ -43,6 +43,7 @@
             // 
             this.labelZamowKsiazke.Dock = System.Windows.Forms.DockStyle.Top;
             this.labelZamowKsiazke.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.labelZamowKsiazke.ForeColor = System.Drawing.Color.White;
             this.labelZamowKsiazke.Location = new System.Drawing.Point(0, 0);
             this.labelZamowKsiazke.Name = "labelZamowKsiazke";
             this.labelZamowKsiazke.Size = new System.Drawing.Size(900, 120);
@@ -101,19 +102,22 @@
             // 
             // btnZamow
             // 
+            this.btnZamow.BackColor = System.Drawing.Color.SaddleBrown;
             this.btnZamow.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnZamow.ForeColor = System.Drawing.Color.White;
             this.btnZamow.Location = new System.Drawing.Point(737, 267);
             this.btnZamow.Name = "btnZamow";
             this.btnZamow.Size = new System.Drawing.Size(120, 70);
             this.btnZamow.TabIndex = 2;
             this.btnZamow.Text = "Zamów książkę";
-            this.btnZamow.UseVisualStyleBackColor = true;
+            this.btnZamow.UseVisualStyleBackColor = false;
             this.btnZamow.Click += new System.EventHandler(this.btnZamow_Click);
             // 
             // UserControlZamowKsiazke
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.btnZamow);
             this.Controls.Add(this.listViewKsiazkiZamow);
             this.Controls.Add(this.labelZamowKsiazke);

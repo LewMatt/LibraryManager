@@ -51,70 +51,84 @@
             // lblLogin
             // 
             this.lblLogin.AutoSize = true;
-            this.lblLogin.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.lblLogin.Location = new System.Drawing.Point(266, 80);
+            this.lblLogin.BackColor = System.Drawing.Color.Transparent;
+            this.lblLogin.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblLogin.ForeColor = System.Drawing.Color.White;
+            this.lblLogin.Location = new System.Drawing.Point(267, 80);
             this.lblLogin.Name = "lblLogin";
-            this.lblLogin.Size = new System.Drawing.Size(78, 36);
+            this.lblLogin.Size = new System.Drawing.Size(80, 37);
             this.lblLogin.TabIndex = 0;
             this.lblLogin.Text = "Login:";
             // 
             // lblHaslo
             // 
             this.lblHaslo.AutoSize = true;
-            this.lblHaslo.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblHaslo.BackColor = System.Drawing.Color.Transparent;
+            this.lblHaslo.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Bold);
+            this.lblHaslo.ForeColor = System.Drawing.Color.White;
             this.lblHaslo.Location = new System.Drawing.Point(265, 147);
             this.lblHaslo.Name = "lblHaslo";
-            this.lblHaslo.Size = new System.Drawing.Size(79, 36);
+            this.lblHaslo.Size = new System.Drawing.Size(81, 37);
             this.lblHaslo.TabIndex = 1;
             this.lblHaslo.Text = "Hasło:";
             // 
             // lblPowHaslo
             // 
             this.lblPowHaslo.AutoSize = true;
-            this.lblPowHaslo.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblPowHaslo.BackColor = System.Drawing.Color.Transparent;
+            this.lblPowHaslo.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Bold);
+            this.lblPowHaslo.ForeColor = System.Drawing.Color.White;
             this.lblPowHaslo.Location = new System.Drawing.Point(171, 220);
             this.lblPowHaslo.Name = "lblPowHaslo";
-            this.lblPowHaslo.Size = new System.Drawing.Size(173, 36);
+            this.lblPowHaslo.Size = new System.Drawing.Size(174, 37);
             this.lblPowHaslo.TabIndex = 2;
             this.lblPowHaslo.Text = "Powtórz hasło:";
             // 
             // lblImie
             // 
             this.lblImie.AutoSize = true;
-            this.lblImie.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblImie.BackColor = System.Drawing.Color.Transparent;
+            this.lblImie.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Bold);
+            this.lblImie.ForeColor = System.Drawing.Color.White;
             this.lblImie.Location = new System.Drawing.Point(277, 290);
             this.lblImie.Name = "lblImie";
-            this.lblImie.Size = new System.Drawing.Size(67, 36);
+            this.lblImie.Size = new System.Drawing.Size(68, 37);
             this.lblImie.TabIndex = 3;
             this.lblImie.Text = "Imię:";
             // 
             // lblNazwisko
             // 
             this.lblNazwisko.AutoSize = true;
-            this.lblNazwisko.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblNazwisko.BackColor = System.Drawing.Color.Transparent;
+            this.lblNazwisko.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Bold);
+            this.lblNazwisko.ForeColor = System.Drawing.Color.White;
             this.lblNazwisko.Location = new System.Drawing.Point(225, 360);
             this.lblNazwisko.Name = "lblNazwisko";
-            this.lblNazwisko.Size = new System.Drawing.Size(119, 36);
+            this.lblNazwisko.Size = new System.Drawing.Size(120, 37);
             this.lblNazwisko.TabIndex = 4;
             this.lblNazwisko.Text = "Nazwisko:";
             // 
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
-            this.lblEmail.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblEmail.BackColor = System.Drawing.Color.Transparent;
+            this.lblEmail.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Bold);
+            this.lblEmail.ForeColor = System.Drawing.Color.White;
             this.lblEmail.Location = new System.Drawing.Point(266, 430);
             this.lblEmail.Name = "lblEmail";
-            this.lblEmail.Size = new System.Drawing.Size(81, 36);
+            this.lblEmail.Size = new System.Drawing.Size(82, 37);
             this.lblEmail.TabIndex = 5;
             this.lblEmail.Text = "Email:";
             // 
             // lblTelefon
             // 
             this.lblTelefon.AutoSize = true;
-            this.lblTelefon.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblTelefon.BackColor = System.Drawing.Color.Transparent;
+            this.lblTelefon.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Bold);
+            this.lblTelefon.ForeColor = System.Drawing.Color.White;
             this.lblTelefon.Location = new System.Drawing.Point(156, 500);
             this.lblTelefon.Name = "lblTelefon";
-            this.lblTelefon.Size = new System.Drawing.Size(188, 36);
+            this.lblTelefon.Size = new System.Drawing.Size(189, 37);
             this.lblTelefon.TabIndex = 6;
             this.lblTelefon.Text = "Numer telefonu:";
             // 
@@ -178,28 +192,33 @@
             // 
             // btnUtworzKonto
             // 
+            this.btnUtworzKonto.BackColor = System.Drawing.Color.SaddleBrown;
             this.btnUtworzKonto.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnUtworzKonto.ForeColor = System.Drawing.Color.White;
             this.btnUtworzKonto.Location = new System.Drawing.Point(425, 580);
             this.btnUtworzKonto.Name = "btnUtworzKonto";
             this.btnUtworzKonto.Size = new System.Drawing.Size(250, 50);
             this.btnUtworzKonto.TabIndex = 14;
             this.btnUtworzKonto.Text = "Utwórz konto";
-            this.btnUtworzKonto.UseVisualStyleBackColor = true;
+            this.btnUtworzKonto.UseVisualStyleBackColor = false;
             this.btnUtworzKonto.Click += new System.EventHandler(this.btnUtworzKonto_Click);
             // 
             // btnPowrot
             // 
+            this.btnPowrot.BackColor = System.Drawing.Color.SaddleBrown;
             this.btnPowrot.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnPowrot.ForeColor = System.Drawing.Color.White;
             this.btnPowrot.Location = new System.Drawing.Point(1000, 0);
             this.btnPowrot.Name = "btnPowrot";
             this.btnPowrot.Size = new System.Drawing.Size(100, 50);
             this.btnPowrot.TabIndex = 15;
             this.btnPowrot.Text = "Powrót";
-            this.btnPowrot.UseVisualStyleBackColor = true;
+            this.btnPowrot.UseVisualStyleBackColor = false;
             this.btnPowrot.Click += new System.EventHandler(this.btnPowrot_Click);
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.btnPowrot);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 650);
@@ -211,6 +230,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Library_Manager.Properties.Resources.book_photo_1100_700;
             this.ClientSize = new System.Drawing.Size(1100, 700);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnUtworzKonto);

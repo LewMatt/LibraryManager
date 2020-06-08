@@ -41,8 +41,10 @@
             // 
             // lblZmienTel
             // 
+            this.lblZmienTel.BackColor = System.Drawing.Color.Transparent;
             this.lblZmienTel.Dock = System.Windows.Forms.DockStyle.Top;
             this.lblZmienTel.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblZmienTel.ForeColor = System.Drawing.Color.White;
             this.lblZmienTel.Location = new System.Drawing.Point(0, 0);
             this.lblZmienTel.Name = "lblZmienTel";
             this.lblZmienTel.Size = new System.Drawing.Size(1100, 150);
@@ -53,20 +55,24 @@
             // lblTelefon
             // 
             this.lblTelefon.AutoSize = true;
-            this.lblTelefon.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblTelefon.BackColor = System.Drawing.Color.Transparent;
+            this.lblTelefon.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblTelefon.ForeColor = System.Drawing.Color.White;
             this.lblTelefon.Location = new System.Drawing.Point(184, 240);
             this.lblTelefon.Name = "lblTelefon";
-            this.lblTelefon.Size = new System.Drawing.Size(160, 36);
+            this.lblTelefon.Size = new System.Drawing.Size(160, 37);
             this.lblTelefon.TabIndex = 1;
             this.lblTelefon.Text = "Nowy numer:";
             // 
             // lblHaslo
             // 
             this.lblHaslo.AutoSize = true;
-            this.lblHaslo.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblHaslo.BackColor = System.Drawing.Color.Transparent;
+            this.lblHaslo.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblHaslo.ForeColor = System.Drawing.Color.White;
             this.lblHaslo.Location = new System.Drawing.Point(265, 340);
             this.lblHaslo.Name = "lblHaslo";
-            this.lblHaslo.Size = new System.Drawing.Size(79, 36);
+            this.lblHaslo.Size = new System.Drawing.Size(81, 37);
             this.lblHaslo.TabIndex = 2;
             this.lblHaslo.Text = "Hasło:";
             // 
@@ -89,28 +95,33 @@
             // 
             // btnAnuluj
             // 
+            this.btnAnuluj.BackColor = System.Drawing.Color.SaddleBrown;
             this.btnAnuluj.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnAnuluj.ForeColor = System.Drawing.Color.White;
             this.btnAnuluj.Location = new System.Drawing.Point(1000, 0);
             this.btnAnuluj.Name = "btnAnuluj";
             this.btnAnuluj.Size = new System.Drawing.Size(100, 50);
             this.btnAnuluj.TabIndex = 5;
             this.btnAnuluj.Text = "Anuluj";
-            this.btnAnuluj.UseVisualStyleBackColor = true;
+            this.btnAnuluj.UseVisualStyleBackColor = false;
             this.btnAnuluj.Click += new System.EventHandler(this.btnAnuluj_Click);
             // 
             // btnZmien
             // 
+            this.btnZmien.BackColor = System.Drawing.Color.SaddleBrown;
             this.btnZmien.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnZmien.ForeColor = System.Drawing.Color.White;
             this.btnZmien.Location = new System.Drawing.Point(425, 500);
             this.btnZmien.Name = "btnZmien";
             this.btnZmien.Size = new System.Drawing.Size(250, 60);
             this.btnZmien.TabIndex = 6;
             this.btnZmien.Text = "Zmień";
-            this.btnZmien.UseVisualStyleBackColor = true;
+            this.btnZmien.UseVisualStyleBackColor = false;
             this.btnZmien.Click += new System.EventHandler(this.btnZmien_Click);
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.Controls.Add(this.btnAnuluj);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel1.Location = new System.Drawing.Point(0, 650);
@@ -122,6 +133,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Library_Manager.Properties.Resources.book_photo_1100_700;
             this.ClientSize = new System.Drawing.Size(1100, 700);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnZmien);

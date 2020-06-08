@@ -41,6 +41,7 @@
             // 
             this.label1.Dock = System.Windows.Forms.DockStyle.Top;
             this.label1.Font = new System.Drawing.Font("Segoe Print", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(0, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(900, 120);
@@ -86,19 +87,22 @@
             // 
             // btnOddajKsiazke
             // 
+            this.btnOddajKsiazke.BackColor = System.Drawing.Color.SaddleBrown;
             this.btnOddajKsiazke.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.btnOddajKsiazke.ForeColor = System.Drawing.Color.White;
             this.btnOddajKsiazke.Location = new System.Drawing.Point(737, 267);
             this.btnOddajKsiazke.Name = "btnOddajKsiazke";
             this.btnOddajKsiazke.Size = new System.Drawing.Size(120, 70);
             this.btnOddajKsiazke.TabIndex = 2;
             this.btnOddajKsiazke.Text = "Oddaj książkę";
-            this.btnOddajKsiazke.UseVisualStyleBackColor = true;
+            this.btnOddajKsiazke.UseVisualStyleBackColor = false;
             this.btnOddajKsiazke.Click += new System.EventHandler(this.btnOddajKsiazke_Click);
             // 
             // UserControlMojeKsiazki
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.btnOddajKsiazke);
             this.Controls.Add(this.listViewMojeKsiazki);
             this.Controls.Add(this.label1);
