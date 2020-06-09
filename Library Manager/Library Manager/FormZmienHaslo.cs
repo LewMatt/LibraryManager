@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,6 +17,8 @@ namespace Library_Manager
         {
             InitializeComponent();
         }
+
+        readonly func fnc= new func();
 
         public int my_act_id;
 
@@ -52,8 +55,9 @@ namespace Library_Manager
                     }
                     else
                     {
-                        query = "UPDATE users SET user_password = '"+textBoxNoweHaslo.Text+"' WHERE user_id LIKE "+my_act_id.ToString();
-                        string trash_res = form1obj.sendQueryRetString(query);
+                        //fnc.UpdatePass(textBoxNoweHaslo.Text, my_act_id.ToString());
+                        //query = "UPDATE users SET user_password = '"+textBoxNoweHaslo.Text+"' WHERE user_id LIKE "+my_act_id.ToString();
+                        string trash_res = fnc.UpdatePass(textBoxNoweHaslo.Text, my_act_id.ToString()); //form1obj.sendQueryRetString(query);
                         MessageBox.Show("Hasło zmienione.");
                         textBoxAktHaslo.Text = "";
                         textBoxNoweHaslo.Text = "";
@@ -63,5 +67,54 @@ namespace Library_Manager
                 }
             }
         }
+        
+    }
+
+    public class func
+    {
+        public string UpdatePass(string nowe_haslo, string id)
+        {
+            string query = "UPDATE users SET user_password = '" + nowe_haslo + "' WHERE user_id LIKE " + id;
+
+
+            string someStringFromColumnZero = "";
+            string result = "";
+            var dbCon = DBConnection.Instance();
+            dbCon.DatabaseName = "mylibrarydb";
+            if (dbCon.IsConnect())
+            {
+                var cmd = new MySqlCommand(query, dbCon.Connection);
+                var reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    someStringFromColumnZero = reader.GetString(0);
+                    result = someStringFromColumnZero;
+
+                }
+                dbCon.Close();
+            }
+            return "done";
+        }
+
+        public string CheckPass(string id)
+        {
+            string query = "SELECT user_password from users where user_id like '"+ id+"'";
+            string res="";
+            var dbCon = DBConnection.Instance();
+            dbCon.DatabaseName = "mylibrarydb";
+            if (dbCon.IsConnect())
+            {
+                var cmd = new MySqlCommand(query, dbCon.Connection);
+                var reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    res = reader.GetString(0);
+                }
+                dbCon.Close();
+            }
+            return res;
+        }
+
+
     }
 }
