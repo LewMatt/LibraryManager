@@ -22,53 +22,62 @@ namespace Library_Manager
 
         private void btnDodajIloscKsiazek_Click(object sender, EventArgs e)
         {
-            if (textBoxIloscKsiazek.Text == "")
-            {
-                MessageBox.Show("Wprowadź ilość książek");
+            if(listViewBibliotekaAdmin.SelectedItems.Count <=0)
+            { 
+            
             }
             else
             {
-                if(int.TryParse(textBoxIloscKsiazek.Text,out int x) == false)
+                if (textBoxIloscKsiazek.Text == "")
                 {
-                    MessageBox.Show("Wprowadź poprawną ilość.");
+                    MessageBox.Show("Wprowadź ilość książek");
                 }
                 else
                 {
-                    int ile_dodac = int.Parse(textBoxIloscKsiazek.Text);
-
-                    string id_ksiazki = listViewBibliotekaAdmin.SelectedItems[0].Text;
-
-                    string query = "SELECT book_amount_available FROM books WHERE book_id LIKE '"+ id_ksiazki +"'";
-
-                    int books_available = int.Parse(form1obj.sendQueryRetString(query));
-
-                    int books_after_add = books_available + ile_dodac;
-
-                    query = "UPDATE books SET book_amount_available = " + books_after_add.ToString() + " WHERE book_id LIKE " + id_ksiazki;
-
-                    string trash_res = form1obj.sendQueryRetString(query);
-
-
-                    List<ListViewItem> list_upd = new List<ListViewItem>();
-
-                    query = "SELECT * FROM books";
-
-                    list_upd = form1obj.sendQueryRetBooks(query);
-
-                    listViewBibliotekaAdmin.Items.Clear();
-
-                    foreach(ListViewItem item in list_upd)
+                    if (int.TryParse(textBoxIloscKsiazek.Text, out int x) == false)
                     {
-                        listViewBibliotekaAdmin.Items.Add(item);
+                        MessageBox.Show("Wprowadź poprawną ilość.");
                     }
+                    else
+                    {
+                        int ile_dodac = int.Parse(textBoxIloscKsiazek.Text);
 
-                    textBoxIloscKsiazek.Text = "";
+                        string id_ksiazki = listViewBibliotekaAdmin.SelectedItems[0].Text;
+
+                        string query = "SELECT book_amount_available FROM books WHERE book_id LIKE '" + id_ksiazki + "'";
+
+                        int books_available = int.Parse(form1obj.sendQueryRetString(query));
+
+                        int books_after_add = books_available + ile_dodac;
+
+                        query = "UPDATE books SET book_amount_available = " + books_after_add.ToString() + " WHERE book_id LIKE " + id_ksiazki;
+
+                        string trash_res = form1obj.sendQueryRetString(query);
 
 
-                    MessageBox.Show("Dodano książki.");
+                        List<ListViewItem> list_upd = new List<ListViewItem>();
 
+                        query = "SELECT * FROM books";
+
+                        list_upd = form1obj.sendQueryRetBooks(query);
+
+                        listViewBibliotekaAdmin.Items.Clear();
+
+                        foreach (ListViewItem item in list_upd)
+                        {
+                            listViewBibliotekaAdmin.Items.Add(item);
+                        }
+
+                        textBoxIloscKsiazek.Text = "";
+
+
+                        MessageBox.Show("Dodano książki.");
+
+                    }
                 }
             }
+
+           
         }
 
         private void btnNowaKsiazka_Click(object sender, EventArgs e)

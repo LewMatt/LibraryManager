@@ -242,6 +242,11 @@ namespace Library_Manager
             fCreAcc.BringToFront();
 
         }
+
+        private void textBoxLogin_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 
     public class DBConnection

@@ -21,6 +21,12 @@ namespace Library_Manager
 
         private void btnDodajDoBib_Click(object sender, EventArgs e)
         {
+            if(listViewZamowienia.SelectedItems.Count <= 0 )
+            {
+                MessageBox.Show("Wybierz opcje z listy");
+            }
+            else
+            { 
             string book_id = listViewZamowienia.SelectedItems[0].Text;
             string user_id = listViewZamowienia.SelectedItems[0].SubItems[1].Text;
 
@@ -71,6 +77,7 @@ namespace Library_Manager
             trash_res = form1o.sendQueryRetString(quer);
 
             MessageBox.Show("Dodano do biblioteki");
+            }
         }
     }
 }

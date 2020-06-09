@@ -69,6 +69,7 @@
             this.listViewBiblioteka.TabIndex = 1;
             this.listViewBiblioteka.UseCompatibleStateImageBehavior = false;
             this.listViewBiblioteka.View = System.Windows.Forms.View.Details;
+            this.listViewBiblioteka.MouseLeave += new System.EventHandler(this.listViewBiblioteka_MouseLeave);
             // 
             // hID
             // 

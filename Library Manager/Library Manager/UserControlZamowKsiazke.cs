@@ -25,36 +25,44 @@ namespace Library_Manager
 
         private void btnZamow_Click(object sender, EventArgs e)
         {
-            int book_id = int.Parse(listViewKsiazkiZamow.SelectedItems[0].Text);
-
-            string query = "SELECT COUNT(*) FROM books_ordered WHERE user_id LIKE "+my_user_id.ToString()+" AND book_id LIKE "+book_id.ToString();
-
-            int res = int.Parse(form1obj.sendQueryRetString(query));
-
-            if(res == 1)
+            if (listViewKsiazkiZamow.SelectedItems.Count <= 0)
             {
-                MessageBox.Show("Już zamówiłeś tę książkę.");
+                MessageBox.Show("Wybierz ksiazke z listy");
             }
             else
             {
-                query = "SELECT COUNT(*) FROM books_"+my_user_login+" WHERE book_id LIKE "+ book_id.ToString();
+                int book_id = int.Parse(listViewKsiazkiZamow.SelectedItems[0].Text);
 
-                res = int.Parse(form1obj.sendQueryRetString(query));
+                string query = "SELECT COUNT(*) FROM books_ordered WHERE user_id LIKE " + my_user_id.ToString() + " AND book_id LIKE " + book_id.ToString();
+
+                int res = int.Parse(form1obj.sendQueryRetString(query));
 
                 if (res == 1)
                 {
-                    MessageBox.Show("Posiadasz już tą książkę.");
+                    MessageBox.Show("Już zamówiłeś tę książkę.");
                 }
                 else
                 {
-                    query = "INSERT INTO `books_ordered` (`book_id`, `user_id`) VALUES ('" + book_id.ToString() + "', '" + my_user_id + "')";
+                    query = "SELECT COUNT(*) FROM books_" + my_user_login + " WHERE book_id LIKE " + book_id.ToString();
 
-                    string trash_res = form1obj.sendQueryRetString(query);
+                    res = int.Parse(form1obj.sendQueryRetString(query));
 
-                    MessageBox.Show("Zamówiono książkę.");
+                    if (res == 1)
+                    {
+                        MessageBox.Show("Posiadasz już tą książkę.");
+                    }
+                    else
+                    {
+                        query = "INSERT INTO `books_ordered` (`book_id`, `user_id`) VALUES ('" + book_id.ToString() + "', '" + my_user_id + "')";
+
+                        string trash_res = form1obj.sendQueryRetString(query);
+
+                        MessageBox.Show("Zamówiono książkę.");
+                    }
+
                 }
-                
             }
+            
 
         }
     }
