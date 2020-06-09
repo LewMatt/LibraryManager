@@ -59,6 +59,7 @@
             this.lblLogin.Size = new System.Drawing.Size(80, 37);
             this.lblLogin.TabIndex = 0;
             this.lblLogin.Text = "Login:";
+            this.lblLogin.Visible = false;
             // 
             // lblHaslo
             // 
@@ -71,6 +72,7 @@
             this.lblHaslo.Size = new System.Drawing.Size(81, 37);
             this.lblHaslo.TabIndex = 1;
             this.lblHaslo.Text = "Hasło:";
+            this.lblHaslo.Visible = false;
             // 
             // lblPowHaslo
             // 
@@ -83,6 +85,7 @@
             this.lblPowHaslo.Size = new System.Drawing.Size(174, 37);
             this.lblPowHaslo.TabIndex = 2;
             this.lblPowHaslo.Text = "Powtórz hasło:";
+            this.lblPowHaslo.Visible = false;
             // 
             // lblImie
             // 
@@ -95,6 +98,7 @@
             this.lblImie.Size = new System.Drawing.Size(68, 37);
             this.lblImie.TabIndex = 3;
             this.lblImie.Text = "Imię:";
+            this.lblImie.Visible = false;
             // 
             // lblNazwisko
             // 
@@ -107,6 +111,7 @@
             this.lblNazwisko.Size = new System.Drawing.Size(120, 37);
             this.lblNazwisko.TabIndex = 4;
             this.lblNazwisko.Text = "Nazwisko:";
+            this.lblNazwisko.Visible = false;
             // 
             // lblEmail
             // 
@@ -119,6 +124,7 @@
             this.lblEmail.Size = new System.Drawing.Size(82, 37);
             this.lblEmail.TabIndex = 5;
             this.lblEmail.Text = "Email:";
+            this.lblEmail.Visible = false;
             // 
             // lblTelefon
             // 
@@ -131,64 +137,91 @@
             this.lblTelefon.Size = new System.Drawing.Size(189, 37);
             this.lblTelefon.TabIndex = 6;
             this.lblTelefon.Text = "Numer telefonu:";
+            this.lblTelefon.Visible = false;
             // 
             // textBoxLogin
             // 
             this.textBoxLogin.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBoxLogin.ForeColor = System.Drawing.Color.Gray;
             this.textBoxLogin.Location = new System.Drawing.Point(350, 80);
             this.textBoxLogin.Name = "textBoxLogin";
             this.textBoxLogin.Size = new System.Drawing.Size(400, 36);
             this.textBoxLogin.TabIndex = 7;
+            this.textBoxLogin.Text = "Login";
+            this.textBoxLogin.Enter += new System.EventHandler(this.textBoxLogin_Enter);
+            this.textBoxLogin.Leave += new System.EventHandler(this.textBoxLogin_Leave);
             // 
             // textBoxHaslo
             // 
             this.textBoxHaslo.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBoxHaslo.ForeColor = System.Drawing.Color.Gray;
             this.textBoxHaslo.Location = new System.Drawing.Point(350, 150);
             this.textBoxHaslo.Name = "textBoxHaslo";
-            this.textBoxHaslo.PasswordChar = '*';
             this.textBoxHaslo.Size = new System.Drawing.Size(400, 33);
             this.textBoxHaslo.TabIndex = 8;
+            this.textBoxHaslo.Text = "Hasło";
+            this.textBoxHaslo.Enter += new System.EventHandler(this.textBoxHaslo_Enter);
+            this.textBoxHaslo.Leave += new System.EventHandler(this.textBoxHaslo_Leave);
             // 
             // textBoxPowHaslo
             // 
             this.textBoxPowHaslo.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBoxPowHaslo.ForeColor = System.Drawing.Color.Gray;
             this.textBoxPowHaslo.Location = new System.Drawing.Point(350, 220);
             this.textBoxPowHaslo.Name = "textBoxPowHaslo";
-            this.textBoxPowHaslo.PasswordChar = '*';
             this.textBoxPowHaslo.Size = new System.Drawing.Size(400, 36);
             this.textBoxPowHaslo.TabIndex = 9;
+            this.textBoxPowHaslo.Text = "Powtórz hasło";
+            this.textBoxPowHaslo.Enter += new System.EventHandler(this.textBoxPowHaslo_Enter);
+            this.textBoxPowHaslo.Leave += new System.EventHandler(this.textBoxPowHaslo_Leave);
             // 
             // textBoxImie
             // 
             this.textBoxImie.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBoxImie.ForeColor = System.Drawing.Color.Gray;
             this.textBoxImie.Location = new System.Drawing.Point(350, 290);
             this.textBoxImie.Name = "textBoxImie";
             this.textBoxImie.Size = new System.Drawing.Size(400, 36);
             this.textBoxImie.TabIndex = 10;
+            this.textBoxImie.Text = "Imię";
+            this.textBoxImie.Enter += new System.EventHandler(this.textBoxImie_Enter);
+            this.textBoxImie.Leave += new System.EventHandler(this.textBoxImie_Leave);
             // 
             // textBoxNazwisko
             // 
             this.textBoxNazwisko.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBoxNazwisko.ForeColor = System.Drawing.Color.Gray;
             this.textBoxNazwisko.Location = new System.Drawing.Point(350, 360);
             this.textBoxNazwisko.Name = "textBoxNazwisko";
             this.textBoxNazwisko.Size = new System.Drawing.Size(400, 36);
             this.textBoxNazwisko.TabIndex = 11;
+            this.textBoxNazwisko.Text = "Nazwisko";
+            this.textBoxNazwisko.Enter += new System.EventHandler(this.textBoxNazwisko_Enter);
+            this.textBoxNazwisko.Leave += new System.EventHandler(this.textBoxNazwisko_Leave);
             // 
             // textBoxEmail
             // 
             this.textBoxEmail.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBoxEmail.ForeColor = System.Drawing.Color.Gray;
             this.textBoxEmail.Location = new System.Drawing.Point(350, 430);
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.Size = new System.Drawing.Size(400, 36);
             this.textBoxEmail.TabIndex = 12;
+            this.textBoxEmail.Text = "Email";
+            this.textBoxEmail.Enter += new System.EventHandler(this.textBoxEmail_Enter);
+            this.textBoxEmail.Leave += new System.EventHandler(this.textBoxEmail_Leave);
             // 
             // textBoxTelefon
             // 
             this.textBoxTelefon.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBoxTelefon.ForeColor = System.Drawing.Color.Gray;
             this.textBoxTelefon.Location = new System.Drawing.Point(350, 500);
             this.textBoxTelefon.Name = "textBoxTelefon";
             this.textBoxTelefon.Size = new System.Drawing.Size(400, 36);
             this.textBoxTelefon.TabIndex = 13;
+            this.textBoxTelefon.Text = "Numer telefonu";
+            this.textBoxTelefon.Enter += new System.EventHandler(this.textBoxTelefon_Enter);
+            this.textBoxTelefon.Leave += new System.EventHandler(this.textBoxTelefon_Leave);
             // 
             // btnUtworzKonto
             // 

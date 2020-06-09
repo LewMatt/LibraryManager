@@ -43,20 +43,27 @@
             // textBoxLogin
             // 
             this.textBoxLogin.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBoxLogin.ForeColor = System.Drawing.Color.Gray;
             this.textBoxLogin.Location = new System.Drawing.Point(371, 239);
             this.textBoxLogin.Name = "textBoxLogin";
             this.textBoxLogin.Size = new System.Drawing.Size(358, 45);
             this.textBoxLogin.TabIndex = 0;
+            this.textBoxLogin.Text = "Login";
             this.textBoxLogin.TextChanged += new System.EventHandler(this.textBoxLogin_TextChanged);
+            this.textBoxLogin.Enter += new System.EventHandler(this.textBoxLogin_Enter);
+            this.textBoxLogin.Leave += new System.EventHandler(this.textBoxLogin_Leave);
             // 
             // textBoxPassword
             // 
             this.textBoxPassword.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBoxPassword.ForeColor = System.Drawing.Color.Gray;
             this.textBoxPassword.Location = new System.Drawing.Point(371, 341);
             this.textBoxPassword.Name = "textBoxPassword";
-            this.textBoxPassword.PasswordChar = '*';
             this.textBoxPassword.Size = new System.Drawing.Size(358, 45);
             this.textBoxPassword.TabIndex = 1;
+            this.textBoxPassword.Text = "Hasło";
+            this.textBoxPassword.Enter += new System.EventHandler(this.textBoxPassword_Enter);
+            this.textBoxPassword.Leave += new System.EventHandler(this.textBoxPassword_Leave);
             // 
             // btnLogin
             // 
@@ -82,6 +89,7 @@
             this.label1.Size = new System.Drawing.Size(109, 51);
             this.label1.TabIndex = 3;
             this.label1.Text = "Login:";
+            this.label1.Visible = false;
             // 
             // label2
             // 
@@ -94,6 +102,7 @@
             this.label2.Size = new System.Drawing.Size(110, 51);
             this.label2.TabIndex = 4;
             this.label2.Text = "Hasło:";
+            this.label2.Visible = false;
             // 
             // btnExit
             // 
