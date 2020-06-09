@@ -68,6 +68,7 @@
             // btnLogin
             // 
             this.btnLogin.BackColor = System.Drawing.Color.SaddleBrown;
+            this.btnLogin.BackgroundImage = global::Library_Manager.Properties.Resources.wood_button;
             this.btnLogin.Font = new System.Drawing.Font("Segoe Print", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnLogin.ForeColor = System.Drawing.Color.White;
             this.btnLogin.Location = new System.Drawing.Point(425, 480);
@@ -107,6 +108,7 @@
             // btnExit
             // 
             this.btnExit.BackColor = System.Drawing.Color.SaddleBrown;
+            this.btnExit.BackgroundImage = global::Library_Manager.Properties.Resources.wood_button;
             this.btnExit.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnExit.ForeColor = System.Drawing.Color.White;
             this.btnExit.Location = new System.Drawing.Point(1000, 0);
@@ -120,6 +122,7 @@
             // btnUtworzKonto
             // 
             this.btnUtworzKonto.BackColor = System.Drawing.Color.SaddleBrown;
+            this.btnUtworzKonto.BackgroundImage = global::Library_Manager.Properties.Resources.wood_button;
             this.btnUtworzKonto.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnUtworzKonto.ForeColor = System.Drawing.Color.White;
             this.btnUtworzKonto.Location = new System.Drawing.Point(0, 0);

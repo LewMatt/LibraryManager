@@ -104,6 +104,7 @@
             // btnWypozyczKsiazke
             // 
             this.btnWypozyczKsiazke.BackColor = System.Drawing.Color.SaddleBrown;
+            this.btnWypozyczKsiazke.BackgroundImage = global::Library_Manager.Properties.Resources.wood_button;
             this.btnWypozyczKsiazke.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnWypozyczKsiazke.ForeColor = System.Drawing.Color.White;
             this.btnWypozyczKsiazke.Location = new System.Drawing.Point(737, 267);

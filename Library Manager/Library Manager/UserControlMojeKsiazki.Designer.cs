@@ -88,6 +88,7 @@
             // btnOddajKsiazke
             // 
             this.btnOddajKsiazke.BackColor = System.Drawing.Color.SaddleBrown;
+            this.btnOddajKsiazke.BackgroundImage = global::Library_Manager.Properties.Resources.wood_button;
             this.btnOddajKsiazke.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnOddajKsiazke.ForeColor = System.Drawing.Color.White;
             this.btnOddajKsiazke.Location = new System.Drawing.Point(737, 267);

@@ -132,6 +132,7 @@
             // btnAnuluj
             // 
             this.btnAnuluj.BackColor = System.Drawing.Color.SaddleBrown;
+            this.btnAnuluj.BackgroundImage = global::Library_Manager.Properties.Resources.wood_button;
             this.btnAnuluj.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnAnuluj.ForeColor = System.Drawing.Color.White;
             this.btnAnuluj.Location = new System.Drawing.Point(1000, 0);
@@ -145,6 +146,7 @@
             // btnZmienHaslo
             // 
             this.btnZmienHaslo.BackColor = System.Drawing.Color.SaddleBrown;
+            this.btnZmienHaslo.BackgroundImage = global::Library_Manager.Properties.Resources.wood_button;
             this.btnZmienHaslo.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnZmienHaslo.ForeColor = System.Drawing.Color.White;
             this.btnZmienHaslo.Location = new System.Drawing.Point(425, 500);

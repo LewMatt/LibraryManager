@@ -103,6 +103,7 @@
             // btnZamow
             // 
             this.btnZamow.BackColor = System.Drawing.Color.SaddleBrown;
+            this.btnZamow.BackgroundImage = global::Library_Manager.Properties.Resources.wood_button;
             this.btnZamow.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnZamow.ForeColor = System.Drawing.Color.White;
             this.btnZamow.Location = new System.Drawing.Point(737, 267);

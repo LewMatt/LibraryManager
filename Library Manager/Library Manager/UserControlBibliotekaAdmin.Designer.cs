@@ -106,6 +106,7 @@
             // btnDodajIloscKsiazek
             // 
             this.btnDodajIloscKsiazek.BackColor = System.Drawing.Color.SaddleBrown;
+            this.btnDodajIloscKsiazek.BackgroundImage = global::Library_Manager.Properties.Resources.wood_button;
             this.btnDodajIloscKsiazek.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnDodajIloscKsiazek.ForeColor = System.Drawing.Color.White;
             this.btnDodajIloscKsiazek.Location = new System.Drawing.Point(789, 222);
@@ -127,6 +128,7 @@
             // btnNowaKsiazka
             // 
             this.btnNowaKsiazka.BackColor = System.Drawing.Color.SaddleBrown;
+            this.btnNowaKsiazka.BackgroundImage = global::Library_Manager.Properties.Resources.wood_button;
             this.btnNowaKsiazka.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnNowaKsiazka.ForeColor = System.Drawing.Color.White;
             this.btnNowaKsiazka.Location = new System.Drawing.Point(723, 348);
@@ -140,6 +142,7 @@
             // btnOdswiez
             // 
             this.btnOdswiez.BackColor = System.Drawing.Color.SaddleBrown;
+            this.btnOdswiez.BackgroundImage = global::Library_Manager.Properties.Resources.wood_button;
             this.btnOdswiez.Font = new System.Drawing.Font("Segoe Print", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnOdswiez.ForeColor = System.Drawing.Color.White;
             this.btnOdswiez.Location = new System.Drawing.Point(756, 460);

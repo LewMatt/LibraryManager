@@ -75,6 +75,7 @@
             // btnDodajDoBib
             // 
             this.btnDodajDoBib.BackColor = System.Drawing.Color.SaddleBrown;
+            this.btnDodajDoBib.BackgroundImage = global::Library_Manager.Properties.Resources.wood_button;
             this.btnDodajDoBib.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnDodajDoBib.ForeColor = System.Drawing.Color.White;
             this.btnDodajDoBib.Location = new System.Drawing.Point(670, 267);

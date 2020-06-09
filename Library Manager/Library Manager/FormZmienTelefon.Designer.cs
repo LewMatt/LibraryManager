@@ -103,6 +103,7 @@
             // btnAnuluj
             // 
             this.btnAnuluj.BackColor = System.Drawing.Color.SaddleBrown;
+            this.btnAnuluj.BackgroundImage = global::Library_Manager.Properties.Resources.wood_button;
             this.btnAnuluj.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnAnuluj.ForeColor = System.Drawing.Color.White;
             this.btnAnuluj.Location = new System.Drawing.Point(1000, 0);
@@ -116,6 +117,7 @@
             // btnZmien
             // 
             this.btnZmien.BackColor = System.Drawing.Color.SaddleBrown;
+            this.btnZmien.BackgroundImage = global::Library_Manager.Properties.Resources.wood_button;
             this.btnZmien.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnZmien.ForeColor = System.Drawing.Color.White;
             this.btnZmien.Location = new System.Drawing.Point(425, 500);

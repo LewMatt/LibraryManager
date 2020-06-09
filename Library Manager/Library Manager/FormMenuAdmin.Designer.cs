@@ -61,6 +61,7 @@
             // btnWyjscie
             // 
             this.btnWyjscie.BackColor = System.Drawing.Color.SaddleBrown;
+            this.btnWyjscie.BackgroundImage = global::Library_Manager.Properties.Resources.wood_button;
             this.btnWyjscie.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnWyjscie.ForeColor = System.Drawing.Color.White;
             this.btnWyjscie.Location = new System.Drawing.Point(800, 0);
@@ -88,6 +89,7 @@
             // btnZamowienia
             // 
             this.btnZamowienia.BackColor = System.Drawing.Color.SaddleBrown;
+            this.btnZamowienia.BackgroundImage = global::Library_Manager.Properties.Resources.wood_button;
             this.btnZamowienia.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnZamowienia.ForeColor = System.Drawing.Color.White;
             this.btnZamowienia.Location = new System.Drawing.Point(0, 240);
@@ -101,6 +103,7 @@
             // btnUzytkownicy
             // 
             this.btnUzytkownicy.BackColor = System.Drawing.Color.SaddleBrown;
+            this.btnUzytkownicy.BackgroundImage = global::Library_Manager.Properties.Resources.wood_button;
             this.btnUzytkownicy.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnUzytkownicy.ForeColor = System.Drawing.Color.White;
             this.btnUzytkownicy.Location = new System.Drawing.Point(0, 180);
@@ -114,6 +117,7 @@
             // btnKsiazkiWypozyczone
             // 
             this.btnKsiazkiWypozyczone.BackColor = System.Drawing.Color.SaddleBrown;
+            this.btnKsiazkiWypozyczone.BackgroundImage = global::Library_Manager.Properties.Resources.wood_button;
             this.btnKsiazkiWypozyczone.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnKsiazkiWypozyczone.ForeColor = System.Drawing.Color.White;
             this.btnKsiazkiWypozyczone.Location = new System.Drawing.Point(0, 120);
@@ -127,6 +131,7 @@
             // btnBiblioteka
             // 
             this.btnBiblioteka.BackColor = System.Drawing.Color.SaddleBrown;
+            this.btnBiblioteka.BackgroundImage = global::Library_Manager.Properties.Resources.wood_button;
             this.btnBiblioteka.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnBiblioteka.ForeColor = System.Drawing.Color.White;
             this.btnBiblioteka.Location = new System.Drawing.Point(0, 60);
@@ -140,6 +145,7 @@
             // btnMenu
             // 
             this.btnMenu.BackColor = System.Drawing.Color.SaddleBrown;
+            this.btnMenu.BackgroundImage = global::Library_Manager.Properties.Resources.wood_button;
             this.btnMenu.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnMenu.ForeColor = System.Drawing.Color.White;
             this.btnMenu.Location = new System.Drawing.Point(0, 0);
@@ -173,6 +179,7 @@
             // btnWyloguj
             // 
             this.btnWyloguj.BackColor = System.Drawing.Color.SaddleBrown;
+            this.btnWyloguj.BackgroundImage = global::Library_Manager.Properties.Resources.wood_button;
             this.btnWyloguj.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnWyloguj.ForeColor = System.Drawing.Color.White;
             this.btnWyloguj.Location = new System.Drawing.Point(800, 0);

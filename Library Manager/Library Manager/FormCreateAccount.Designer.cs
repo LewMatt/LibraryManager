@@ -226,6 +226,7 @@
             // btnUtworzKonto
             // 
             this.btnUtworzKonto.BackColor = System.Drawing.Color.SaddleBrown;
+            this.btnUtworzKonto.BackgroundImage = global::Library_Manager.Properties.Resources.wood_button;
             this.btnUtworzKonto.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnUtworzKonto.ForeColor = System.Drawing.Color.White;
             this.btnUtworzKonto.Location = new System.Drawing.Point(425, 560);
@@ -239,6 +240,7 @@
             // btnPowrot
             // 
             this.btnPowrot.BackColor = System.Drawing.Color.SaddleBrown;
+            this.btnPowrot.BackgroundImage = global::Library_Manager.Properties.Resources.wood_button;
             this.btnPowrot.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnPowrot.ForeColor = System.Drawing.Color.White;
             this.btnPowrot.Location = new System.Drawing.Point(1000, 0);

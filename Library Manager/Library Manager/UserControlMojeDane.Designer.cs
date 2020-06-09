@@ -146,6 +146,7 @@
             // btnZmienEmail
             // 
             this.btnZmienEmail.BackColor = System.Drawing.Color.SaddleBrown;
+            this.btnZmienEmail.BackgroundImage = global::Library_Manager.Properties.Resources.wood_button;
             this.btnZmienEmail.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnZmienEmail.ForeColor = System.Drawing.Color.White;
             this.btnZmienEmail.Location = new System.Drawing.Point(630, 230);
@@ -159,6 +160,7 @@
             // btnZmienTel
             // 
             this.btnZmienTel.BackColor = System.Drawing.Color.SaddleBrown;
+            this.btnZmienTel.BackgroundImage = global::Library_Manager.Properties.Resources.wood_button;
             this.btnZmienTel.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnZmienTel.ForeColor = System.Drawing.Color.White;
             this.btnZmienTel.Location = new System.Drawing.Point(630, 320);
@@ -172,6 +174,7 @@
             // btnOdswiez
             // 
             this.btnOdswiez.BackColor = System.Drawing.Color.SaddleBrown;
+            this.btnOdswiez.BackgroundImage = global::Library_Manager.Properties.Resources.wood_button;
             this.btnOdswiez.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnOdswiez.ForeColor = System.Drawing.Color.White;
             this.btnOdswiez.Location = new System.Drawing.Point(375, 475);
@@ -185,6 +188,7 @@
             // btnZmienHaslo
             // 
             this.btnZmienHaslo.BackColor = System.Drawing.Color.SaddleBrown;
+            this.btnZmienHaslo.BackgroundImage = global::Library_Manager.Properties.Resources.wood_button;
             this.btnZmienHaslo.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnZmienHaslo.ForeColor = System.Drawing.Color.White;
             this.btnZmienHaslo.Location = new System.Drawing.Point(630, 140);
