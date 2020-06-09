@@ -23,8 +23,8 @@ namespace Library_Manager
         private void btnDodajIloscKsiazek_Click(object sender, EventArgs e)
         {
             if(listViewBibliotekaAdmin.SelectedItems.Count <=0)
-            { 
-            
+            {
+                MessageBox.Show("Wybierz ksiazke.");
             }
             else
             {
