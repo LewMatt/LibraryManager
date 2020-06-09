@@ -16,6 +16,12 @@ namespace Library_Manager
         public FormMenu()
         {
             InitializeComponent();
+
+            Color panelColor = Color.FromArgb(100, Color.Gray);
+            panel1.BackColor = panelColor;
+            panel2.BackColor = panelColor;
+            panel3.BackColor = panelColor;
+
             userControlMenu1.BringToFront();
         }
 

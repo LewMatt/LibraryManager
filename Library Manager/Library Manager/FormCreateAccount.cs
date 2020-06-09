@@ -15,6 +15,8 @@ namespace Library_Manager
         public FormCreateAccount()
         {
             InitializeComponent();
+            Color panelColor = Color.FromArgb(100, Color.Gray);
+            panel1.BackColor = panelColor;
         }
 
         Form1 form1obj = new Form1();

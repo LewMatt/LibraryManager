@@ -21,6 +21,8 @@ namespace Library_Manager
         public Form1()
         {
             InitializeComponent();
+            Color panelColor = Color.FromArgb(100, Color.Gray);
+            panel1.BackColor = panelColor;
         }
 
         public string sendQueryRetString(string query)

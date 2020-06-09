@@ -54,7 +54,7 @@
             this.lblLogin.BackColor = System.Drawing.Color.Transparent;
             this.lblLogin.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.lblLogin.ForeColor = System.Drawing.Color.White;
-            this.lblLogin.Location = new System.Drawing.Point(267, 80);
+            this.lblLogin.Location = new System.Drawing.Point(267, 60);
             this.lblLogin.Name = "lblLogin";
             this.lblLogin.Size = new System.Drawing.Size(80, 37);
             this.lblLogin.TabIndex = 0;
@@ -67,7 +67,7 @@
             this.lblHaslo.BackColor = System.Drawing.Color.Transparent;
             this.lblHaslo.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Bold);
             this.lblHaslo.ForeColor = System.Drawing.Color.White;
-            this.lblHaslo.Location = new System.Drawing.Point(265, 147);
+            this.lblHaslo.Location = new System.Drawing.Point(263, 126);
             this.lblHaslo.Name = "lblHaslo";
             this.lblHaslo.Size = new System.Drawing.Size(81, 37);
             this.lblHaslo.TabIndex = 1;
@@ -80,7 +80,7 @@
             this.lblPowHaslo.BackColor = System.Drawing.Color.Transparent;
             this.lblPowHaslo.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Bold);
             this.lblPowHaslo.ForeColor = System.Drawing.Color.White;
-            this.lblPowHaslo.Location = new System.Drawing.Point(171, 220);
+            this.lblPowHaslo.Location = new System.Drawing.Point(170, 199);
             this.lblPowHaslo.Name = "lblPowHaslo";
             this.lblPowHaslo.Size = new System.Drawing.Size(174, 37);
             this.lblPowHaslo.TabIndex = 2;
@@ -93,7 +93,7 @@
             this.lblImie.BackColor = System.Drawing.Color.Transparent;
             this.lblImie.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Bold);
             this.lblImie.ForeColor = System.Drawing.Color.White;
-            this.lblImie.Location = new System.Drawing.Point(277, 290);
+            this.lblImie.Location = new System.Drawing.Point(276, 269);
             this.lblImie.Name = "lblImie";
             this.lblImie.Size = new System.Drawing.Size(68, 37);
             this.lblImie.TabIndex = 3;
@@ -106,7 +106,7 @@
             this.lblNazwisko.BackColor = System.Drawing.Color.Transparent;
             this.lblNazwisko.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Bold);
             this.lblNazwisko.ForeColor = System.Drawing.Color.White;
-            this.lblNazwisko.Location = new System.Drawing.Point(225, 360);
+            this.lblNazwisko.Location = new System.Drawing.Point(224, 339);
             this.lblNazwisko.Name = "lblNazwisko";
             this.lblNazwisko.Size = new System.Drawing.Size(120, 37);
             this.lblNazwisko.TabIndex = 4;
@@ -119,7 +119,7 @@
             this.lblEmail.BackColor = System.Drawing.Color.Transparent;
             this.lblEmail.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Bold);
             this.lblEmail.ForeColor = System.Drawing.Color.White;
-            this.lblEmail.Location = new System.Drawing.Point(266, 430);
+            this.lblEmail.Location = new System.Drawing.Point(262, 409);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(82, 37);
             this.lblEmail.TabIndex = 5;
@@ -132,7 +132,7 @@
             this.lblTelefon.BackColor = System.Drawing.Color.Transparent;
             this.lblTelefon.Font = new System.Drawing.Font("Segoe Print", 15.75F, System.Drawing.FontStyle.Bold);
             this.lblTelefon.ForeColor = System.Drawing.Color.White;
-            this.lblTelefon.Location = new System.Drawing.Point(156, 500);
+            this.lblTelefon.Location = new System.Drawing.Point(155, 479);
             this.lblTelefon.Name = "lblTelefon";
             this.lblTelefon.Size = new System.Drawing.Size(189, 37);
             this.lblTelefon.TabIndex = 6;
@@ -143,7 +143,7 @@
             // 
             this.textBoxLogin.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.textBoxLogin.ForeColor = System.Drawing.Color.Gray;
-            this.textBoxLogin.Location = new System.Drawing.Point(350, 80);
+            this.textBoxLogin.Location = new System.Drawing.Point(350, 60);
             this.textBoxLogin.Name = "textBoxLogin";
             this.textBoxLogin.Size = new System.Drawing.Size(400, 36);
             this.textBoxLogin.TabIndex = 7;
@@ -155,7 +155,7 @@
             // 
             this.textBoxHaslo.Font = new System.Drawing.Font("Segoe Script", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.textBoxHaslo.ForeColor = System.Drawing.Color.Gray;
-            this.textBoxHaslo.Location = new System.Drawing.Point(350, 150);
+            this.textBoxHaslo.Location = new System.Drawing.Point(350, 130);
             this.textBoxHaslo.Name = "textBoxHaslo";
             this.textBoxHaslo.Size = new System.Drawing.Size(400, 33);
             this.textBoxHaslo.TabIndex = 8;
@@ -167,7 +167,7 @@
             // 
             this.textBoxPowHaslo.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.textBoxPowHaslo.ForeColor = System.Drawing.Color.Gray;
-            this.textBoxPowHaslo.Location = new System.Drawing.Point(350, 220);
+            this.textBoxPowHaslo.Location = new System.Drawing.Point(350, 200);
             this.textBoxPowHaslo.Name = "textBoxPowHaslo";
             this.textBoxPowHaslo.Size = new System.Drawing.Size(400, 36);
             this.textBoxPowHaslo.TabIndex = 9;
@@ -179,7 +179,7 @@
             // 
             this.textBoxImie.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.textBoxImie.ForeColor = System.Drawing.Color.Gray;
-            this.textBoxImie.Location = new System.Drawing.Point(350, 290);
+            this.textBoxImie.Location = new System.Drawing.Point(350, 270);
             this.textBoxImie.Name = "textBoxImie";
             this.textBoxImie.Size = new System.Drawing.Size(400, 36);
             this.textBoxImie.TabIndex = 10;
@@ -191,7 +191,7 @@
             // 
             this.textBoxNazwisko.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.textBoxNazwisko.ForeColor = System.Drawing.Color.Gray;
-            this.textBoxNazwisko.Location = new System.Drawing.Point(350, 360);
+            this.textBoxNazwisko.Location = new System.Drawing.Point(350, 340);
             this.textBoxNazwisko.Name = "textBoxNazwisko";
             this.textBoxNazwisko.Size = new System.Drawing.Size(400, 36);
             this.textBoxNazwisko.TabIndex = 11;
@@ -203,7 +203,7 @@
             // 
             this.textBoxEmail.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.textBoxEmail.ForeColor = System.Drawing.Color.Gray;
-            this.textBoxEmail.Location = new System.Drawing.Point(350, 430);
+            this.textBoxEmail.Location = new System.Drawing.Point(350, 410);
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.Size = new System.Drawing.Size(400, 36);
             this.textBoxEmail.TabIndex = 12;
@@ -215,7 +215,7 @@
             // 
             this.textBoxTelefon.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.textBoxTelefon.ForeColor = System.Drawing.Color.Gray;
-            this.textBoxTelefon.Location = new System.Drawing.Point(350, 500);
+            this.textBoxTelefon.Location = new System.Drawing.Point(350, 480);
             this.textBoxTelefon.Name = "textBoxTelefon";
             this.textBoxTelefon.Size = new System.Drawing.Size(400, 36);
             this.textBoxTelefon.TabIndex = 13;
@@ -228,7 +228,7 @@
             this.btnUtworzKonto.BackColor = System.Drawing.Color.SaddleBrown;
             this.btnUtworzKonto.Font = new System.Drawing.Font("Segoe Print", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.btnUtworzKonto.ForeColor = System.Drawing.Color.White;
-            this.btnUtworzKonto.Location = new System.Drawing.Point(425, 580);
+            this.btnUtworzKonto.Location = new System.Drawing.Point(425, 560);
             this.btnUtworzKonto.Name = "btnUtworzKonto";
             this.btnUtworzKonto.Size = new System.Drawing.Size(250, 50);
             this.btnUtworzKonto.TabIndex = 14;

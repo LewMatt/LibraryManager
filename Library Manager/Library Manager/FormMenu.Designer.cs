@@ -219,6 +219,7 @@
             // 
             // userControlMenu1
             // 
+            this.userControlMenu1.BackColor = System.Drawing.Color.Transparent;
             this.userControlMenu1.Location = new System.Drawing.Point(200, 50);
             this.userControlMenu1.Name = "userControlMenu1";
             this.userControlMenu1.Size = new System.Drawing.Size(900, 600);

@@ -185,6 +185,7 @@
             // 
             // userControlZamowienaAdmin1
             // 
+            this.userControlZamowienaAdmin1.BackColor = System.Drawing.Color.Transparent;
             this.userControlZamowienaAdmin1.Location = new System.Drawing.Point(200, 50);
             this.userControlZamowienaAdmin1.Name = "userControlZamowienaAdmin1";
             this.userControlZamowienaAdmin1.Size = new System.Drawing.Size(900, 600);
@@ -192,6 +193,7 @@
             // 
             // userControlUzytkownicyAdmin1
             // 
+            this.userControlUzytkownicyAdmin1.BackColor = System.Drawing.Color.Transparent;
             this.userControlUzytkownicyAdmin1.Location = new System.Drawing.Point(200, 50);
             this.userControlUzytkownicyAdmin1.Name = "userControlUzytkownicyAdmin1";
             this.userControlUzytkownicyAdmin1.Size = new System.Drawing.Size(900, 600);
@@ -199,6 +201,7 @@
             // 
             // userControlKsiazkiWypAdmin1
             // 
+            this.userControlKsiazkiWypAdmin1.BackColor = System.Drawing.Color.Transparent;
             this.userControlKsiazkiWypAdmin1.Location = new System.Drawing.Point(200, 50);
             this.userControlKsiazkiWypAdmin1.Name = "userControlKsiazkiWypAdmin1";
             this.userControlKsiazkiWypAdmin1.Size = new System.Drawing.Size(900, 600);
@@ -206,6 +209,7 @@
             // 
             // userControlBibliotekaAdmin1
             // 
+            this.userControlBibliotekaAdmin1.BackColor = System.Drawing.Color.Transparent;
             this.userControlBibliotekaAdmin1.Location = new System.Drawing.Point(200, 50);
             this.userControlBibliotekaAdmin1.Name = "userControlBibliotekaAdmin1";
             this.userControlBibliotekaAdmin1.Size = new System.Drawing.Size(900, 600);

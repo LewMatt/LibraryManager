@@ -15,6 +15,17 @@ namespace Library_Manager
         public UserControlMojeDane()
         {
             InitializeComponent();
+
+            Color labelColor = Color.FromArgb(190, Color.Gray);
+            lblImie.BackColor = labelColor;
+            lblNazwisko.BackColor = labelColor;
+            lblEmail.BackColor = labelColor;
+            lblTelefon.BackColor = labelColor;
+            lblPokazImie.BackColor = labelColor;
+            lblPokazNazwisko.BackColor = labelColor;
+            lblPokazEmail.BackColor = labelColor;
+            lblTelefonPokaz.BackColor = labelColor;
+
         }
 
         public int my_id;
