@@ -65,6 +65,7 @@
             this.lblHasloAkt.Size = new System.Drawing.Size(179, 37);
             this.lblHasloAkt.TabIndex = 1;
             this.lblHasloAkt.Text = "Aktualne hasło:";
+            this.lblHasloAkt.Visible = false;
             // 
             // lblHaslo
             // 
@@ -77,6 +78,7 @@
             this.lblHaslo.Size = new System.Drawing.Size(143, 37);
             this.lblHaslo.TabIndex = 2;
             this.lblHaslo.Text = "Nowe hasło:";
+            this.lblHaslo.Visible = false;
             // 
             // lblPowHaslo
             // 
@@ -89,33 +91,43 @@
             this.lblPowHaslo.Size = new System.Drawing.Size(237, 37);
             this.lblPowHaslo.TabIndex = 3;
             this.lblPowHaslo.Text = "Powtórz nowe hasło:";
+            this.lblPowHaslo.Visible = false;
             // 
             // textBoxAktHaslo
             // 
             this.textBoxAktHaslo.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBoxAktHaslo.ForeColor = System.Drawing.Color.Gray;
             this.textBoxAktHaslo.Location = new System.Drawing.Point(325, 200);
             this.textBoxAktHaslo.Name = "textBoxAktHaslo";
-            this.textBoxAktHaslo.PasswordChar = '*';
             this.textBoxAktHaslo.Size = new System.Drawing.Size(450, 36);
             this.textBoxAktHaslo.TabIndex = 4;
+            this.textBoxAktHaslo.Text = "Aktualne hasło";
+            this.textBoxAktHaslo.Enter += new System.EventHandler(this.textBoxAktHaslo_Enter);
+            this.textBoxAktHaslo.Leave += new System.EventHandler(this.textBoxAktHaslo_Leave);
             // 
             // textBoxNoweHaslo
             // 
             this.textBoxNoweHaslo.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBoxNoweHaslo.ForeColor = System.Drawing.Color.Gray;
             this.textBoxNoweHaslo.Location = new System.Drawing.Point(325, 290);
             this.textBoxNoweHaslo.Name = "textBoxNoweHaslo";
-            this.textBoxNoweHaslo.PasswordChar = '*';
             this.textBoxNoweHaslo.Size = new System.Drawing.Size(450, 36);
             this.textBoxNoweHaslo.TabIndex = 5;
+            this.textBoxNoweHaslo.Text = "Nowe hasło";
+            this.textBoxNoweHaslo.Enter += new System.EventHandler(this.textBoxNoweHaslo_Enter);
+            this.textBoxNoweHaslo.Leave += new System.EventHandler(this.textBoxNoweHaslo_Leave);
             // 
             // textBoxNoweHasloPow
             // 
             this.textBoxNoweHasloPow.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBoxNoweHasloPow.ForeColor = System.Drawing.Color.Gray;
             this.textBoxNoweHasloPow.Location = new System.Drawing.Point(325, 380);
             this.textBoxNoweHasloPow.Name = "textBoxNoweHasloPow";
-            this.textBoxNoweHasloPow.PasswordChar = '*';
             this.textBoxNoweHasloPow.Size = new System.Drawing.Size(450, 36);
             this.textBoxNoweHasloPow.TabIndex = 6;
+            this.textBoxNoweHasloPow.Text = "Powtórz nowe hasło";
+            this.textBoxNoweHasloPow.Enter += new System.EventHandler(this.textBoxNoweHasloPow_Enter);
+            this.textBoxNoweHasloPow.Leave += new System.EventHandler(this.textBoxNoweHasloPow_Leave);
             // 
             // btnAnuluj
             // 

@@ -67,7 +67,66 @@ namespace Library_Manager
                 }
             }
         }
-        
+
+        private void textBoxAktHaslo_Enter(object sender, EventArgs e)
+        {
+            if (textBoxAktHaslo.Text == "Aktualne hasło")
+            {
+                textBoxAktHaslo.Text = "";
+                textBoxAktHaslo.ForeColor = Color.Black;
+                textBoxAktHaslo.PasswordChar = char.Parse("*");
+            }
+        }
+
+        private void textBoxAktHaslo_Leave(object sender, EventArgs e)
+        {
+            if (textBoxAktHaslo.Text == "")
+            {
+                textBoxAktHaslo.Text = "Aktualne hasło";
+                textBoxAktHaslo.ForeColor = Color.Gray;
+                textBoxAktHaslo.PasswordChar = '\0';
+            }
+        }
+
+        private void textBoxNoweHaslo_Enter(object sender, EventArgs e)
+        {
+            if (textBoxNoweHaslo.Text == "Nowe hasło")
+            {
+                textBoxNoweHaslo.Text = "";
+                textBoxNoweHaslo.ForeColor = Color.Black;
+                textBoxNoweHaslo.PasswordChar = char.Parse("*");
+            }
+        }
+
+        private void textBoxNoweHaslo_Leave(object sender, EventArgs e)
+        {
+            if (textBoxNoweHaslo.Text == "")
+            {
+                textBoxNoweHaslo.Text = "Nowe hasło";
+                textBoxNoweHaslo.ForeColor = Color.Gray;
+                textBoxNoweHaslo.PasswordChar = '\0';
+            }
+        }
+
+        private void textBoxNoweHasloPow_Enter(object sender, EventArgs e)
+        {
+            if (textBoxNoweHasloPow.Text == "Powtórz nowe hasło")
+            {
+                textBoxNoweHasloPow.Text = "";
+                textBoxNoweHasloPow.ForeColor = Color.Black;
+                textBoxNoweHasloPow.PasswordChar = char.Parse("*");
+            }
+        }
+
+        private void textBoxNoweHasloPow_Leave(object sender, EventArgs e)
+        {
+            if (textBoxNoweHasloPow.Text == "")
+            {
+                textBoxNoweHasloPow.Text = "Powtórz nowe hasło";
+                textBoxNoweHasloPow.ForeColor = Color.Gray;
+                textBoxNoweHasloPow.PasswordChar = '\0';
+            }
+        }
     }
 
     public class func
