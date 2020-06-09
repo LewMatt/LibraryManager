@@ -78,5 +78,43 @@ namespace Library_Manager
 
             }
         }
+
+        private void textBoxTelefon_Enter(object sender, EventArgs e)
+        {
+            if (textBoxTelefon.Text == "Nowy numer")
+            {
+                textBoxTelefon.Text = "";
+                textBoxTelefon.ForeColor = Color.Black;
+            }
+        }
+
+        private void textBoxTelefon_Leave(object sender, EventArgs e)
+        {
+            if (textBoxTelefon.Text == "")
+            {
+                textBoxTelefon.Text = "Nowy numer";
+                textBoxTelefon.ForeColor = Color.Gray;
+            }
+        }
+
+        private void textBoxHaslo_Enter(object sender, EventArgs e)
+        {
+            if (textBoxHaslo.Text == "Hasło")
+            {
+                textBoxHaslo.Text = "";
+                textBoxHaslo.ForeColor = Color.Black;
+                textBoxHaslo.PasswordChar = char.Parse("*");
+            }
+        }
+
+        private void textBoxHaslo_Leave(object sender, EventArgs e)
+        {
+            if (textBoxHaslo.Text == "")
+            {
+                textBoxHaslo.Text = "Hasło";
+                textBoxHaslo.ForeColor = Color.Gray;
+                textBoxHaslo.PasswordChar = '\0';
+            }
+        }
     }
 }

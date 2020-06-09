@@ -92,5 +92,95 @@ namespace Library_Manager
                 }
             }
         }
+
+        private void textBoxTytul_Enter(object sender, EventArgs e)
+        {
+            if (textBoxTytul.Text == "Tytuł")
+            {
+                textBoxTytul.Text = "";
+                textBoxTytul.ForeColor = Color.Black;
+            }
+        }
+
+        private void textBoxTytul_Leave(object sender, EventArgs e)
+        {
+            if (textBoxTytul.Text == "")
+            {
+                textBoxTytul.Text = "Tytuł";
+                textBoxTytul.ForeColor = Color.Gray;
+            }
+        }
+
+        private void textBoxAutor_Enter(object sender, EventArgs e)
+        {
+            if (textBoxAutor.Text == "Autor")
+            {
+                textBoxAutor.Text = "";
+                textBoxAutor.ForeColor = Color.Black;
+            }
+        }
+
+        private void textBoxAutor_Leave(object sender, EventArgs e)
+        {
+            if (textBoxAutor.Text == "")
+            {
+                textBoxAutor.Text = "Autor";
+                textBoxAutor.ForeColor = Color.Gray;
+            }
+        }
+
+        private void textBoxGatunek_Enter(object sender, EventArgs e)
+        {
+            if (textBoxGatunek.Text == "Gatunek")
+            {
+                textBoxGatunek.Text = "";
+                textBoxGatunek.ForeColor = Color.Black;
+            }
+        }
+
+        private void textBoxGatunek_Leave(object sender, EventArgs e)
+        {
+            if (textBoxGatunek.Text == "")
+            {
+                textBoxGatunek.Text = "Gatunek";
+                textBoxGatunek.ForeColor = Color.Gray;
+            }
+        }
+
+        private void textBoxDataWyd_Enter(object sender, EventArgs e)
+        {
+            if (textBoxDataWyd.Text == "Data wydania")
+            {
+                textBoxDataWyd.Text = "";
+                textBoxDataWyd.ForeColor = Color.Black;
+            }
+        }
+
+        private void textBoxDataWyd_Leave(object sender, EventArgs e)
+        {
+            if (textBoxDataWyd.Text == "")
+            {
+                textBoxDataWyd.Text = "Data wydania";
+                textBoxDataWyd.ForeColor = Color.Gray;
+            }
+        }
+
+        private void textBoxIlosc_Enter(object sender, EventArgs e)
+        {
+            if (textBoxIlosc.Text == "Ilość")
+            {
+                textBoxIlosc.Text = "";
+                textBoxIlosc.ForeColor = Color.Black;
+            }
+        }
+
+        private void textBoxIlosc_Leave(object sender, EventArgs e)
+        {
+            if (textBoxIlosc.Text == "")
+            {
+                textBoxIlosc.Text = "Ilość";
+                textBoxIlosc.ForeColor = Color.Gray;
+            }
+        }
     }
 }

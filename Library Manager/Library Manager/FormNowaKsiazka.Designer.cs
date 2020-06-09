@@ -82,6 +82,7 @@
             this.lblTytul.Size = new System.Drawing.Size(80, 37);
             this.lblTytul.TabIndex = 2;
             this.lblTytul.Text = "Tytuł:";
+            this.lblTytul.Visible = false;
             // 
             // lblAutor
             // 
@@ -94,6 +95,7 @@
             this.lblAutor.Size = new System.Drawing.Size(85, 37);
             this.lblAutor.TabIndex = 3;
             this.lblAutor.Text = "Autor:";
+            this.lblAutor.Visible = false;
             // 
             // lblGatunek
             // 
@@ -106,6 +108,7 @@
             this.lblGatunek.Size = new System.Drawing.Size(111, 37);
             this.lblGatunek.TabIndex = 4;
             this.lblGatunek.Text = "Gatunek:";
+            this.lblGatunek.Visible = false;
             // 
             // lblDataWyd
             // 
@@ -118,6 +121,7 @@
             this.lblDataWyd.Size = new System.Drawing.Size(170, 37);
             this.lblDataWyd.TabIndex = 5;
             this.lblDataWyd.Text = "Data wydania:";
+            this.lblDataWyd.Visible = false;
             // 
             // lblIlosc
             // 
@@ -130,46 +134,67 @@
             this.lblIlosc.Size = new System.Drawing.Size(68, 37);
             this.lblIlosc.TabIndex = 6;
             this.lblIlosc.Text = "Ilość:";
+            this.lblIlosc.Visible = false;
             // 
             // textBoxTytul
             // 
             this.textBoxTytul.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBoxTytul.ForeColor = System.Drawing.Color.Gray;
             this.textBoxTytul.Location = new System.Drawing.Point(350, 150);
             this.textBoxTytul.Name = "textBoxTytul";
             this.textBoxTytul.Size = new System.Drawing.Size(400, 36);
             this.textBoxTytul.TabIndex = 7;
+            this.textBoxTytul.Text = "Tytuł";
+            this.textBoxTytul.Enter += new System.EventHandler(this.textBoxTytul_Enter);
+            this.textBoxTytul.Leave += new System.EventHandler(this.textBoxTytul_Leave);
             // 
             // textBoxAutor
             // 
             this.textBoxAutor.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBoxAutor.ForeColor = System.Drawing.Color.Gray;
             this.textBoxAutor.Location = new System.Drawing.Point(350, 220);
             this.textBoxAutor.Name = "textBoxAutor";
             this.textBoxAutor.Size = new System.Drawing.Size(400, 36);
             this.textBoxAutor.TabIndex = 8;
+            this.textBoxAutor.Text = "Autor";
+            this.textBoxAutor.Enter += new System.EventHandler(this.textBoxAutor_Enter);
+            this.textBoxAutor.Leave += new System.EventHandler(this.textBoxAutor_Leave);
             // 
             // textBoxGatunek
             // 
             this.textBoxGatunek.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBoxGatunek.ForeColor = System.Drawing.Color.Gray;
             this.textBoxGatunek.Location = new System.Drawing.Point(350, 290);
             this.textBoxGatunek.Name = "textBoxGatunek";
             this.textBoxGatunek.Size = new System.Drawing.Size(400, 36);
             this.textBoxGatunek.TabIndex = 9;
+            this.textBoxGatunek.Text = "Gatunek";
+            this.textBoxGatunek.Enter += new System.EventHandler(this.textBoxGatunek_Enter);
+            this.textBoxGatunek.Leave += new System.EventHandler(this.textBoxGatunek_Leave);
             // 
             // textBoxDataWyd
             // 
             this.textBoxDataWyd.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBoxDataWyd.ForeColor = System.Drawing.Color.Gray;
             this.textBoxDataWyd.Location = new System.Drawing.Point(350, 360);
             this.textBoxDataWyd.Name = "textBoxDataWyd";
             this.textBoxDataWyd.Size = new System.Drawing.Size(400, 36);
             this.textBoxDataWyd.TabIndex = 10;
+            this.textBoxDataWyd.Text = "Data wydania";
+            this.textBoxDataWyd.Enter += new System.EventHandler(this.textBoxDataWyd_Enter);
+            this.textBoxDataWyd.Leave += new System.EventHandler(this.textBoxDataWyd_Leave);
             // 
             // textBoxIlosc
             // 
             this.textBoxIlosc.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.textBoxIlosc.ForeColor = System.Drawing.Color.Gray;
             this.textBoxIlosc.Location = new System.Drawing.Point(350, 430);
             this.textBoxIlosc.Name = "textBoxIlosc";
             this.textBoxIlosc.Size = new System.Drawing.Size(400, 36);
             this.textBoxIlosc.TabIndex = 11;
+            this.textBoxIlosc.Text = "Ilość";
+            this.textBoxIlosc.Enter += new System.EventHandler(this.textBoxIlosc_Enter);
+            this.textBoxIlosc.Leave += new System.EventHandler(this.textBoxIlosc_Leave);
             // 
             // btnDodaj
             // 

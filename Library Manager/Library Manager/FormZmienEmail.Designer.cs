@@ -63,6 +63,7 @@
             this.lblEmail.Size = new System.Drawing.Size(146, 37);
             this.lblEmail.TabIndex = 1;
             this.lblEmail.Text = "Nowy email:";
+            this.lblEmail.Visible = false;
             // 
             // lblHaslo
             // 
@@ -75,6 +76,7 @@
             this.lblHaslo.Size = new System.Drawing.Size(81, 37);
             this.lblHaslo.TabIndex = 2;
             this.lblHaslo.Text = "Hasło:";
+            this.lblHaslo.Visible = false;
             // 
             // textBoxEmail
             // 
@@ -83,15 +85,20 @@
             this.textBoxEmail.Name = "textBoxEmail";
             this.textBoxEmail.Size = new System.Drawing.Size(450, 36);
             this.textBoxEmail.TabIndex = 3;
+            this.textBoxEmail.Text = "Nowy email";
+            this.textBoxEmail.Enter += new System.EventHandler(this.textBoxEmail_Enter);
+            this.textBoxEmail.Leave += new System.EventHandler(this.textBoxEmail_Leave);
             // 
             // textBoxHaslo
             // 
             this.textBoxHaslo.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.textBoxHaslo.Location = new System.Drawing.Point(350, 340);
             this.textBoxHaslo.Name = "textBoxHaslo";
-            this.textBoxHaslo.PasswordChar = '*';
             this.textBoxHaslo.Size = new System.Drawing.Size(450, 36);
             this.textBoxHaslo.TabIndex = 4;
+            this.textBoxHaslo.Text = "Hasło";
+            this.textBoxHaslo.Enter += new System.EventHandler(this.textBoxHaslo_Enter);
+            this.textBoxHaslo.Leave += new System.EventHandler(this.textBoxHaslo_Leave);
             // 
             // btnAnuluj
             // 

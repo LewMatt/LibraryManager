@@ -72,5 +72,43 @@ namespace Library_Manager
 
 
         }
+
+        private void textBoxEmail_Enter(object sender, EventArgs e)
+        {
+            if (textBoxEmail.Text == "Nowy email")
+            {
+                textBoxEmail.Text = "";
+                textBoxEmail.ForeColor = Color.Black;
+            }
+        }
+
+        private void textBoxEmail_Leave(object sender, EventArgs e)
+        {
+            if (textBoxEmail.Text == "")
+            {
+                textBoxEmail.Text = "Nowy email";
+                textBoxEmail.ForeColor = Color.Gray;
+            }
+        }
+
+        private void textBoxHaslo_Enter(object sender, EventArgs e)
+        {
+            if (textBoxHaslo.Text == "Hasło")
+            {
+                textBoxHaslo.Text = "";
+                textBoxHaslo.ForeColor = Color.Black;
+                textBoxHaslo.PasswordChar = char.Parse("*");
+            }
+        }
+
+        private void textBoxHaslo_Leave(object sender, EventArgs e)
+        {
+            if (textBoxHaslo.Text == "")
+            {
+                textBoxHaslo.Text = "Hasło";
+                textBoxHaslo.ForeColor = Color.Gray;
+                textBoxHaslo.PasswordChar = '\0';
+            }
+        }
     }
 }
