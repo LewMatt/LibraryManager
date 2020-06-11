@@ -124,7 +124,7 @@
             this.btnKsiazkiWypozyczone.Name = "btnKsiazkiWypozyczone";
             this.btnKsiazkiWypozyczone.Size = new System.Drawing.Size(200, 50);
             this.btnKsiazkiWypozyczone.TabIndex = 2;
-            this.btnKsiazkiWypozyczone.Text = "Książki wypożyczone";
+            this.btnKsiazkiWypozyczone.Text = "Wypożyczone";
             this.btnKsiazkiWypozyczone.UseVisualStyleBackColor = false;
             this.btnKsiazkiWypozyczone.Click += new System.EventHandler(this.btnKsiazkiWypozyczone_Click);
             // 

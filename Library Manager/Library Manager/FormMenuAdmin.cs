@@ -21,6 +21,7 @@ namespace Library_Manager
             panel2.BackColor = panelColor;
             panel3.BackColor = panelColor;
 
+            userControlMenuAdmin1.fMenAdm = this;
             userControlMenuAdmin1.BringToFront();
         }
 
@@ -36,7 +37,7 @@ namespace Library_Manager
             userControlMenuAdmin1.BringToFront();
         }
 
-        private void btnBiblioteka_Click(object sender, EventArgs e)
+        public void btnBiblioteka_Click(object sender, EventArgs e)
         {
             List<ListViewItem> ksiazki = new List<ListViewItem>();
 
@@ -54,7 +55,7 @@ namespace Library_Manager
 
         }
 
-        private void btnKsiazkiWypozyczone_Click(object sender, EventArgs e)
+        public void btnKsiazkiWypozyczone_Click(object sender, EventArgs e)
         {
             List<ListViewItem> ksiazki_wyp = new List<ListViewItem>();
 
@@ -78,7 +79,7 @@ namespace Library_Manager
             userControlKsiazkiWypAdmin1.BringToFront();
         }
 
-        private void btnUzytkownicy_Click(object sender, EventArgs e)
+        public void btnUzytkownicy_Click(object sender, EventArgs e)
         {
             List<ListViewItem> uzytkownicy = new List<ListViewItem>();
 
@@ -100,7 +101,7 @@ namespace Library_Manager
             Application.Restart();
         }
 
-        private void btnZamowienia_Click(object sender, EventArgs e)
+        public void btnZamowienia_Click(object sender, EventArgs e)
         {
 
             List<ListViewItem> ksiazki_zam = new List<ListViewItem>();

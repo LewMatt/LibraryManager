@@ -16,5 +16,27 @@ namespace Library_Manager
         {
             InitializeComponent();
         }
+
+        public FormMenuAdmin fMenAdm;
+
+        private void btnBiblioteka_Click(object sender, EventArgs e)
+        {
+            fMenAdm.btnBiblioteka_Click(sender, e);
+        }
+
+        private void btnWypozyczone_Click(object sender, EventArgs e)
+        {
+            fMenAdm.btnKsiazkiWypozyczone_Click(sender, e);
+        }
+
+        private void btnUzytkownicy_Click(object sender, EventArgs e)
+        {
+            fMenAdm.btnUzytkownicy_Click(sender, e);
+        }
+
+        private void btnZamowienia_Click(object sender, EventArgs e)
+        {
+            fMenAdm.btnZamowienia_Click(sender, e);
+        }
     }
 }

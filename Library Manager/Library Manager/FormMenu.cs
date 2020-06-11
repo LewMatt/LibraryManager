@@ -22,6 +22,7 @@ namespace Library_Manager
             panel2.BackColor = panelColor;
             panel3.BackColor = panelColor;
 
+            userControlMenu1.fM = this;
             userControlMenu1.BringToFront();
         }
 
@@ -40,7 +41,7 @@ namespace Library_Manager
             userControlMenu1.BringToFront();
         }
 
-        private void btnBiblioteka_Click(object sender, EventArgs e)
+        public void btnBiblioteka_Click(object sender, EventArgs e)
         {
             List<ListViewItem> ksiazki = new List<ListViewItem>();
 
@@ -99,7 +100,7 @@ namespace Library_Manager
         }
 
 
-        private void btnMojeDane_Click(object sender, EventArgs e)
+        public void btnMojeDane_Click(object sender, EventArgs e)
         {
             string query = "SELECT user_fname FROM users WHERE user_login LIKE '" + logged_user + "'";
             string imie = form1obj.sendQueryRetString(query);
@@ -123,7 +124,7 @@ namespace Library_Manager
             userControlMojeDane1.BringToFront();
         }
 
-        private void btnZamowKsiazke_Click(object sender, EventArgs e)
+        public void btnZamowKsiazke_Click(object sender, EventArgs e)
         {
             string query = "SELECT COUNT(*) FROM books WHERE book_amount_available LIKE 0";
 
