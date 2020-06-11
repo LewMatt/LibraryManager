@@ -197,7 +197,11 @@ namespace Library_Manager
 
             return lista;
         }
-
+        /// <summary>
+        /// Funkcja odpowiedzialna za logowanie.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnLogin_Click(object sender, EventArgs e)
         {
             string query = "SELECT COUNT(*) FROM users WHERE user_login like '" + textBoxLogin.Text + "' AND user_password like '" + textBoxPassword.Text + "'";
@@ -236,13 +240,17 @@ namespace Library_Manager
             System.Windows.Forms.Application.Exit();
         }
 
+        /// <summary>
+        /// Funkcja otwierająca okno tworzenia konta.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnUtworzKonto_Click(object sender, EventArgs e)
         {
             FormCreateAccount fCreAcc = new FormCreateAccount();
 
             fCreAcc.Show();
             fCreAcc.BringToFront();
-
         }
         
         private void textBoxLogin_TextChanged(object sender, EventArgs e)
