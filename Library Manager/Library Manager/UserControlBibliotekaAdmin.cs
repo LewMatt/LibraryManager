@@ -20,6 +20,11 @@ namespace Library_Manager
 
         Form1 form1obj = new Form1();
 
+        /// <summary>
+        /// Funkcja odpowiedzialna za dodawanie istniejących już książek.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnDodajIloscKsiazek_Click(object sender, EventArgs e)
         {
             if(listViewBibliotekaAdmin.SelectedItems.Count <=0)
@@ -80,6 +85,11 @@ namespace Library_Manager
            
         }
 
+        /// <summary>
+        /// Funkcja otwierająca okno dodawania nowej książki.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnNowaKsiazka_Click(object sender, EventArgs e)
         {
             FormNowaKsiazka fKsiazka = new FormNowaKsiazka();
@@ -88,6 +98,11 @@ namespace Library_Manager
             fKsiazka.BringToFront();
         }
 
+        /// <summary>
+        /// Funkcja odświeżająca zawartość biblioteki.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnOdswiez_Click(object sender, EventArgs e)
         {
             List<ListViewItem> list_upd = new List<ListViewItem>();

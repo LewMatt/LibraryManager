@@ -29,6 +29,11 @@ namespace Library_Manager
             this.Hide();
         }
 
+        /// <summary>
+        /// Funkcja odpowiedzialna za zmiane numeru telefonu.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnZmien_Click(object sender, EventArgs e)
         {
             if (textBoxTelefon.Text == "")

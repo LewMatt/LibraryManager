@@ -28,6 +28,11 @@ namespace Library_Manager
             this.Hide();
         }
 
+        /// <summary>
+        /// Funkcja opowiedzialna za zmiane email.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnZmien_Click(object sender, EventArgs e)
         {
             if(textBoxEmail.Text == "")

@@ -23,6 +23,11 @@ namespace Library_Manager
 
         Form1 form1obj = new Form1();
 
+        /// <summary>
+        /// Funkcja odpowiedzialna za zamówienie książki przez użytkownika.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnZamow_Click(object sender, EventArgs e)
         {
             if (listViewKsiazkiZamow.SelectedItems.Count <= 0)

@@ -32,6 +32,11 @@ namespace Library_Manager
             this.Hide();
         }
 
+        /// <summary>
+        /// Funkcja odpowiedzialna za zmiane hasła.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnZmienHaslo_Click(object sender, EventArgs e)
         {
             if(textBoxAktHaslo.Text == "")

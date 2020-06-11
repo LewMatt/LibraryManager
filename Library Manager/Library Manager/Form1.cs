@@ -25,6 +25,11 @@ namespace Library_Manager
             panel1.BackColor = panelColor;
         }
 
+        /// <summary>
+        /// Funkcja wysyłająca zapytanie do bazy danych i zwracająca string.
+        /// </summary>
+        /// <param name="query"></param>
+        /// <returns></returns>
         public string sendQueryRetString(string query)
         {
             string someStringFromColumnZero = "";
@@ -45,6 +50,11 @@ namespace Library_Manager
             return result;
         }
 
+        /// <summary>
+        /// Funkcja wysyłąjąca zapytanie do bazy danych i zwracająca listę typu ListViewItem.
+        /// </summary>
+        /// <param name="query"></param>
+        /// <returns></returns>
         public List<ListViewItem> sendQueryRetBooks(string query)
         {
             List<ListViewItem> lista = new List<ListViewItem>();
@@ -234,7 +244,11 @@ namespace Library_Manager
             }
 
         }
-
+        /// <summary>
+        /// Funkcja wyłączająca aplikację.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnExit_Click(object sender, EventArgs e)
         {
             System.Windows.Forms.Application.Exit();
@@ -297,7 +311,9 @@ namespace Library_Manager
             }
         }
     }
-
+    /// <summary>
+    ///Klasa odpowiedzialna za łączność z bazą danych.
+    /// </summary>
     public class DBConnection
     {
         private DBConnection()

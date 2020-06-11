@@ -27,6 +27,11 @@ namespace Library_Manager
 
         Form1 form1obj = new Form1();
 
+        /// <summary>
+        /// Funkcja zamykająca aplikację.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnWyjscie_Click(object sender, EventArgs e)
         {
             System.Windows.Forms.Application.Exit();
@@ -37,6 +42,11 @@ namespace Library_Manager
             userControlMenuAdmin1.BringToFront();
         }
 
+        /// <summary>
+        /// Funkcja odpowiedzialna za wyświetlenie biblioteki.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         public void btnBiblioteka_Click(object sender, EventArgs e)
         {
             List<ListViewItem> ksiazki = new List<ListViewItem>();
@@ -54,7 +64,11 @@ namespace Library_Manager
             userControlBibliotekaAdmin1.BringToFront();
 
         }
-
+        /// <summary>
+        /// Funkcja odpowiedzialna za wyświetlenie listy książek wypożyczonych.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         public void btnKsiazkiWypozyczone_Click(object sender, EventArgs e)
         {
             List<ListViewItem> ksiazki_wyp = new List<ListViewItem>();
@@ -79,6 +93,11 @@ namespace Library_Manager
             userControlKsiazkiWypAdmin1.BringToFront();
         }
 
+        /// <summary>
+        /// Funkcja odpowiedzialna za wyświetlenie utworzonych kont użytkowników. 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         public void btnUzytkownicy_Click(object sender, EventArgs e)
         {
             List<ListViewItem> uzytkownicy = new List<ListViewItem>();
@@ -101,6 +120,11 @@ namespace Library_Manager
             Application.Restart();
         }
 
+        /// <summary>
+        /// Funkcja odpowiedzialna za wyświetlenie listy zamówień.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         public void btnZamowienia_Click(object sender, EventArgs e)
         {
 

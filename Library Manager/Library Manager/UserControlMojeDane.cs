@@ -33,6 +33,11 @@ namespace Library_Manager
 
         Form1 form1obj = new Form1();
 
+        /// <summary>
+        /// Funkcja otwierająca okno zmiany email.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnZmienEmail_Click(object sender, EventArgs e)
         {
             FormZmienEmail fZmienEmail = new FormZmienEmail();
@@ -41,6 +46,11 @@ namespace Library_Manager
             fZmienEmail.BringToFront();
         }
 
+        /// <summary>
+        /// Funkcja odświeżająca dane użytkownika.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnOdswiez_Click(object sender, EventArgs e)
         {
             string query = "SELECT user_fname FROM users WHERE user_login LIKE '" + my_login + "'";
@@ -60,6 +70,11 @@ namespace Library_Manager
             lblTelefonPokaz.Text = tel;
         }
 
+        /// <summary>
+        /// Funkcja otwierająca okno zmiany numeru telefonu.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnZmienTel_Click(object sender, EventArgs e)
         {
             FormZmienTelefon fZmienTel = new FormZmienTelefon();
@@ -69,6 +84,11 @@ namespace Library_Manager
             fZmienTel.BringToFront();
         }
 
+        /// <summary>
+        /// Funkcja otwierająca okno zmiany hasła.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnZmienHaslo_Click(object sender, EventArgs e)
         {
             FormZmienHaslo fZmienHas = new FormZmienHaslo();

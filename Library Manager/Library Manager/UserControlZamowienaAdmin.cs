@@ -19,6 +19,11 @@ namespace Library_Manager
 
         public string data_odd;
 
+        /// <summary>
+        /// Funkcja odpowiedzialna za dodanie książek zamówionych przez użytkowników.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnDodajDoBib_Click(object sender, EventArgs e)
         {
             if(listViewZamowienia.SelectedItems.Count <= 0 )

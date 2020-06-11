@@ -19,6 +19,11 @@ namespace Library_Manager
 
         Form1 form1obj = new Form1();
 
+        /// <summary>
+        /// Funkcja odpowiedzialna za powrót do menu.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnAnuluj_Click(object sender, EventArgs e)
         {
             textBoxTytul.Text = "";
@@ -29,6 +34,11 @@ namespace Library_Manager
             this.Hide();
         }
 
+        /// <summary>
+        /// Funkcja odpowiedzialna za dodawanie nowych książek do biblioteki.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnDodaj_Click(object sender, EventArgs e)
         {
             if(textBoxTytul.Text == "")

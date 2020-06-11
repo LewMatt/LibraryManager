@@ -31,6 +31,11 @@ namespace Library_Manager
         public string logged_user = "";
         public int logged_user_id;
 
+        /// <summary>
+        /// Funkcja zamykająca aplikację.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnExit_Click(object sender, EventArgs e)
         {
             System.Windows.Forms.Application.Exit();
@@ -40,7 +45,11 @@ namespace Library_Manager
         {
             userControlMenu1.BringToFront();
         }
-
+        /// <summary>
+        /// Funkcja odpowiedzialna za zapełnienie biblioteki.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         public void btnBiblioteka_Click(object sender, EventArgs e)
         {
             List<ListViewItem> ksiazki = new List<ListViewItem>();
@@ -69,6 +78,11 @@ namespace Library_Manager
             userControlBiblioteka1.BringToFront();
         }
 
+        /// <summary>
+        /// Funkcja odpowiedzialna za zapełnienie listy książek wypożyczonych przez użytkownika.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         public void btnMojeKsiazki_Click(object sender, EventArgs e)
         {
             List<ListViewItem> moje_ksiazki = new List<ListViewItem>();
@@ -99,7 +113,11 @@ namespace Library_Manager
             userControlMojeKsiazki1.BringToFront();
         }
 
-
+        /// <summary>
+        /// Funkcja wyświetlająca dane użytkownika.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         public void btnMojeDane_Click(object sender, EventArgs e)
         {
             string query = "SELECT user_fname FROM users WHERE user_login LIKE '" + logged_user + "'";
@@ -124,6 +142,11 @@ namespace Library_Manager
             userControlMojeDane1.BringToFront();
         }
 
+        /// <summary>
+        /// Funkcja odpowiedzialna za otworzenie okna zamawiania książęk oraz wyświetlenie dostępnych książek do zamówienia.
+        /// </summar>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         public void btnZamowKsiazke_Click(object sender, EventArgs e)
         {
             string query = "SELECT COUNT(*) FROM books WHERE book_amount_available LIKE 0";

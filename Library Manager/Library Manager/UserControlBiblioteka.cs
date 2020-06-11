@@ -26,8 +26,11 @@ namespace Library_Manager
 
         public string data_za_mies;
 
-
-
+        /// <summary>
+        /// Funkcja odpowiedzialna za wypożyczenie książki.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnWypozyczKsiazke_Click(object sender, EventArgs e)
         {
            

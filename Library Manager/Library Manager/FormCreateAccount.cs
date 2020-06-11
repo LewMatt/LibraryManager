@@ -19,6 +19,11 @@ namespace Library_Manager
 
         Form1 form1obj = new Form1();
 
+        /// <summary>
+        /// Funkcja odpowiedzialna za tworzenie konta.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnUtworzKonto_Click(object sender, EventArgs e)
         {
             string new_login = textBoxLogin.Text;
@@ -83,6 +88,11 @@ namespace Library_Manager
 
         }
 
+        /// <summary>
+        /// Funkcja odpowiedzialna za wyjście z okna tworzenia konta.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnPowrot_Click(object sender, EventArgs e)
         {
             textBoxLogin.Text = "";
