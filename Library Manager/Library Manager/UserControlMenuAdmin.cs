@@ -15,6 +15,11 @@ namespace Library_Manager
         public UserControlMenuAdmin()
         {
             InitializeComponent();
+            Color backColor = Color.FromArgb(100, Color.Gray);
+            lblBiblioteka.BackColor = backColor;
+            lblWypozyczone.BackColor = backColor;
+            lblUzytkownicy.BackColor = backColor;
+            lblZamowienia.BackColor = backColor;
         }
 
         public FormMenuAdmin fMenAdm;

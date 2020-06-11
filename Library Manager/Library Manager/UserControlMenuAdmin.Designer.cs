@@ -37,6 +37,10 @@
             this.btnWypozyczone = new System.Windows.Forms.Button();
             this.btnUzytkownicy = new System.Windows.Forms.Button();
             this.btnZamowienia = new System.Windows.Forms.Button();
+            this.lblBiblioteka = new System.Windows.Forms.Label();
+            this.lblWypozyczone = new System.Windows.Forms.Label();
+            this.lblUzytkownicy = new System.Windows.Forms.Label();
+            this.lblZamowienia = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -57,6 +61,7 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.lblBiblioteka);
             this.panel1.Controls.Add(this.btnBiblioteka);
             this.panel1.Location = new System.Drawing.Point(0, 120);
             this.panel1.Name = "panel1";
@@ -65,6 +70,7 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.lblWypozyczone);
             this.panel2.Controls.Add(this.btnWypozyczone);
             this.panel2.Location = new System.Drawing.Point(225, 120);
             this.panel2.Name = "panel2";
@@ -73,6 +79,7 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.lblUzytkownicy);
             this.panel3.Controls.Add(this.btnUzytkownicy);
             this.panel3.Location = new System.Drawing.Point(450, 120);
             this.panel3.Name = "panel3";
@@ -81,6 +88,7 @@
             // 
             // panel4
             // 
+            this.panel4.Controls.Add(this.lblZamowienia);
             this.panel4.Controls.Add(this.btnZamowienia);
             this.panel4.Location = new System.Drawing.Point(675, 120);
             this.panel4.Name = "panel4";
@@ -139,6 +147,50 @@
             this.btnZamowienia.UseVisualStyleBackColor = true;
             this.btnZamowienia.Click += new System.EventHandler(this.btnZamowienia_Click);
             // 
+            // lblBiblioteka
+            // 
+            this.lblBiblioteka.Font = new System.Drawing.Font("Segoe Print", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblBiblioteka.ForeColor = System.Drawing.Color.White;
+            this.lblBiblioteka.Location = new System.Drawing.Point(0, 100);
+            this.lblBiblioteka.Name = "lblBiblioteka";
+            this.lblBiblioteka.Size = new System.Drawing.Size(225, 100);
+            this.lblBiblioteka.TabIndex = 1;
+            this.lblBiblioteka.Text = "Biblioteka";
+            this.lblBiblioteka.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblWypozyczone
+            // 
+            this.lblWypozyczone.Font = new System.Drawing.Font("Segoe Print", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblWypozyczone.ForeColor = System.Drawing.Color.White;
+            this.lblWypozyczone.Location = new System.Drawing.Point(0, 100);
+            this.lblWypozyczone.Name = "lblWypozyczone";
+            this.lblWypozyczone.Size = new System.Drawing.Size(225, 100);
+            this.lblWypozyczone.TabIndex = 2;
+            this.lblWypozyczone.Text = "Wypożyczone";
+            this.lblWypozyczone.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblUzytkownicy
+            // 
+            this.lblUzytkownicy.Font = new System.Drawing.Font("Segoe Print", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblUzytkownicy.ForeColor = System.Drawing.Color.White;
+            this.lblUzytkownicy.Location = new System.Drawing.Point(0, 100);
+            this.lblUzytkownicy.Name = "lblUzytkownicy";
+            this.lblUzytkownicy.Size = new System.Drawing.Size(225, 100);
+            this.lblUzytkownicy.TabIndex = 2;
+            this.lblUzytkownicy.Text = "Użytkownicy";
+            this.lblUzytkownicy.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblZamowienia
+            // 
+            this.lblZamowienia.Font = new System.Drawing.Font("Segoe Print", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.lblZamowienia.ForeColor = System.Drawing.Color.White;
+            this.lblZamowienia.Location = new System.Drawing.Point(0, 100);
+            this.lblZamowienia.Name = "lblZamowienia";
+            this.lblZamowienia.Size = new System.Drawing.Size(225, 100);
+            this.lblZamowienia.TabIndex = 2;
+            this.lblZamowienia.Text = "Zamówienia";
+            this.lblZamowienia.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // UserControlMenuAdmin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -170,5 +222,9 @@
         private System.Windows.Forms.Button btnWypozyczone;
         private System.Windows.Forms.Button btnUzytkownicy;
         private System.Windows.Forms.Button btnZamowienia;
+        private System.Windows.Forms.Label lblBiblioteka;
+        private System.Windows.Forms.Label lblWypozyczone;
+        private System.Windows.Forms.Label lblUzytkownicy;
+        private System.Windows.Forms.Label lblZamowienia;
     }
 }
