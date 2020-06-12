@@ -22,8 +22,7 @@ namespace LibraryTest
         {
 
             Random rnd = new Random();
-            rnd.Next(0, 10000);
-            string newPass = rnd.ToString();
+            string newPass = rnd.Next(0,10000).ToString();
             string expected = newPass;
             string id = 2.ToString();
 
