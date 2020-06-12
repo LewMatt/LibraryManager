@@ -26,10 +26,10 @@ namespace LibraryTest
             string newPass = rnd.ToString();
             string expected = newPass;
             string id = 2.ToString();
+
             func fnc = new func();
 
             string trash_res = fnc.UpdatePass(newPass, id);
-
 
             Assert.AreEqual(expected, fnc.CheckPass(id));
         }
