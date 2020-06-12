@@ -25,7 +25,7 @@ namespace LibraryTest
             rnd.Next(0, 10000);
             string newPass = rnd.ToString();
             string expected = newPass;
-            string id = 4.ToString();
+            string id = 2.ToString();
             func fnc = new func();
 
             string trash_res = fnc.UpdatePass(newPass, id);
