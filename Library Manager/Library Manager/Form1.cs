@@ -28,7 +28,7 @@ namespace Library_Manager
         /// <summary>
         /// Funkcja wysyłająca zapytanie do bazy danych i zwracająca string.
         /// </summary>
-        /// <param name="query"></param>
+        /// <param name="query">Zmienna typu string przechowująca zapytanie do bazy danych.</param>
         /// <returns></returns>
         public string sendQueryRetString(string query)
         {
@@ -53,7 +53,7 @@ namespace Library_Manager
         /// <summary>
         /// Funkcja wysyłąjąca zapytanie do bazy danych i zwracająca listę typu ListViewItem.
         /// </summary>
-        /// <param name="query"></param>
+        /// <param name="query">Zmienna typu string przechowująca zapytanie do bazy danych.</param>
         /// <returns></returns>
         public List<ListViewItem> sendQueryRetBooks(string query)
         {
